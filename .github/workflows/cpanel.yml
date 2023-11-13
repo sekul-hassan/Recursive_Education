@@ -1,4 +1,8 @@
-deployment:
+
+  deployment:
+    tasks:
+      - export DEPLOYPATH=/home/example/public_html/
+      - /bin/cp -R images $DEPLOYPATH
   environment:
     php: 7.4
     node: 16
