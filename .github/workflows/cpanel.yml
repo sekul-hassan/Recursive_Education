@@ -1,0 +1,13 @@
+deployment:
+  environment:
+    php: 7.4
+    node: 16
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - git pull
+    - composer install
+    - npm install
+    - npm run build
+    - cp -r build/* $DEPLOYPATH
+    - nginx -t
+    - sudo systemctl restart nginx
