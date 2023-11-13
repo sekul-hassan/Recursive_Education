@@ -27,7 +27,8 @@ jobs:
       - name: Deploy to cPanel
         uses: appleboy/ssh-action@master
         with:
-          server: ${{ secrets.CPANEL_HOST }}
+          host: ${{ secrets.CPANEL_HOST }}
           username: ${{ secrets.CPANEL_SSH_USERNAME }}
           password: ${{ secrets.CPANEL_PASSWORD }}
-          local-dir: build/
+          port: ${{ secrets.FTP_PORT }}
+
