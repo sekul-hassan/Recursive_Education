@@ -1,4 +1,4 @@
-name: Deploy to cPanel
+name: CI/CD React Application
 
 on:
   push:
@@ -6,29 +6,45 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build
+      - name: Build React application
         run: npm run build
 
-      - name: Deploy to cPanel
-        uses: appleboy/ssh-action@master
+      - name: Archive build artifact
+        uses: actions/upload-artifact@v3
         with:
-          host: ${{ secrets.CPANEL_HOST }}
-          username: ${{ secrets.CPANEL_SSH_USERNAME }}
-          password: ${{ secrets.CPANEL_PASSWORD }}
-          port: ${{ secrets.FTP_PORT }}
+          name: build-artifact
+          path: build/
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build-artifact
+          path: build/
+
+      - name: Deploy to production
+        uses: recursiveeducation/deploy-react-to-production@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          domain: recursiveeducation.com
+          shared-ip-address: 23.106.53.137
+          home-directory: /home/recursiveeducati
