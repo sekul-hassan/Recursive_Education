@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import {Col, Container, Row} from "react-bootstrap";
+import HomeCarousel from "./HomeCarousel";
 
 function HomeTopBar(props) {
     return (
@@ -9,8 +10,7 @@ function HomeTopBar(props) {
                     <Col>
                         <div className="homeTopBackgroundOverlay">
                             <div className="topBarContent">
-                                <h4>hii there have a slider</h4>
-                                <h4>Slider is boom boom</h4>
+                              <HomeCarousel/>
                             </div>
                         </div>
                     </Col>

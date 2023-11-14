@@ -1,0 +1,10 @@
+@media (min-width: 768px) {
+    .topBarContent{
+        width: 60%;
+    }
+}
+@media (min-width: 1000px) {
+    .topBarContent{
+        width: 50%;
+    }
+}
