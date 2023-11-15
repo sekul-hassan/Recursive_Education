@@ -8,3 +8,13 @@
         width: 50%;
     }
 }
+@media (min-width: 1200px) {
+    .topBarContent{
+        width: 40%;
+    }
+}
+@media (min-width: 1400px) {
+    .topBarContent{
+        width: 30%;
+    }
+}
