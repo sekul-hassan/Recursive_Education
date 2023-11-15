@@ -14,64 +14,64 @@ function HomeCarousel() {
             <Carousel.Item>
                 <img className="carouselImg" src={sekul} alt=""/>
                 <Carousel.Caption>
-                    <h3>SEKUL HASSAN</h3>
-                    <p>Department of Computer Science and Engineering.</p>
-                    <h3>Programing Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">SEKUL HASSAN</h3>
+                    <h6 className="subtitle">Department of Computer Science and Engineering.</h6>
+                    <h3 className="title">Programing Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={sueb} alt=""/>
                 <Carousel.Caption>
-                    <h3>Sueb</h3>
-                    <p>Department of Mathematics</p>
-                    <h3>Expert of Mathematics</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Sueb</h3>
+                    <h6 className="subtitle">Department of Mathematics</h6>
+                    <h3 className="title">Expert of Mathematics</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={shohidulla} alt=""/>
                 <Carousel.Caption>
-                    <h3>Shohidullah</h3>
-                    <p>Department of Computer Science and Engineering.</p>
-                    <h3>Sanilion video editing Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Shohidullah</h3>
+                    <h6 className="subtitle">Department of Computer Science and Engineering.</h6>
+                    <h3 className="title">Sanilion video editing Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={shamem} alt=""/>
                 <Carousel.Caption>
-                    <h3>Yasin Ahamed Shamim</h3>
-                    <p>Department of Chemistry.</p>
-                    <h3>Chemistry Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Yasin Ahamed Shamim</h3>
+                    <h6 className="subtitle">Department of Chemistry.</h6>
+                    <h3 className="title">Chemistry Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={moto} alt=""/>
                 <Carousel.Caption>
-                    <h3>Shirin's Shamem</h3>
-                    <p>Department of English</p>
-                    <h3>SEO Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Shirin's Shamem</h3>
+                    <h6 className="subtitle">Department of English</h6>
+                    <h3 className="title">SEO Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={rana} alt=""/>
                 <Carousel.Caption>
-                    <h3>Rana Ahamed</h3>
-                    <p>Department of Chemistry.</p>
-                    <h3>Chemistry Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Rana Ahamed</h3>
+                    <h6 className="subtitle">Department of Chemistry.</h6>
+                    <h3 className="title">Chemistry Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
                 <img className="carouselImg" src={sk} alt=""/>
                 <Carousel.Caption>
-                    <h3>Sk Shohid</h3>
-                    <p>Department of Mitu.</p>
-                    <h3>Biology Expert</h3>
-                    <Button>Contact me!</Button>
+                    <h3 className="title">Sk Shohid</h3>
+                    <h6 className="subtitle">Department of Mitu.</h6>
+                    <h3 className="title">Biology Expert</h3>
+                    <Button className="contactBtn">Contact me!</Button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

@@ -1,15 +1,49 @@
 .navBar{
-    width: 100%;
+    max-width: 100%;
     height: 60px;
-    background-color: rgba(0,0,0,0.2) !important;
+    background-color: rgba(0,0,0,0.1) !important;
     padding: 0 5% 0 5%;
+    transition: 0.5s;
 }
+.navLink{
+    color: white !important;
+    font-family: Roboto,serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.navBarScroll{
+    max-width: 100%;
+    height: 60px;
+    padding: 0 5% 0 5%;
+    background-color:#ffffff !important;
+    transition: 0.5s;
+}
+.navLinkScroll{
+    color: rgba(0,0,0,0.7) !important;
+    font-family: Roboto,serif;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+}
+.navLink:hover{
+    color: pink!important;
+    border: 1px solid white!important;
+}
+.navLinkScroll:hover{
+    color: #0d39e1 !important;
+    border: 1px solid black!important;
+}
+
 .homeTopBackground {
     background-size: cover;
     width: 100%;
     height: 100%;
     margin-top: -60px;
     background: url("../Images/back.JPG") no-repeat fixed center;
+    padding: 0;
 }
 
 .homeTopBackgroundOverlay{
@@ -17,7 +51,8 @@
     background: rgba(0,0,0,0.4);
     width: 100%;
     height: 710px;
-    margin-top: -60px;
+    margin: -60px 0 0 0;
+    padding: 0;
 }
 
 .topBarContent {
@@ -30,4 +65,21 @@
 .carouselImg{
     width: 100%;
     height: 430px;
+}
+.title{
+    color: white;
+    font-size: 22px;
+    font-family: Popin, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.subTitle{
+    color: white;
+    font-size: 20px;
+    font-family: Popin, serif;
+    font-weight: 400;
+}
+.contactBtn{
+
 }

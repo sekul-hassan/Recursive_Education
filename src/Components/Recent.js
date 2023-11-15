@@ -17,9 +17,9 @@ function Recent(props) {
                         />
                     </Col>
                     <Col md={6} sm={12} lg={6}>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium ad aspernatur commodi cumque deserunt dignissimos dolorem eius exercitationem expedita facere fugit impedit ipsa ipsam ipsum libero maxime nemo nesciunt nobis officiis optio quaerat quibusdam quisquam quo rerum saepe similique soluta, tempore unde velit veritatis voluptas voluptate voluptates. Aut delectus libero pariatur perferendis quasi quod tenetur, vel. Adipisci aspernatur at, commodi corporis doloribus earum eum excepturi exercitationem id illum in iure iusto magni non, nulla odit perferendis perspiciatis possimus provident quos ratione recusandae sequi tempora tenetur velit voluptas, voluptates. Ad commodi cum deserunt ea magni nemo odit omnis quo tenetur.
-                        </p>
+                       <h4>How to Make a Carousel</h4>
+                        <h5>using HTML CSS & JavaScript</h5>
+
                     </Col>
                 </Row>
             </Container>
