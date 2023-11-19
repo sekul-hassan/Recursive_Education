@@ -23,15 +23,14 @@ function Slider(props) {
                     <img src={img3} alt="1/3"/>
                     <div className="text">Cation 3</div>
                 </div>
-                <a className="prev" onClick="plusSlides(-1)">❮</a>
-                <a className="next" onClick="plusSlides(1)">❯</a>
+                <button className="prev" onClick={()=>{}}>❮</button>
+                <button className="next" onClick={()=>{}}>❯</button>
             </div>
             <div className="text-center">
                 <span className="dot" onClick="currentSlide(1)"> </span>
                 <span className="dot" onClick="currentSlide(2)"> </span>
                 <span className="dot" onClick="currentSlide(3)"> </span>
             </div>
-
         </Container>
     );
 }
