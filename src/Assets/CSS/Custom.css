@@ -1,7 +1,7 @@
 .navBar{
     max-width: 100%;
     height: 60px;
-    background-color: rgba(0,0,0,0.1) !important;
+    background-color: rgba(0,0,0,1) !important;
     padding: 0 5% 0 5%;
     transition: 0.5s;
 }
@@ -12,6 +12,7 @@
     font-weight: 300;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 .navBarScroll{
     max-width: 100%;
@@ -27,6 +28,7 @@
     font-weight: 300;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 .navLink:hover{
     color: pink!important;
@@ -81,5 +83,42 @@
     font-weight: 400;
 }
 .contactBtn{
-
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Montserrat, serif;
+    font-weight: 400;
+    background-color: rgba(0,0,0,0.2);
+}
+.contactBtn:hover{
+    background-color: white;
+    color: #282c34;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+.globalTitle{
+    color: rgba(0,0,0,1);
+    font-family: Montserrat, serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+.globalSubTitle{
+    color: rgba(0,0,0,1);
+    font-family: Raleway, serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+.logoImg{
+    width: 100px;
+    height: 60px;
+    padding: 0;
+}
+.contactLink{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+}
+.contactLink:hover{
+    color: #000000;
+    transition: 0.2s;
 }

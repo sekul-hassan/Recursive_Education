@@ -7,7 +7,7 @@ function Recent(props) {
         <Fragment>
             <Container fluid="true" className="p-4 text-center">
                 <Row>
-                    <h3 className="mb-4">Most recent activity</h3>
+                    <h3 className="globalTitle">Most recent activity</h3>
                     <Col md={6} sm={12} lg={6}>
                         <ReactPlayer url="https://www.youtube.com/watch?v=YLQ6wfqdWDI&list=RDGMEM916WJxafRUGgOvd6dVJkeQVMYLQ6wfqdWDI&start_radio=1"
                         controls
@@ -16,9 +16,9 @@ function Recent(props) {
                                      style={{borderRadius:"10px"}}
                         />
                     </Col>
-                    <Col md={6} sm={12} lg={6}>
-                       <h4>How to Make a Carousel</h4>
-                        <h5>using HTML CSS & JavaScript</h5>
+                    <Col className="recentRight" md={6} sm={12} lg={6}>
+                       <h4 className="globalTitle">How to Make a Carousel</h4>
+                        <h5 className="globalSubTitle">Using HTML CSS & JavaScript</h5>
 
                     </Col>
                 </Row>

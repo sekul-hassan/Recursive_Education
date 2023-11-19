@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+
+
+.practiceList{
+    padding: 2px;
+    margin-top: 60px;
+}
+.practiceTitle{
+    margin-left: -1%;
+    font-size: 22px;
+    font-family: Popin, serif;
+    font-weight: 600;
+}
+.sidebar {
+    padding: 10px;
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+.sidebar a {
+    padding: 2px;
+    text-decoration: none;
+    color: #333;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 56px;
+        bottom: 0;
+        left: 0;
+        width:15%;
+        overflow-y: auto;
+        border-right: 1px solid #ccc;
+    }
+    .practiceTitle{
+        margin-left: -5%;
+    }
+    .sidebar.show {
+        display: block;
+    }
+}
+.mySlides img{
+    width: 100%;
+    height: auto;
+}
+.practiceRightDiv{
+    margin: 36px 0 0 0 !important;
+    padding: 0 !important;
+}
