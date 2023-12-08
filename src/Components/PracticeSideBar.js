@@ -12,7 +12,7 @@ function PracticeSideBar(props) {
 
     return (
        <Container fluid="true">
-           <Navbar expand="md" className="practiceList">
+           <Navbar expand={true} className="practiceList">
                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} />
                <Navbar.Collapse id="basic-navbar-nav" className={`${showMenu ? 'show' : ''}`}>
                    <Nav className="flex-column sidebar">
