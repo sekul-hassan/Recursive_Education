@@ -45,7 +45,7 @@ function TopMenu(props) {
         <Fragment>
             <Navbar className={css.navBar} fixed = "top" collapseOnSelect expand="sm">
                 <Navbar.Brand className="m-0 p-0" href="#home"><Link to="/"><img className="logoImg" src={css.logo} alt=""/></Link></Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle className="smallNav" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto"/>
                     <Nav className="nav">
