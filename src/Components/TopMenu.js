@@ -55,7 +55,7 @@ function TopMenu(props) {
                         <Nav.Link ><Link to="/"  className={css.navLink}>Projects</Link></Nav.Link>
                         <Nav.Link><Link to="practice"  className={css.navLink} >Practice</Link></Nav.Link>
                         {
-                            !login ? <Nav.Link><Link className={css.navLink} onClick={loginBtn}>Login</Link></Nav.Link>:<Nav.Link onClick={loginBtn}><Link className={css.navLink}>Logout</Link></Nav.Link>
+                            !login ? <Nav.Link><Link to="/" className={css.navLink} onClick={loginBtn}>Login</Link></Nav.Link>:<Nav.Link onClick={loginBtn}><Link className={css.navLink}>Logout</Link></Nav.Link>
                         }
                     </Nav>
                 </Navbar.Collapse>

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import PracticeSideBar from "../Components/PracticeSideBar";
+import Slider from "../Components/Slider";
+import Footer from "../Components/Footer";
 
 function PracticePage(props) {
     return (
@@ -10,7 +12,8 @@ function PracticePage(props) {
                     <PracticeSideBar/>
                 </Col>
                 <Col className="practiceRightDiv" md={10} lg={9} sm={11}>
-
+                    <Slider/>
+                    <Footer/>
                 </Col>
             </Row>
         </Container>

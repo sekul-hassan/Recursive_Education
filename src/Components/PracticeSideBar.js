@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, {Fragment, useState} from 'react';
 import '../Assets/CSS/SideBar.css';
-import {Container, Nav, Navbar} from 'react-bootstrap';
+import {Nav, Navbar} from 'react-bootstrap';
 import {Link} from "react-router-dom";
 
 function PracticeSideBar(props) {
@@ -11,7 +11,7 @@ function PracticeSideBar(props) {
     };
 
     return (
-       <Container fluid="true">
+       <Fragment>
            <Navbar expand={true} className="practiceList">
                <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleMenu} />
                <Navbar.Collapse id="basic-navbar-nav" className={`${showMenu ? 'show' : ''}`}>
@@ -43,7 +43,7 @@ function PracticeSideBar(props) {
                    </Nav>
                </Navbar.Collapse>
            </Navbar>
-       </Container>
+       </Fragment>
     );
 }
 
