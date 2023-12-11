@@ -6,12 +6,12 @@ import Slider from "../Components/Slider";
 
 function SlidePage(props) {
     return (
-        <Container fluid="true" className="px-2">
-            <Row className="m-0">
-                <Col md={2} lg={3} sm={1}>
+        <Container fluid="true">
+            <Row className="m-0 p-0">
+                <Col className="m-0 p-0" md={2} lg={3} sm={1}>
                     <PracticeSideBar/>
                 </Col>
-                <Col md={10} lg={9} sm={11} className="slidePage">
+                <Col md={10} lg={9} sm={11} className="slidePage m-0 p-0">
                     <Slider/>
                     <Footer/>
                 </Col>

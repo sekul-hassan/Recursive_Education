@@ -6,7 +6,7 @@
 .practiceList{
     padding: 0;
     margin-top: 60px;
-    width: 18px;
+    width: 60px!important;
 }
 .practiceTitle{
     margin-left: -1%;

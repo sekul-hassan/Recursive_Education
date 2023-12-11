@@ -1,7 +1,23 @@
 .slidePage {
     position: absolute;
-    left: 110px;
-    width: calc(100% - 110px);
+    left: 120px;
+    width: calc(100% - 122px);
     top: 70px;
 
+}
+@media (max-width: 555px) {
+    .sidebar {
+        max-height: calc(100vh - 56px);
+        overflow-y: auto;
+        background-color: red;
+    }
+    /*.practiceList h4{*/
+    /*    font-size: 15px;*/
+    /*    margin-left: -2px;*/
+    /*    font-weight: 400;*/
+    /*}*/
+    /*.practiceList a{*/
+    /*    font-size: 10px;*/
+
+    /*}*/
 }
