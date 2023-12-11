@@ -2,6 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Assets/CSS/Custom.css'
 import './Assets/CSS/Responsive.css'
+import './Assets/CSS/SliderResponsive.css'
 import React, {Fragment} from "react";
 import Home from "./Pages/Home";
 import TopMenu from "./Components/TopMenu";

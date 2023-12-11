@@ -1,12 +1,11 @@
-import React from 'react';
-import {Container} from "react-bootstrap";
+import React, {Fragment} from 'react';
 import img1 from "../Assets/Images/sekul1.JPG"
 import img2 from "../Assets/Images/moto1.JPG"
 import img3 from "../Assets/Images/shohidulla1.JPG"
 
 function Slider(props) {
     return (
-        <Container fluid="true">
+        <Fragment>
             <div className="slideShowContainer">
                 <div className="mySlides">
                     <div className="numberText">1/3</div>
@@ -31,7 +30,7 @@ function Slider(props) {
                 <span className="dot" onClick="currentSlide(2)"> </span>
                 <span className="dot" onClick="currentSlide(3)"> </span>
             </div>
-        </Container>
+        </Fragment>
     );
 }
 
