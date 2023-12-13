@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import "../Assets/CSS/Slider.css";
 import img1 from "../Assets/Images/sekul1.JPG"
 import img2 from "../Assets/Images/moto1.JPG"
 import img3 from "../Assets/Images/shohidulla1.JPG"
