@@ -17,7 +17,7 @@ function Slider(props) {
                     <img src={img2} alt="1/3"/>
                     <div className="text">Cation 2</div>
                 </div>
-                <div className="mySlides ">
+                <div className="mySlides">
                     <div className="numberText">3/3</div>
                     <img src={img3} alt="1/3"/>
                     <div className="text">Cation 3</div>
