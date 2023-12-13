@@ -1,27 +1,4 @@
-@media (min-width: 768px) {
-    .topBarContent{
-        width: 60%;
-    }
-}
-@media (min-width: 1000px) {
-    .topBarContent{
-        width: 50%;
-    }
-}
-@media (min-width: 1200px) {
-    .topBarContent{
-        width: 40%;
-    }
-}
-@media (min-width: 1400px) {
-    .topBarContent{
-        width: 36%;
-    }
-}
 @media only screen and (max-width: 400px) {
-    .topBarContent{
-        top: 43%;
-    }
     .carouselImg{
         height: 370px;
     }
@@ -64,4 +41,26 @@
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .topBarContent {
+        position: absolute;
+        width: 100%;
+        top: 18rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .globalTitle{
+        color: rgba(0,0,0,1);
+        font-family: Montserrat, serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .globalSubTitle{
+        color: rgba(0,0,0,1);
+        font-family: Raleway, serif;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
