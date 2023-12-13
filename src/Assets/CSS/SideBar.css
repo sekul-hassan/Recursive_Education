@@ -6,26 +6,32 @@
 .practiceList{
     padding: 0;
     margin-top: 60px;
-    width: 60px!important;
+    width: 100px!important;
 }
 .practiceTitle{
-    margin-left: -1%;
-    font-size: 22px;
-    font-family: Popin, serif;
+    font-family: Montserrat, serif, serif;
+    font-size: 16px;
     font-weight: 600;
+    padding-left: 5px;
 }
 .sidebar {
+    width: 100px!important;
     padding: 0;
     max-height: calc(100vh - 56px);
     overflow-y: auto;
 }
 .sidebar a {
     text-decoration: none;
-    color: #333;
+    color: rgba(0,0,0,0.8);
+    padding: 2px 0 0 10px;
+    font-family: Montserrat, serif, serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0!important;
 }
-
-.sidebar a {
-    padding: 2px 0 0 0;
+.sidebar a:hover{
+    background-color: rgba(0,0,0,0.4);
+    color: #61dafb;
 }
 .mySlides img{
     width: 100%;

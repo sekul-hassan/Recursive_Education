@@ -1,23 +1,40 @@
 .slidePage {
     position: absolute;
-    left: 120px;
-    width: calc(100% - 122px);
+    left: 100px;
+    width: calc(100% - 100px);
     top: 70px;
-
+    padding: 0 20px 0 20px!important;
 }
-@media (max-width: 555px) {
-    .sidebar {
-        max-height: calc(100vh - 56px);
-        overflow-y: auto;
-        background-color: red;
-    }
-    /*.practiceList h4{*/
-    /*    font-size: 15px;*/
-    /*    margin-left: -2px;*/
-    /*    font-weight: 400;*/
-    /*}*/
-    /*.practiceList a{*/
-    /*    font-size: 10px;*/
 
-    /*}*/
+@media (max-width: 600px) {
+    .practiceTitle {
+        padding-left: 0!important;
+        font-family: Montserrat, serif, serif!important;
+        font-size: 15px!important;
+        font-weight: 600 !important;
+    }
+
+    .slidePage {
+        position: absolute!important;
+        left: 122px!important;
+        width: calc(100% - 122px) !important;
+        top: 70px!important;
+        padding: 0 5px 0 5px !important;
+    }
+
+    .sidebar {
+        width: 80px!important;
+        padding: 0 0 0 5px!important;
+        max-height: calc(100vh - 56px) !important;
+        overflow-y: auto!important;
+    }
+    .sidebar a {
+        text-decoration: none!important;
+        color: rgba(0,0,0,0.8) !important;
+        padding: 2px 0 0 5px!important;
+        font-family: Montserrat, serif, serif!important;
+        font-size: 15px!important;
+        font-weight: 500!important;
+        margin: 0!important;
+    }
 }
