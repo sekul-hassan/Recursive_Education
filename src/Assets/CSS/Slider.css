@@ -1,3 +1,62 @@
-.mySlide{
+.slideShowContainer{
+    position: relative;
+}
+.slideShowContainer img{
+    width: 100%;
+    height: auto;
+}
+.numberText{
+    position: absolute;
+    left: 5px;
+    color: #fafafa;
+    font-size: 22px;
+    font-family: Popin, serif;
+    font-weight: 500;
+}
+
+.mySlides{
     display: none;
+}
+.text{
+    position: absolute;
+    top: 40%;
+    color: #ffffff;
+    font-family: Raleway, serif;
+    font-size: 20px;
+    font-weight: 600;
+    left: 36%;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+.active,.dot:hover{
+    background-color: #605c5c!important;
+}
+.prev{
+    position: absolute;
+    top: 36%;
+}
+.next{
+    position: absolute;
+    right: 2px;
+    top: 36%;
+}
+.prev:hover,.next:hover{
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+.fades{
+    animation-name: fades;
+    animation-duration: 1.5s;
+}
+@keyframes fades {
+    from {opacity: 0.3}
+    to {opacity: 1}
 }
