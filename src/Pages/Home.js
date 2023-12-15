@@ -8,7 +8,9 @@ function Home(props) {
         <Fragment>
             <HomeTopBar/>
             <Recent/>
-            <Footer/>
+           <div className="p-4">
+               <Footer/>
+           </div>
         </Fragment>
     );
 }

@@ -121,3 +121,10 @@
     color: #000000;
     transition: 0.2s;
 }
+.globalDescription{
+    font-size: 15px;
+    font-family: Montserrat, serif;
+    font-weight: 400;
+    color: rgba(0,0,0,0.8);
+    line-height: 1.4rem
+}
