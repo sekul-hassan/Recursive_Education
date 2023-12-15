@@ -9,6 +9,7 @@ import TopMenu from "./Components/TopMenu";
 import {Route, Routes} from "react-router-dom";
 import SlidePage from "./Pages/SlidePage";
 import PracticePage from "./Pages/PracticePage";
+import LoginFormPage from "./Pages/LoginFormPage";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/slider" element={<SlidePage/>}/>
             <Route path="/practice" element={<PracticePage/>}/>
+            <Route path="/loginForm" element={<LoginFormPage/>}/>
         </Routes>
     </Fragment>
   );

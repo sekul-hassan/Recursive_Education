@@ -1,0 +1,48 @@
+.loginBtn{
+    width: 95px;
+    color: white;
+    background-color: #059862;
+    font-family: Raleway, serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.loginBtn:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(40, 44, 52, 0.67);
+}
+
+.displayModal{
+    position: fixed;
+    z-index: 22;
+    left: 121px;
+    top: 11px;
+    width: calc(100% - 121px );
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+.displayModal img{
+    width: 35%;
+    border-radius: 50%;
+}
+.displayModal input{
+    position: inherit;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.submitBtn{
+    position: inherit;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #4CAF50;
+   border: none;
+}
