@@ -6,7 +6,6 @@
 .practiceList{
     padding: 0;
     margin-top: 60px;
-    width: 100px!important;
 }
 .practiceTitle{
     font-family: Montserrat, serif, serif;
@@ -15,10 +14,10 @@
     padding-left: 5px;
 }
 .sidebar {
-    width: 100px!important;
     padding: 0;
     max-height: calc(100vh - 56px);
     overflow-y: auto;
+    width: 121px;
 }
 .sidebar a {
     text-decoration: none;
@@ -36,4 +35,15 @@
 .mySlides img{
     width: 100%;
     height: auto;
+}
+.practiceSlider{
+    width: 121px;
+    float: left;
+    min-width: 79px;
+}
+.practiceRightPage{
+    width: calc(100% - 121px);
+    float: right;
+    margin-top: 69px;
+    padding: 1px 13px 1px 13px;
 }

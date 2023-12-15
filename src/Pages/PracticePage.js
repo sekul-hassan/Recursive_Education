@@ -1,21 +1,21 @@
 import React from 'react';
-import {Col, Container, Row} from "react-bootstrap";
+import {Container} from "react-bootstrap";
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Slider from "../Components/Slider";
 import SliderCode from "../JS/SliderCode";
+import Footer from "../Components/Footer";
 
 function PracticePage(props) {
     return (
         <Container fluid="true">
-            <Row className="m-0 p-0">
-                <Col md={1} lg={1} sm={1} className="m-0 p-0">
-                    <PracticeSideBar/>
-                </Col>
-                <Col md={11} lg={11} sm={11} className="m-0 p-0">
-                    <Slider/>
-                    <SliderCode/>
-                </Col>
-            </Row>
+            <div className="practiceSlider">
+                <PracticeSideBar/>
+            </div>
+            <div className="practiceRightPage">
+                <Slider/>
+                <SliderCode/>
+                <Footer/>
+            </div>
         </Container>
     );
 }

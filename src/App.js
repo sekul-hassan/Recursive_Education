@@ -9,7 +9,6 @@ import TopMenu from "./Components/TopMenu";
 import {Route, Routes} from "react-router-dom";
 import SlidePage from "./Pages/SlidePage";
 import PracticePage from "./Pages/PracticePage";
-import Footer from "./Components/Footer";
 
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
             <Route path="/slider" element={<SlidePage/>}/>
             <Route path="/practice" element={<PracticePage/>}/>
         </Routes>
-        <Footer/>
     </Fragment>
   );
 }
