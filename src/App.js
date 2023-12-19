@@ -10,6 +10,7 @@ import {Route, Routes} from "react-router-dom";
 import SlidePage from "./Pages/SlidePage";
 import PracticePage from "./Pages/PracticePage";
 import LoginFormPage from "./Pages/LoginFormPage";
+import TabsPage from "./Pages/TabsPage";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path="/slider" element={<SlidePage/>}/>
             <Route path="/practice" element={<PracticePage/>}/>
             <Route path="/loginForm" element={<LoginFormPage/>}/>
+            <Route path="/tabs" element={<TabsPage/>}/>
         </Routes>
     </Fragment>
   );

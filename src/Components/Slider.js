@@ -1,8 +1,8 @@
 import React, {Fragment, useEffect} from 'react';
 import "../Assets/CSS/Slider.css";
-import img1 from "../Assets/Images/sekul1.JPG"
-import img2 from "../Assets/Images/moto1.JPG"
-import img3 from "../Assets/Images/shohidulla1.JPG"
+import img1 from "../Assets/Images/Slider/slider1.jpg"
+import img2 from "../Assets/Images/Slider/slider2.jpg"
+import img3 from "../Assets/Images/Slider/slider3.jpg"
 import {currentSlide, plusSlides} from "../JS/Slider";
 
 function Slider(props) {

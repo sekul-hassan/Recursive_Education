@@ -4,6 +4,7 @@
 .slideShowContainer img{
     width: 100%;
     height: auto;
+    max-height: 350px;
 }
 .numberText{
     position: absolute;
@@ -19,7 +20,7 @@
 }
 .text{
     position: absolute;
-    top: 40%;
+    top: 43%;
     color: #ffffff;
     font-family: Raleway, serif;
     font-size: 20px;
@@ -41,12 +42,12 @@
 }
 .prev{
     position: absolute;
-    top: 36%;
+    top: 40%;
 }
 .next{
     position: absolute;
     right: 2px;
-    top: 36%;
+    top: 40%;
 }
 .prev:hover,.next:hover{
     background-color: rgba(0,0,0,0.6);

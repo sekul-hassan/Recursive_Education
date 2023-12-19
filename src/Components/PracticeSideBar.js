@@ -19,7 +19,7 @@ function PracticeSideBar(props) {
                        <h4 className="practiceTitle mt-2">Javascript</h4>
                        <Link to="/slider">Slider</Link>
                        <Link to="/loginForm">Login Form</Link>
-                       <Link to="/slider">Slider</Link>
+                       <Link to="/tabs">Tabs</Link>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>
