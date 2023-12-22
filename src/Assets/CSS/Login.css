@@ -11,18 +11,36 @@
     background-color: white;
     border: 1px solid rgba(40, 44, 52, 0.67);
 }
+.close{
+    position: absolute;
+    font-size: 42px;
+    right: 0;
+    top: -16px;
+    cursor: pointer;
+    padding: 0 10px 0 10px;
+}
+
+.close:hover{
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.5s;
+}
 
 .displayModal{
     position: fixed;
     z-index: 22;
-    left: 121px;
-    top: 11px;
-    width: calc(100% - 121px );
-    height: 100%;
+    left: 141px;
+    top: 80px;
+    width: calc(100% - 161px );
+    height: auto;
     overflow: auto;
-    background-color: white;
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
+    background-color: rgba(255,255,255,1);
+    border: 2px solid silver;
+    padding: 20px 0 20px 0;
+}
+
+.modalContent{
+    text-align: left;
+    padding: 20px;
 }
 .displayModal img{
     width: 35%;
@@ -45,4 +63,29 @@
     display: inline-block;
     background-color: #4CAF50;
    border: none;
+}
+.submitBtn:hover{
+    background-color: #CCCCCC;
+    color: white;
+    transition: 0.5s;
+}
+.modalContentFooter{
+    box-sizing: border-box;
+    background-color: #F1F1F1;
+    padding: 15px 12px 15px 12px;
+    border-top: 1px solid gray;
+}
+.cancelBtn{
+    background-color: #F44336;
+    border: none;
+    padding: 5px 11px 5px 11px !important;
+    color: white;
+    font-family: Raleway, serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.cancelBtn:hover{
+    background-color: #059862;
+    transition: 0.5s;
 }

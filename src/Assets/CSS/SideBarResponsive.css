@@ -30,4 +30,17 @@
         float: right;
         margin-top: 69px;
     }
+    .displayModal{
+        left: 84px!important;
+        width: calc(100% - 84px ) !important;
+    }
+    .cancelBtn{
+        padding:1px !important;
+        font-size: 12px!important;
+        margin: 0!important;
+    }
+    .modalContentFooter{
+        padding: 10px!important;
+    }
+
 }
