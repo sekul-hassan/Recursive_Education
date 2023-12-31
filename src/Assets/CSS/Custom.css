@@ -1,5 +1,5 @@
 .navBar{
-    max-width: 100%;
+    width: 100%;
     height: 60px;
     background-color: rgba(0,0,0,1) !important;
     padding: 0 5% 0 5%;
@@ -15,7 +15,7 @@
     text-decoration: none;
 }
 .navBarScroll{
-    max-width: 100%;
+    width: 100%;
     height: 60px;
     padding: 0 5% 0 5%;
     background-color:#ffffff !important;
@@ -39,27 +39,33 @@
     border: 1px solid black!important;
 }
 
+.topBarContent {
+    position: absolute;
+    width: 100%;
+    top: 13.5rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
 .homeTopBackground {
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 25rem;
     background: url("../Images/banner.jpg") no-repeat fixed center;
-    padding: 0;
 }
 
 .homeTopBackgroundOverlay{
     background-size: cover;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
     width: 100%;
-    height: 710px;
-    margin: -60px 0 0 0;
-    padding: 0;
+    height: 25rem;
 }
 
-.topBarContent {
+.PrivacyTopBarContent {
     position: absolute;
     width: 70%;
-    top: 17rem;
+    top: 13rem;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -96,20 +102,21 @@
 }
 .globalTitle{
     color: rgba(0,0,0,1);
-    font-family: Montserrat, serif;
-    font-size: 22px;
+    font-family: Popin, serif;
+    font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 .globalSubTitle{
     color: rgba(0,0,0,1);
-    font-family: Raleway, serif;
+    font-family: Montserrat, serif;
     font-size: 18px;
     font-weight: 600;
 }
 .logoImg{
     width: 100px;
     height: 60px;
-    padding: 0;
+    margin-left: 20px;
 }
 .contactLink{
     text-decoration: none;
@@ -126,21 +133,34 @@
     font-family: Montserrat, serif;
     font-weight: 400;
     color: rgba(0,0,0,0.8);
-    line-height: 1.4rem
+    line-height: 1.4rem;
 }
 .privacyTop{
     background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 300px;
     background: url("../Images/banner.jpg") no-repeat fixed center;
-    padding: 0;
+    margin-top: 50px;
 }
 
-.homeTopBackgroundOverlay{
+.privacyTopOverlay{
     background-size: cover;
     background: rgba(0,0,0,0.5);
     width: 100%;
-    height: 710px;
-    margin: -60px 0 0 0;
-    padding: 0;
+    height: 300px;
+}
+.privacyTopOverlay a:hover{
+    color: #0D6EFD !important;
+    transition: 0.2s;
+}
+.text-warning{
+    color: #EDAC87!important;
+}
+.text-warning a{
+    color: #EDAC87!important;
+    text-decoration: none;
+}
+.text-warning a:hover{
+    color: #0D6EFD !important;
+    transition: 0.2s;
 }

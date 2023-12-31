@@ -13,9 +13,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 
-function Footer(props) {
+function Footer({pad}) {
+
     return (
-        <Container fluid="true" className="mt-4">
+        <Container fluid className={`px-${pad}`}>
             <Row className="m-0 p-0">
                <Col className="justify-content-start m-0 p-0" lg={4} md={4} sm={4}>
                    <h4 className="globalSubTitle">Contact</h4>

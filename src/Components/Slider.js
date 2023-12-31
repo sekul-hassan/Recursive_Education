@@ -1,8 +1,8 @@
 import React, {Fragment, useEffect} from 'react';
 import "../Assets/CSS/Slider.css";
-import img1 from "../Assets/Images/Slider/slider1.jpg"
-import img2 from "../Assets/Images/Slider/slider2.jpg"
-import img3 from "../Assets/Images/Slider/slider3.jpg"
+import img1 from "../Assets/Images/Slider/slider1.png"
+import img2 from "../Assets/Images/Slider/slider2.png"
+import img3 from "../Assets/Images/Slider/slider3.png"
 import {currentSlide, plusSlides} from "../JS/Slider";
 
 function Slider(props) {
@@ -48,6 +48,9 @@ function Slider(props) {
                 <span className="dot" onClick={() => currentSlide(1)}> </span>
                 <span className="dot" onClick={() => currentSlide(2)}> </span>
                 <span className="dot" onClick={() => currentSlide(3)}> </span>
+            </div>
+            <div className="mt-4">
+                <h4 className="globalDescription"><strong>How to make a Slider using HTML , CSS , & JAVASCRIPT</strong></h4>
             </div>
         </Fragment>
     );

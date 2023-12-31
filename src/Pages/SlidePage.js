@@ -17,7 +17,7 @@ function SlidePage(props) {
                 <div className="practiceRightPage">
                     <Slider/>
                     <SliderCode/>
-                    <Footer/>
+                    <Footer pad={0}/>
                 </div>
             </Container>
         </Fragment>

@@ -17,7 +17,7 @@ function TabsPage(props) {
                <div className="practiceRightPage">
                    <Tab/>
                    <SliderCode/>
-                   <Footer/>
+                   <Footer pad={0}/>
                </div>
            </Container>
        </Fragment>

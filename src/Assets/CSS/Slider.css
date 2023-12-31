@@ -9,7 +9,7 @@
 .numberText{
     position: absolute;
     left: 5px;
-    color: #fafafa;
+    color: #000000;
     font-size: 22px;
     font-family: Popin, serif;
     font-weight: 500;
@@ -21,11 +21,11 @@
 .text{
     position: absolute;
     top: 43%;
-    color: #ffffff;
+    color: #000000;
     font-family: Raleway, serif;
     font-size: 20px;
     font-weight: 600;
-    left: 36%;
+    left: calc(50% - 55px)
 }
 .dot{
     cursor: pointer;

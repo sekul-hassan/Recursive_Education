@@ -9,6 +9,8 @@ function TopMenu(props) {
         navBar: 'navBar',
         navLink: 'navLink',
         nabBrand: 'navBrand',
+        smallNav:'smallNav',
+        nav:'nav',
         logo: black,
     });
 
@@ -34,6 +36,8 @@ function TopMenu(props) {
                     navBar: 'navBarScroll',
                     navLink: 'navLinkScroll',
                     nabBrand: 'navBrandScroll',
+                    smallNav:'smallNavScroll',
+                    nav:'navScroll',
                     logo: white,
                 });
             } else {
@@ -41,6 +45,8 @@ function TopMenu(props) {
                     navBar: 'navBar',
                     navLink: 'navLink',
                     nabBrand: 'navBrand',
+                    smallNav:'smallNav',
+                    nav:'nav',
                     logo: black,
                 });
             }
@@ -71,12 +77,12 @@ function TopMenu(props) {
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle
-                    className="smallNav"
+                    className={css.smallNav}
                     aria-controls="responsive-navbar-nav"
                 />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto" />
-                    <Nav className="nav">
+                    <Nav className={css.nav}>
                         <Nav.Link>
                             <Link to="/" className={css.navLink}>
                                 Home
@@ -98,7 +104,7 @@ function TopMenu(props) {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="practice" className={css.navLink}>
+                            <Link to="/practice" className={css.navLink}>
                                 Practice
                             </Link>
                         </Nav.Link>
