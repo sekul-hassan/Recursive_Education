@@ -11,6 +11,7 @@ import {
     faLock, faMoneyBill, faPhone, faScroll,
     faTools, faUser
 } from "@fortawesome/free-solid-svg-icons";
+import {Link} from "react-router-dom";
 
 function Footer(props) {
     return (
@@ -34,7 +35,7 @@ function Footer(props) {
                </Col>
                <Col className="justify-content-start m-0 p-0" lg={4} md={4} sm={4}>
                    <h4 className="globalSubTitle">Pages</h4>
-                   <a className="contactLink" href="#a"><FontAwesomeIcon icon={faLock}/> Privacy Policy</a><br/>
+                   <Link to="/privacy" className="contactLink" href="#a"><FontAwesomeIcon icon={faLock}/> Privacy Policy</Link><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faScroll}/> Terms & Condition</a><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faMoneyBill}/> Refund Policy</a><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faUser}/> Community Guidelines</a><br/>

@@ -1,22 +1,26 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Container} from "react-bootstrap";
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Slider from "../Components/Slider";
 import SliderCode from "../JS/SliderCode";
 import Footer from "../Components/Footer";
+import TopMenu from "../Components/TopMenu";
 
 function SlidePage(props) {
     return (
-        <Container fluid="true">
-            <div className="practiceSlider">
-                <PracticeSideBar/>
-            </div>
-            <div className="practiceRightPage">
-                <Slider/>
-                <SliderCode/>
-                <Footer/>
-            </div>
-        </Container>
+        <Fragment>
+            <TopMenu/>
+            <Container fluid="true">
+                <div className="practiceSlider">
+                    <PracticeSideBar/>
+                </div>
+                <div className="practiceRightPage">
+                    <Slider/>
+                    <SliderCode/>
+                    <Footer/>
+                </div>
+            </Container>
+        </Fragment>
     );
 }
 
