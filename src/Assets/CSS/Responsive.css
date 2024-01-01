@@ -86,11 +86,14 @@
     }
 
     .homeTopBackground {
-        height: 20rem;
+        height: 30rem;
     }
 
     .homeTopBackgroundOverlay{
-        height: 20rem;
+        height: 30rem;
+    }
+    .topBarContent {
+        top: 16rem;
     }
 
     .title{

@@ -8,7 +8,7 @@ import {
     faEnvelope,
     faHome,
     faInfoCircle,
-    faLock, faMoneyBill, faPhone, faScroll,
+    faLock, faMoneyBill, faScroll,
     faTools, faUser
 } from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
@@ -16,7 +16,7 @@ import {Link} from "react-router-dom";
 function Footer({pad}) {
 
     return (
-        <Container fluid className={`px-${pad}`}>
+        <Container fluid className={`p-${pad}`}>
             <Row className="m-0 p-0">
                <Col className="justify-content-start m-0 p-0" lg={4} md={4} sm={4}>
                    <h4 className="globalSubTitle">Contact</h4>
@@ -40,7 +40,6 @@ function Footer({pad}) {
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faScroll}/> Terms & Condition</a><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faMoneyBill}/> Refund Policy</a><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faUser}/> Community Guidelines</a><br/>
-                   <a className="contactLink" href="#a"><FontAwesomeIcon icon={faPhone}/> Contact</a><br/>
                </Col>
             </Row>
         </Container>

@@ -1,0 +1,21 @@
+.tabs{
+    border: 1px solid #282c34;
+    background-color: #f1f1f1;
+}
+.tabsLinks{
+    border: none;
+    padding: 5px;
+}
+.tabsLinks:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+}
+.active{
+    background-color:  rgba(0, 0, 0, 0.4);
+}
+.tebContent{
+    display: none;
+    padding: 10px;
+    border: 1px solid #282c34;
+    border-top: none;
+}

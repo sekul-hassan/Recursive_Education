@@ -3,8 +3,7 @@
 }
 .slideShowContainer img{
     width: 100%;
-    height: auto;
-    max-height: 350px;
+    height: 350px;
 }
 .numberText{
     position: absolute;

@@ -1,10 +1,12 @@
 import React, {Fragment} from 'react';
 import PracticeSideBar from "../Components/PracticeSideBar";
-import SliderCode from "../JS/SliderCode";
 import Footer from "../Components/Footer";
+import "../Assets/CSS/Tabs.css";
 import {Container} from "react-bootstrap";
-import Tab from "../JS/Tab";
 import TopMenu from "../Components/TopMenu";
+import Tab from "../Components/Tab";
+import {jsCode ,cssCode,htmlCode} from "../Code/TabsCode";
+import SliderCode from "../Components/SliderCode";
 
 function TabsPage(props) {
     return (
@@ -16,7 +18,7 @@ function TabsPage(props) {
                </div>
                <div className="practiceRightPage">
                    <Tab/>
-                   <SliderCode/>
+                   <SliderCode jsCode={jsCode} cssCode={cssCode} htmlCode={htmlCode}/>
                    <Footer pad={0}/>
                </div>
            </Container>

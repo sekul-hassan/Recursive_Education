@@ -3,9 +3,10 @@ import "../Assets/CSS/Login.css";
 import {Container} from "react-bootstrap";
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Footer from "../Components/Footer";
-import LoginForm from "../JS/LoginForm";
-import SliderCode from "../JS/SliderCode";
+import LoginForm from "../Components/LoginForm";
+import SliderCode from "../Components/SliderCode";
 import TopMenu from "../Components/TopMenu";
+import {cssCode, htmlCode, jsCode} from "../Code/LiginCode";
 
 function LoginFormPage(props) {
     return (
@@ -17,7 +18,7 @@ function LoginFormPage(props) {
                 </div>
                 <div className="practiceRightPage">
                     <LoginForm/>
-                    <SliderCode/>
+                    <SliderCode htmlCode={htmlCode} cssCode={cssCode} jsCode={jsCode}/>
                     <Footer/>
                 </div>
             </Container>

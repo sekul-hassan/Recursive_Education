@@ -1,11 +1,4 @@
-import React from 'react';
-import "../Assets/CSS/SliderCode.css";
-import { Col, Container, Row } from "react-bootstrap";
-
-
-
-function SliderCode() {
-    const cssCode = `
+const cssCode = `
         .slideShowContainer {
             position: relative;
         }
@@ -69,9 +62,9 @@ function SliderCode() {
             to {opacity: 1}
         }
     `;
-    const htmlCode = `
+const htmlCode = `
      <div className="slideShowContainer">
-                <div className="mySlides fades">
+          <div className="mySlides fades">
                     <div className="numberText">1/3</div>
                     <img src="" alt="1/3"/>
                     <div className="text">Cation 1</div>
@@ -95,7 +88,7 @@ function SliderCode() {
                 <span className="dot" onClick={() => (3)}> </span>
             </div>
     `
-    const jsCode = `
+const jsCode = `
     let slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n) {
@@ -129,28 +122,4 @@ function showSlides(n) {
 export {plusSlides,currentSlide}
     `
 
-    return (
-        <Container fluid="true" className="mt-4">
-            <Row className="m-0 p-0 sliderCode">
-                <Col sm={12} md={4} lg={4} className="m-0 p-0">
-                    <h4 className="globalSubTitle">HTML CODE</h4>
-                    <h6 className="code globalDescription">
-                        {htmlCode}
-                    </h6>
-                </Col>
-                <Col sm={12} md={4} lg={4} className="m-0 p-0">
-                    <h4 className="globalSubTitle">CSS CODE</h4>
-                    <pre className="code globalDescription">{cssCode}</pre>
-                </Col>
-                <Col sm={12} md={4} lg={4} className="m-0 p-0">
-                    <h4 className="globalSubTitle">JS CODE</h4>
-                    <h6 className="code globalDescription">
-                        {jsCode}
-                    </h6>
-                </Col>
-            </Row>
-        </Container>
-    );
-}
-
-export default SliderCode;
+export {cssCode,htmlCode,jsCode};
