@@ -63,7 +63,19 @@ const cssCode = `
         }
     `;
 const htmlCode = `
-     <div className="slideShowContainer">
+     <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+  
+    <title>Recursive Education</title>
+  </head>
+  <body>
+    <div className="slideShowContainer">
           <div className="mySlides fades">
                     <div className="numberText">1/3</div>
                     <img src="" alt="1/3"/>
@@ -87,6 +99,9 @@ const htmlCode = `
                 <span className="dot" onClick={() => (2)}> </span>
                 <span className="dot" onClick={() => (3)}> </span>
             </div>
+  </body>
+</html>
+
     `
 const jsCode = `
     let slideIndex = 1;

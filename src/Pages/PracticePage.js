@@ -5,7 +5,7 @@ import Slider from "../Components/Slider";
 import SliderCode from "../Components/SliderCode";
 import Footer from "../Components/Footer";
 import TopMenu from "../Components/TopMenu";
-import {cssCode, htmlCode, jsCode} from "../Code/TabsCode";
+import {cssCode, htmlCode, jsCode} from "../Code/SliderCode";
 
 function PracticePage(props) {
     return (
