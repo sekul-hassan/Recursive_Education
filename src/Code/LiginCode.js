@@ -1,165 +1,168 @@
 
 
 const htmlCode =
-    `<Container fluid="true" className="mt-2 text-center">
-                <Row className="m-0 p-0">
-                    <h4 className="subTitle text-dark">Click This Button</h4>
-                    <div>
-                        <Button onClick={toggleDummyLogin} className="loginBtn">Login</Button>
-                    </div>
-                    <Modal toggleDummyLogin={toggleDummyLogin} dummyLogin={dummyLogin}/>
-                </Row>
-            </Container>
-            
-            
-             <form className={dummyLogin?"displayModal":"d-none"} action="#">
-            <div className="imgContainer">
-                <span onClick={toggleDummyLogin} className="close">
-                    &times;
-                </span>
-                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="" />
-            </div>
-            <div className="modalContent">
-                <label className="globalSubTitle" htmlFor="name">
-                    User Name
-                </label>
-                <br />
-                <input type="text" placeholder="Enter User Name" />
-                <br />
+`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Education</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <div class="above" id="above">
+    <h4 class="title">Click This Button</h4>
+    <button class="login" onclick="openBox()">Login</button>
+   </div>
+   
+   <div class="loginDiv" id="loginDiv">
+    <div class="imgDiv">
+        <span class="cross" onclick="closeBox()">&times;</span>
+        <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="">
+    </div>
+    <div class="inputDiv">
+        <label for="">User Name</label><br>
+        <input class="formControl" type="text" placeholder="Ener User Name"><br><br>
+        <label for="">Password</label><br>
+        <input class="formControl" type="password" placeholder="Ener Password">
 
-                <label className="globalSubTitle" htmlFor="password">
-                    Password
-                </label>
-                <br />
-                <input type="password" placeholder="Enter Password" />
-                <br />
+        <br>
+        <button class="loginBtn">Login</button>
 
-                <button className="submitBtn" type="submit">
-                    Login
-                </button>
-                <br />
-                <input
-                    type="checkbox"
-                    checked="checked"
-                    name="remember"
-                    style={{ width: 'auto', marginRight: '5px' }}
-                />
-                <label className="form-check-label" htmlFor="remember">
-                    Remember me
-                </label>
-            </div>
-            <div className="modalContentFooter d-flex justify-content-between">
-                <button onClick={toggleDummyLogin} className="cancelBtn">
-                    Cancel
-                </button>
-                <span>
-                    Forgot <a href="#abc">password</a> ?
-                </span>
-            </div>
-        </form>
-            
-            `
+        <input type="checkbox" checked><label for="">Remember me</label>
+
+        <div class="footer">
+            <button class="cancel" onclick="closeBox()">Cancel</button>
+            <span class="forgotContent">Forgot <a href="#">password</a>?</span>
+        </div>
+    </div>
+   </div>
+   <script src="login.js"></script>
+</body>
+</html>    
+`
 
 const cssCode =
-    `.loginBtn{
-    width: 95px;
-    color: white;
+`
+.title{
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: popin,sans-serif;
+}
+
+.login{
     background-color: #059862;
-    font-family: Raleway, serif;
-    font-weight: 500;
-    font-size: 18px;
+    border: none;
+    padding: 11px 28px 11px 28px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
 }
-.loginBtn:hover{
-    color: black;
+.login:hover{
     background-color: white;
-    border: 1px solid rgba(40, 44, 52, 0.67);
+    color: black;
+    border: 1px solid #059862;
+    transition: 0.5s;
 }
-.close{
+.above{
+   text-align: center;
+
+}
+.loginDiv{
+    position: relative;
+    text-align: center;
+    border: 1px solid #059862;
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+.imgDiv img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.cross{
     position: absolute;
     font-size: 42px;
     right: 0;
-    top: -16px;
+    padding: 0 12px 0 12px;
     cursor: pointer;
-    padding: 0 10px 0 10px;
 }
 
-.close:hover{
+.cross:hover{
     background-color: rgba(0,0,0,0.3);
     transition: 0.5s;
 }
-
-.displayModal{
-    position: fixed;
-    z-index: 22;
-    left: 141px;
-    top: 80px;
-    width: calc(100% - 161px );
-    height: auto;
-    overflow: auto;
-    background-color: rgba(255,255,255,1);
-    border: 2px solid silver;
-    padding: 20px 0 20px 0;
-}
-
-.modalContent{
+.inputDiv{
+    width: 80%;
+    margin: 0 auto;
     text-align: left;
-    padding: 20px;
 }
-.displayModal img{
-    width: 35%;
-    border-radius: 50%;
-}
-.displayModal input{
-    position: inherit;
+.formControl{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+    height: 40px;
 }
-.submitBtn{
-    position: inherit;
+.loginBtn{
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    background-color: #4CAF50;
-   border: none;
+    height: 40px;
+    background-color: #059862;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
 }
-.submitBtn:hover{
-    background-color: #CCCCCC;
+.loginBtn:hover{
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.4s;
     color: white;
-    transition: 0.5s;
 }
-.modalContentFooter{
-    box-sizing: border-box;
+.inputDiv input[type="checkbox"]{
+    margin-top: 10px;
+    margin-left: -0.005rem;
+}
+.footer{
+    position: relative;
     background-color: #F1F1F1;
-    padding: 15px 12px 15px 12px;
-    border-top: 1px solid gray;
+    padding: 10px 0 10px 0;
+    margin: 20px 0;
 }
-.cancelBtn{
+.forgotContent{
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+.cancel{
     background-color: #F44336;
     border: none;
-    padding: 5px 11px 5px 11px !important;
-    color: white;
-    font-family: Raleway, serif;
-    font-size: 15px;
-    font-weight: 500;
+    padding: 11px 15px;
+    cursor: pointer;
+    margin-left: 20px;
     border-radius: 5px;
+    color: white;
 }
-.cancelBtn:hover{
+.cancel:hover{
     background-color: #059862;
-    transition: 0.5s;
-}
+    transition: 0.4s;
+}    
 `
 
 const jsCode =
-    ` const [dummyLogin,setDummyLogin] = useState(false);
+`
+function openBox(){
+    let div = document.getElementById('loginDiv');
+    let above = document.getElementById('above');
 
-    const toggleDummyLogin = (e) =>{
-        e.preventDefault();
-        setDummyLogin(!dummyLogin);
-    }`
+    div.style.display = "block";
+    above.style.display = "none";
+}
 
+function closeBox(){
+    let div = document.getElementById('loginDiv');
+    let above = document.getElementById('above');
+
+    div.style.display="none";
+    above.style.display = "block";
+}    
+`
 export {htmlCode,cssCode,jsCode};
