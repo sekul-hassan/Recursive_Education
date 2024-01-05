@@ -1,0 +1,52 @@
+.sideNav{
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    /*padding: 10px;*/
+    width: 0;
+    height: 100%;
+    /*max-height: 170px;*/
+    overflow-x: hidden;
+    top: 60px;
+    transition: width 0.5s;
+}
+.sideNav button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    right: 0;
+    top: -5px;
+}
+.sideNav button:hover{
+    color: black;
+    transition: 0.3s;
+
+}
+.sideNav li{
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 0 0 10px;
+}
+.sideNav li:hover{
+    color: papayawhip;
+    transition: 0.2s;
+}
+#contentArea{
+    transition: margin-left 0.5s;
+}
+#contentArea .openBtn{
+    border: none;
+    color: white;
+    background-color:rgba(0,0,0,0.6);
+    font-family: Raleway, serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+#contentArea .openBtn:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    transition: 0.3s;
+}

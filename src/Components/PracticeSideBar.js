@@ -20,8 +20,8 @@ function PracticeSideBar(props) {
                        <Link to="/slider">Slider</Link>
                        <Link to="/loginForm">Login Form</Link>
                        <Link to="/tabs">Tabs</Link>
-                       <Link to="/slider">Slider</Link>
-                       <Link to="/slider">Slider</Link>
+                       <Link to="/accordion">Accordion</Link>
+                       <Link to="/sideNav">Side Nav</Link>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>

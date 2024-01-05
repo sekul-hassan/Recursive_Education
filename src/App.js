@@ -11,6 +11,8 @@ import PracticePage from "./Pages/PracticePage";
 import LoginFormPage from "./Pages/LoginFormPage";
 import TabsPage from "./Pages/TabsPage";
 import Privacy from "./Pages/Privacy";
+import AccordionPage from "./Pages/AccordionPage";
+import SideNavPage from "./Pages/SideNavPage";
 
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
             <Route path="/loginForm" element={<LoginFormPage/>}/>
             <Route path="/tabs" element={<TabsPage/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
+            <Route path="/accordion" element={<AccordionPage/>}/>
+            <Route path="/sideNav" element={<SideNavPage/>}/>
         </Routes>
     </Fragment>
   );

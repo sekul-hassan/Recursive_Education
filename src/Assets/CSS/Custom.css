@@ -134,6 +134,7 @@
     font-weight: 400;
     color: rgba(0,0,0,0.8);
     line-height: 1.4rem;
+    text-decoration: none;
 }
 .privacyTop{
     background-size: cover;
