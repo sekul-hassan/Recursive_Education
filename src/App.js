@@ -13,6 +13,7 @@ import TabsPage from "./Pages/TabsPage";
 import Privacy from "./Pages/Privacy";
 import AccordionPage from "./Pages/AccordionPage";
 import SideNavPage from "./Pages/SideNavPage";
+import SlideGalleryPage from "./Pages/SlideGalleryPage";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/privacy" element={<Privacy/>}/>
             <Route path="/accordion" element={<AccordionPage/>}/>
             <Route path="/sideNav" element={<SideNavPage/>}/>
+            <Route path="/slideGallery" element={<SlideGalleryPage/>}/>
         </Routes>
     </Fragment>
   );

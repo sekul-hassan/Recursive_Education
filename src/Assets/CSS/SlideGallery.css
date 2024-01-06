@@ -1,0 +1,50 @@
+.gallerySlides img{
+    width: 100%;
+    height: auto;
+    opacity: 1!important;
+}
+.slideDiv{
+    position: relative;
+}
+.gallerySlides{
+    position: relative;
+    display: none;
+}
+.slideNumber{
+    position: absolute;
+    color: white;
+    left: 3px;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.caption{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 2px 0 7px 0;
+    font-family: Montserrat, serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+.pre,.next{
+    position: absolute;
+    top: 38%;
+}
+.next{
+    right: 0;
+}
+.pre:hover,.next:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+.dotImgDiv{
+    display: flex;
+    flex-direction: row;
+}
+.collum{
+    width: 16.7%;
+    height: auto;
+    cursor: pointer;
+}

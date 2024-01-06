@@ -22,7 +22,8 @@ function PracticeSideBar(props) {
                        <Link to="/tabs">Tabs</Link>
                        <Link to="/accordion">Accordion</Link>
                        <Link to="/sideNav">Side Nav</Link>
-                       <Link to="/slider">Slider</Link>
+                       <Link to="/slideGallery">Slide Gallery</Link>
+                       <h4 className="practiceTitle mt-2">React</h4>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>
                        <Link to="/slider">Slider</Link>
