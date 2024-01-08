@@ -89,7 +89,7 @@ function TopMenu(props) {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/" className={css.navLink}>
+                            <Link to="/about" className={css.navLink}>
                                 About
                             </Link>
                         </Nav.Link>

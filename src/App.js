@@ -14,6 +14,7 @@ import Privacy from "./Pages/Privacy";
 import AccordionPage from "./Pages/AccordionPage";
 import SideNavPage from "./Pages/SideNavPage";
 import SlideGalleryPage from "./Pages/SlideGalleryPage";
+import AboutPage from "./Pages/AboutPage";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <Fragment>
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<AboutPage/>}/>
             <Route path="/slider" element={<SlidePage/>}/>
             <Route path="/practice" element={<PracticePage/>}/>
             <Route path="/loginForm" element={<LoginFormPage/>}/>

@@ -31,7 +31,7 @@ function Footer({pad}) {
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faCode}/> Practice</a><br/>
                    <a className="contactLink" href="#aa"><FontAwesomeIcon icon={faBriefcase}/> Projects</a><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faHome}/> Home</a><br/>
-                   <a className="contactLink" href="#a"><FontAwesomeIcon icon={faInfoCircle}/> About</a><br/>
+                   <Link to="/about" className="contactLink" href="#a"><FontAwesomeIcon icon={faInfoCircle}/> About</Link><br/>
                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faTools}/> Service</a><br/>
                </Col>
                <Col className="justify-content-start m-0 p-0" lg={4} md={4} sm={4}>
