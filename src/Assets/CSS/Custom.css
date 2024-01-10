@@ -188,4 +188,11 @@
     -moz-box-shadow: -1px 2px 23px 9px rgba(0,0,0,0.37);
     transition: 0.5s!important;
 }
+.footer{
+    width: 100% !important;
+    display: flex!important;
+}
+.footer div{
+    width: 33.33% !important;
+}
 
