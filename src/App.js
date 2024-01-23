@@ -15,6 +15,7 @@ import AccordionPage from "./Pages/AccordionPage";
 import SideNavPage from "./Pages/SideNavPage";
 import SlideGalleryPage from "./Pages/SlideGalleryPage";
 import AboutPage from "./Pages/AboutPage";
+import ReactSetupPage from "./Pages/ReactSetupPage";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             <Route path="/accordion" element={<AccordionPage/>}/>
             <Route path="/sideNav" element={<SideNavPage/>}/>
             <Route path="/slideGallery" element={<SlideGalleryPage/>}/>
+            <Route path="/setup" element={<ReactSetupPage/>}/>
         </Routes>
     </Fragment>
   );

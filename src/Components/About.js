@@ -1,6 +1,6 @@
 import React from 'react';
 import {Card, Col, Container, Row} from "react-bootstrap";
-import sekul from "../Assets/Images/sekul2.JPG";
+import sekul from "../Assets/Images/sekul3.JPG";
 import shohidullah from "../Assets/Images/shohidulla1.JPG";
 import sueab from "../Assets/Images/sueab1.JPG";
 import moto from "../Assets/Images/moto1.JPG";
