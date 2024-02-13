@@ -48,7 +48,7 @@ function ReactSetup(props) {
             <h4 className="subTitle text-dark">Simply create react-project in Webstorm</h4>
             <img className="projectImg" src={img} alt="react-project"/>
             <p className="globalDescription bg-danger p-1 mt-2">
-                Note: For every steps you need to internet connection.
+                Note: For every steps you need internet connection.
             </p>
         </Container>
     );
