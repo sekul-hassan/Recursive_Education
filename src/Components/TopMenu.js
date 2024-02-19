@@ -66,9 +66,9 @@ function TopMenu(props) {
         <Fragment>
             <Navbar
                 className={css.navBar}
-                fixed="top"
                 collapseOnSelect
                 expand="sm"
+                sticky="top"
                 ref={menuRef}
             >
                 <Navbar.Brand className="m-0 p-0" href="#home">
@@ -99,7 +99,7 @@ function TopMenu(props) {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/" className={css.navLink}>
+                            <Link to="/shuttle" className={css.navLink}>
                                 Projects
                             </Link>
                         </Nav.Link>

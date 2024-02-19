@@ -2,10 +2,8 @@
     box-sizing: border-box;
 }
 
-
 .practiceList{
     padding: 0;
-    margin-top: 60px;
 }
 .practiceTitle{
     font-family: Montserrat, serif, serif;
@@ -44,6 +42,6 @@
 .practiceRightPage{
     width: calc(100% - 121px);
     float: right;
-    margin-top: 69px;
     padding: 1px 13px 1px 13px;
+    margin-top: 10px;
 }
