@@ -1,0 +1,9 @@
+.projectBody{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.2) !important;
+}
+.projectImg{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+}
