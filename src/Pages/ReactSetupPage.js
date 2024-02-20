@@ -10,7 +10,7 @@ function ReactSetupPage(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <Container fluid="true">
+            <Container fluid="true" className="d-flex">
                 <div className="practiceSlider">
                     <PracticeSideBar/>
                 </div>

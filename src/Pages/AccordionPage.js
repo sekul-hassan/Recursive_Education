@@ -11,7 +11,7 @@ function AccordionPage(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <Container fluid="true" className="loginOpacity">
+            <Container fluid="true" className="d-flex">
                 <div className="practiceSlider">
                     <PracticeSideBar/>
                 </div>

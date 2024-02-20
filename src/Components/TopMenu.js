@@ -64,13 +64,7 @@ function TopMenu(props) {
 
     return (
         <Fragment>
-            <Navbar
-                className={css.navBar}
-                collapseOnSelect
-                expand="sm"
-                sticky="top"
-                ref={menuRef}
-            >
+            <Navbar className={css.navBar} collapseOnSelect expand="md" sticky="top" ref={menuRef}>
                 <Navbar.Brand className="m-0 p-0" href="#home">
                     <Link to="/">
                         <img className="logoImg" src={css.logo} alt="" />

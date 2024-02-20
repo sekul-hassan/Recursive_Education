@@ -2,7 +2,6 @@ import React, {Fragment} from 'react';
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Footer from "../Components/Footer";
 import "../Assets/CSS/Tabs.css";
-import {Container} from "react-bootstrap";
 import TopMenu from "../Components/TopMenu";
 import Tab from "../Components/Tab";
 import {jsCode ,cssCode,htmlCode} from "../Code/TabsCode";
@@ -12,7 +11,7 @@ function TabsPage(props) {
     return (
        <Fragment>
            <TopMenu/>
-           <Container fluid="true">
+           <div className="d-flex">
                <div className="practiceSlider">
                    <PracticeSideBar/>
                </div>
@@ -21,7 +20,7 @@ function TabsPage(props) {
                    <SliderCode jsCode={jsCode} cssCode={cssCode} htmlCode={htmlCode}/>
                    <Footer pad={0}/>
                </div>
-           </Container>
+           </div>
        </Fragment>
     );
 }

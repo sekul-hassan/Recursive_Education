@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-import {Container} from "react-bootstrap";
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Slider from "../Components/Slider";
 import SliderCode from "../Components/SliderCode";
@@ -11,7 +10,7 @@ function SlidePage(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <Container fluid="true">
+            <div className="d-flex">
                 <div className="practiceSlider">
                     <PracticeSideBar/>
                 </div>
@@ -20,7 +19,7 @@ function SlidePage(props) {
                     <SliderCode htmlCode={htmlCode} cssCode={cssCode} jsCode={jsCode}/>
                     <Footer pad={0}/>
                 </div>
-            </Container>
+            </div>
         </Fragment>
     );
 }
