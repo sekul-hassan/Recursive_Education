@@ -1,6 +1,7 @@
 import React from 'react';
 import {Button, Card, Col, Container, Row} from "react-bootstrap";
 import project1 from "../Assets/Images/ProjectImg/need2.png"
+import {Link} from "react-router-dom";
 
 function ProjectCard(props) {
     return (
@@ -10,8 +11,8 @@ function ProjectCard(props) {
                     <Card className="projectBody">
                         <img className="projectImg" src={project1} alt={project1}/>
                        <div className="d-flex my-2">
-                           <Button className="btn-outline-info">Preview</Button>
-                           <Button className="btn-outline-info mx-4">Live Code</Button>
+                           <Button href="https://shuttle.recursiveeducation.com/" target="_blank" className="btn-outline-info">Preview</Button>
+                           <Link to="/shuttle-nav"><Button className="btn-outline-info mx-4">Live Code</Button></Link>
                        </div>
                     </Card>
                 </Col>

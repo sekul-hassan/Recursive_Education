@@ -6,10 +6,10 @@ function Recent(props) {
     return (
         <Fragment>
             <Container fluid="true" className="p-4 text-center">
-                <Row>
+                <Row className="mx-0">
                     <h3 className="globalTitle">Most recent activity</h3>
                     <Col md={6} sm={12} lg={6}>
-                        <ReactPlayer url="https://www.youtube.com/watch?v=YLQ6wfqdWDI&list=RDGMEM916WJxafRUGgOvd6dVJkeQVMYLQ6wfqdWDI&start_radio=1"
+                        <ReactPlayer url="https://www.youtube.com/watch?v=gZC4Za8uA3I"
                         controls
                                      width="100%"
                                      height="100%"
