@@ -6,7 +6,7 @@ import ShuttleComponent from "../ShuttleBus/ShuttleComponent";
 import ShuttleContext from "../Context/ShuttleContext";
 import demoImg from "../Assets/Images/ProjectImg/navbar.png";
 
-function ShuttleProject(props) {
+function ProjectPage(props) {
 
     const projectName = "Shuttle";
     const projectLinks = [
@@ -47,4 +47,4 @@ function ShuttleProject(props) {
     );
 }
 
-export default ShuttleProject;
+export default ProjectPage;
