@@ -16,8 +16,9 @@ import SideNavPage from "./Pages/SideNavPage";
 import SlideGalleryPage from "./Pages/SlideGalleryPage";
 import AboutPage from "./Pages/AboutPage";
 import ReactSetupPage from "./Pages/ReactSetupPage";
-import ShuttlePage from "./Pages/ShuttlePage";
+import ProjectPage from "./Pages/ProjectPage";
 import ShuttleProject from "./ProjectPages/ShuttleProject";
+import NcPcProject from "./ProjectPages/NcPcProject";
 
 
 function App() {
@@ -35,8 +36,11 @@ function App() {
             <Route path="/sideNav" element={<SideNavPage/>}/>
             <Route path="/slideGallery" element={<SlideGalleryPage/>}/>
             <Route path="/setup" element={<ReactSetupPage/>}/>
-            <Route path="/project" element={<ShuttlePage/>}/>
+
+
+            <Route path="/project" element={<ProjectPage/>}/>
             <Route path="/shuttle-project" element={<ShuttleProject/>}/>
+            <Route path="/ncpc-project" element={<NcPcProject/>}/>
         </Routes>
     </Fragment>
   );

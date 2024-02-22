@@ -1,24 +1,23 @@
 import React, {Fragment, useState} from 'react';
-import TopMenu from "../Components/TopMenu";
-import ShuttleSideNav from "../ShuttleBus/ShuttleSideNav";
-import Footer from "../Components/Footer";
-import ShuttleCommonComponent from "../ShuttleBus/shuttleCommonComponent";
-import ReactSetup from "../ReactComponents/ReactSetup";
 import {
-    shuttleHomeTopDescription,
     classes,
     projectDescription,
     projectName,
     shuttleFooterDescription,
-    shuttleRegisterDescription,
+    shuttleHomeTopDescription,
     shuttleLoginDescription,
     shuttleProfileDescription,
+    shuttleRegisterDescription,
     shuttleRouteDescription
 } from "../ShuttleBus/ShuttleConfig";
+import TopMenu from "../Components/TopMenu";
+import ShuttleSideNav from "../ShuttleBus/ShuttleSideNav";
+import ReactSetup from "../ReactComponents/ReactSetup";
+import ShuttleCommonComponent from "../ShuttleBus/shuttleCommonComponent";
+import Footer from "../Components/Footer";
 
-function ShuttleProject(props) {
+function NcPcProject(props) {
     const[activeClass,setActiveClass] = useState(classes[0]);
-
     const onSelectCurrentClass = (cls)=>{
         console.log(cls);
         setActiveClass(cls);
@@ -56,4 +55,4 @@ function ShuttleProject(props) {
     );
 }
 
-export default ShuttleProject;
+export default NcPcProject;
