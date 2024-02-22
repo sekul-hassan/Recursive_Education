@@ -1,11 +1,9 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import ReactPlayer from "react-player";
-import ShuttleContext from "../Context/ShuttleContext";
 
-function ShuttleComponent(props) {
+function ShuttleCommonComponent({projectDescription}) {
 
-    const {projectDescription} = useContext(ShuttleContext);
     const { image, videoLink, title, description, githubLink } = projectDescription;
 
     return (
@@ -13,12 +11,7 @@ function ShuttleComponent(props) {
            <img className="w-100 h-auto" src={image} alt={image}/>
            <Row className="mx-0 mt-3">
                <Col md={6} sm={12} lg={6} className="px-0">
-                   <ReactPlayer url={videoLink}
-                                controls
-                                width="100%"
-                                height="100%"
-                                style={{borderRadius:"10px"}}
-                   />
+                   <ReactPlayer url={videoLink} controls width="100%" height="100%" style={{borderRadius:"10px"}}/>
                </Col>
                <Col className="px-0" md={6} sm={12} lg={6}>
                    <div className="px-3">
@@ -35,4 +28,4 @@ function ShuttleComponent(props) {
     );
 }
 
-export default ShuttleComponent;
+export default ShuttleCommonComponent;

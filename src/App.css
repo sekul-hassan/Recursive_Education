@@ -44,3 +44,8 @@ body {
     padding: 0!important;
     margin: 0!important;
 }
+
+.h-auto{
+    height: auto!important;
+    max-height: 400px!important;
+}

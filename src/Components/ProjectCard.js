@@ -12,7 +12,7 @@ function ProjectCard(props) {
                         <img className="projectImg" src={project1} alt={project1}/>
                        <div className="d-flex my-2">
                            <Button href="https://shuttle.recursiveeducation.com/" target="_blank" className="btn-outline-info">Preview</Button>
-                           <Link to="/shuttle-nav"><Button className="btn-outline-info mx-4">Live Code</Button></Link>
+                           <Link to="/shuttle-project"><Button className="btn-outline-info mx-4">Live Code</Button></Link>
                        </div>
                     </Card>
                 </Col>

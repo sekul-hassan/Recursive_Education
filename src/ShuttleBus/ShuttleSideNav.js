@@ -1,11 +1,11 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import ShuttleContext from "../Context/ShuttleContext";
+import {} from "web-vitals";
 
-function ShuttleSideNav(props) {
+function ShuttleSideNav({projectName,classes,onSelectCurrentClass}) {
 
-    const {projectName,projectLinks} = useContext(ShuttleContext)
+
     return (
         <Navbar expand={true} className="practiceList">
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -13,8 +13,8 @@ function ShuttleSideNav(props) {
                 <Nav className="flex-column sidebar">
                     <h4 className="practiceTitle mt-2">{projectName}</h4>
                     {
-                        projectLinks && projectLinks.map((link)=>(
-                            <Link to={link.link}>{link.value}</Link>
+                        classes && classes.map((link)=>(
+                            <Link onClick={()=>onSelectCurrentClass(link)} to={link.link}>{link.value}</Link>
                         ))
                     }
                 </Nav>

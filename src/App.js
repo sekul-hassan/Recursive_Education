@@ -17,7 +17,7 @@ import SlideGalleryPage from "./Pages/SlideGalleryPage";
 import AboutPage from "./Pages/AboutPage";
 import ReactSetupPage from "./Pages/ReactSetupPage";
 import ShuttlePage from "./Pages/ShuttlePage";
-import ProjectPage from "./ProjectPages/ProjectPage";
+import ShuttleProject from "./ProjectPages/ShuttleProject";
 
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
             <Route path="/slideGallery" element={<SlideGalleryPage/>}/>
             <Route path="/setup" element={<ReactSetupPage/>}/>
             <Route path="/project" element={<ShuttlePage/>}/>
-            <Route path="/shuttle-nav" element={<ProjectPage/>}/>
+            <Route path="/shuttle-project" element={<ShuttleProject/>}/>
         </Routes>
     </Fragment>
   );
