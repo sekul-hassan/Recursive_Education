@@ -10,7 +10,7 @@ function Privacy(props) {
             <TopMenu/>
             <PrivacyTop/>
             <PrivacyContent/>
-            <Footer pad={4}/>
+            <Footer pad={2}/>
         </Fragment>
     );
 }

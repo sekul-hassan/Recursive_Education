@@ -10,7 +10,7 @@ function AboutPage(props) {
             <TopMenu/>
             <AboutTop/>
             <About/>
-            <Footer pad={3}/>
+            <Footer pad={1}/>
         </div>
     );
 }

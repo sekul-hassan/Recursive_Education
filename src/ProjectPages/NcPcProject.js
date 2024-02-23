@@ -48,7 +48,9 @@ function NcPcProject(props) {
                                                     activeClass.id === 8 ? <ShuttleCommonComponent
                                                         projectDescription={shuttleRouteDescription}/> : ""
                     }
-                    <Footer pad={0}/>
+                   <div className="ml-3">
+                       <Footer pad={0}/>
+                   </div>
                 </div>
             </div>
         </Fragment>

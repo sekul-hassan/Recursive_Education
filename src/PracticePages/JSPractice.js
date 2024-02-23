@@ -50,9 +50,11 @@ function JSPractice(props) {
                         lecture.id === 6 ? <FormattedSlideGallery/>:
                         lecture.id === 7 ? <ReactSetup />:""
                     }
+                  <div className="ml-3">
+                      <Footer pad={0} />
+                  </div>
                 </div>
             </div>
-            <Footer pad={0} />
         </Fragment>
     );
 }

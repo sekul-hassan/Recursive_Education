@@ -16,7 +16,7 @@ function ProjectPage(props) {
     return (
        <Fragment>
            <TopMenu/>
-           <Container fluid="true" className="mt-3">
+           <Container fluid="true" className="mt-3 mb-3">
                <Row className="mx-0">
                    {
                        projects.map((project)=>(
@@ -27,7 +27,7 @@ function ProjectPage(props) {
                    }
                </Row>
            </Container>
-           <Footer pad={4}/>
+           <Footer pad={1}/>
        </Fragment>
     );
 }

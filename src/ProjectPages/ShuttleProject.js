@@ -30,7 +30,7 @@ function ShuttleProject(props) {
                 <div className="practiceSlider">
                     <ShuttleSideNav classes={classes} onSelectCurrentClass={onSelectCurrentClass} projectName={projectName}/>
                 </div>
-                <div className="practiceRightPage">
+                <div className="practiceRightPage mx-0">
 
                     {
                         activeClass.id === 1 ? <ReactSetup/> :
@@ -48,7 +48,9 @@ function ShuttleProject(props) {
                                                     activeClass.id === 8 ? <ShuttleCommonComponent
                                                         projectDescription={shuttleRouteDescription}/> : ""
                     }
-                    <Footer pad={0}/>
+                   <div className="ml-3">
+                       <Footer pad={0}/>
+                   </div>
                 </div>
             </div>
         </Fragment>
