@@ -98,7 +98,7 @@ function TopMenu(props) {
                             </Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/practice" className={css.navLink}>
+                            <Link to="/javascript" className={css.navLink}>
                                 Practice
                             </Link>
                         </Nav.Link>

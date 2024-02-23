@@ -49,9 +49,6 @@ function Slider(props) {
                 <span className="dot" onClick={() => currentSlide(2)}> </span>
                 <span className="dot" onClick={() => currentSlide(3)}> </span>
             </div>
-            <div className="mt-4">
-                <h4 className="globalDescription"><strong>How to make a Slider using HTML , CSS , & JAVASCRIPT</strong></h4>
-            </div>
         </Fragment>
     );
 }

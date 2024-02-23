@@ -1,29 +1,33 @@
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import '../Assets/CSS/SideBar.css';
-import {Nav, Navbar} from 'react-bootstrap';
-import {Link} from "react-router-dom";
+import { Nav, Navbar } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 
-function PracticeSideBar(props) {
+function PracticeSideBar({ practiceLists , onSelectLecture }) {
 
     return (
-       <Fragment>
-           <Navbar expand={true} className="practiceList">
-               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-               <Navbar.Collapse id="basic-navbar-nav" className="show">
-                   <Nav className="flex-column sidebar">
-                       <h4 className="practiceTitle mt-2">Javascript</h4>
-                       <Link to="/slider">Slider</Link>
-                       <Link to="/loginForm">Login Form</Link>
-                       <Link to="/tabs">Tabs</Link>
-                       <Link to="/accordion">Accordion</Link>
-                       <Link to="/sideNav">Side Nav</Link>
-                       <Link to="/slideGallery">Slide Gallery</Link>
-                       <h4 className="practiceTitle mt-2">React</h4>
-                       <Link to="/setup">Setup</Link>
-                   </Nav>
-               </Navbar.Collapse>
-           </Navbar>
-       </Fragment>
+        <Fragment>
+            <Navbar expand={true} className="practiceList">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav" className="show">
+                    <Nav className="flex-column sidebar">
+                        {practiceLists.map((practiceList, index) => (
+                            <Fragment key={index}>
+                                {practiceList.map((item, subIndex) => (
+                                    <Fragment key={subIndex}>
+                                        {subIndex === 0 ? (
+                                            <h4 className="practiceTitle mt-2">{item.value}</h4>
+                                        ) : (
+                                            <Link onClick={()=>{onSelectLecture(item)}} to={item.link}>{item.value}</Link>
+                                        )}
+                                    </Fragment>
+                                ))}
+                            </Fragment>
+                        ))}
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+        </Fragment>
     );
 }
 

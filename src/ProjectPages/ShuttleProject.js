@@ -20,7 +20,6 @@ function ShuttleProject(props) {
     const[activeClass,setActiveClass] = useState(classes[0]);
 
     const onSelectCurrentClass = (cls)=>{
-        console.log(cls);
         setActiveClass(cls);
     }
 
