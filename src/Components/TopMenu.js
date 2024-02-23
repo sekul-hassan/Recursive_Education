@@ -65,43 +65,16 @@ function TopMenu(props) {
     return (
         <Fragment>
             <Navbar className={css.navBar} collapseOnSelect expand="md" sticky="top" ref={menuRef}>
-                <Navbar.Brand className="m-0 p-0" href="#home">
-                    <Link to="/">
-                        <img className="logoImg" src={css.logo} alt="" />
-                    </Link>
-                </Navbar.Brand>
-                <Navbar.Toggle
-                    className={css.smallNav}
-                    aria-controls="responsive-navbar-nav"
-                />
+                <Navbar.Brand className="m-0 p-0" href="#home"><Link to="/"><img className="logoImg" src={css.logo} alt="" /></Link></Navbar.Brand>
+                <Navbar.Toggle className={css.smallNav} aria-controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto" />
                     <Nav className={css.nav}>
-                        <Nav.Link>
-                            <Link to="/" className={css.navLink}>
-                                Home
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/about" className={css.navLink}>
-                                About
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/" className={css.navLink}>
-                                Service
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/project" className={css.navLink}>
-                                Projects
-                            </Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/javascript" className={css.navLink}>
-                                Practice
-                            </Link>
-                        </Nav.Link>
+                        <Nav.Link><Link to="/" className={css.navLink}>Home</Link></Nav.Link>
+                        <Nav.Link><Link to="/about" className={css.navLink}>About</Link></Nav.Link>
+                        <Nav.Link><Link to="/" className={css.navLink}>Service</Link></Nav.Link>
+                        <Nav.Link><Link to="/project" className={css.navLink}>Projects</Link></Nav.Link>
+                        <Nav.Link><Link to="/javascript" className={css.navLink}>Practice</Link></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
