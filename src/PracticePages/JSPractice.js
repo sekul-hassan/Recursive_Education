@@ -41,27 +41,15 @@ function JSPractice(props) {
                     <PracticeSideBar practiceLists={practiceLists} onSelectLecture={onSelectLecture} />
                 </div>
                 <div className="practiceRightPage">
-                    {lecture.id === 1 && (
-                        <FormattedSlider/>
-                    )}
-                    {lecture.id === 2 && (
-                       <FormattedLoginForm/>
-                    )}
-                    {lecture.id === 3 && (
-                       <FormattedTabs/>
-                    )}
-                    {lecture.id === 4 && (
-                       <FormattedAccordion/>
-                    )}
-                    {lecture.id === 5 && (
-                       <FormattedSideNav/>
-                    )}
-                    {lecture.id === 6 && (
-                       FormattedSlideGallery
-                    )}
-                    {lecture.id === 7 && (
-                        <ReactSetup />
-                    )}
+                    {
+                        lecture.id === 1 ? <FormattedSlider/>:
+                        lecture.id === 2 ? <FormattedLoginForm/>:
+                        lecture.id === 3 ? <FormattedTabs/>:
+                        lecture.id === 4 ? <FormattedAccordion/>:
+                        lecture.id === 5 ? <FormattedSideNav/>:
+                        lecture.id === 6 ? <FormattedSlideGallery/>:
+                        lecture.id === 7 ? <ReactSetup />:""
+                    }
                 </div>
             </div>
             <Footer pad={0} />
