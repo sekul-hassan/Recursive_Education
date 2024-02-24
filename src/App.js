@@ -12,6 +12,7 @@ import ProjectPage from "./Pages/ProjectPage";
 import ShuttleProject from "./ProjectPages/ShuttleProject";
 import NcPcProject from "./ProjectPages/NcPcProject";
 import JSPractice from "./PracticePages/JSPractice";
+import ServicePage from "./Pages/ServicePage";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<AboutPage/>}/>
+            <Route path="/services" element={<ServicePage/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
