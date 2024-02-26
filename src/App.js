@@ -14,7 +14,8 @@ import ShuttleProject from "./ProjectPages/ShuttleProject";
 import NcPcProject from "./ProjectPages/NcPcProject";
 import JSPractice from "./PracticePages/JSPractice";
 import ServicePage from "./Pages/ServicePage";
-import AcademicPage from "./Pages/AcademicPage";
+import AcademicPage from "./AcademicPages/AcademicPage";
+import ClassSix from "./AcademicPages/ClassSix";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/academic" element={<AcademicPage/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
+            <Route path="/six" element={<ClassSix/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
             <Route path="/shuttle-project" element={<ShuttleProject/>}/>
             <Route path="/ncpc-project" element={<NcPcProject/>}/>
