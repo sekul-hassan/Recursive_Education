@@ -73,6 +73,7 @@ function TopMenu(props) {
                         <Nav.Link><Link to="/" className={css.navLink}>Home</Link></Nav.Link>
                         <Nav.Link><Link to="/about" className={css.navLink}>About</Link></Nav.Link>
                         <Nav.Link><Link to="/services" className={css.navLink}>Service</Link></Nav.Link>
+                        <Nav.Link><Link to="/academic" className={css.navLink}>Academic</Link></Nav.Link>
                         <Nav.Link><Link to="/project" className={css.navLink}>Projects</Link></Nav.Link>
                         <Nav.Link><Link to="/javascript" className={css.navLink}>Practice</Link></Nav.Link>
                     </Nav>

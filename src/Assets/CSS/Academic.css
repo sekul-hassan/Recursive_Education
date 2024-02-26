@@ -1,0 +1,35 @@
+.academicNav{
+    width: 100%;
+    display: flex;
+    min-width: 800px;
+    overflow-x: auto;
+    justify-content: space-between;
+}
+
+.hslider {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-between;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: #059862;
+}
+.hslider li{
+    text-decoration: none;
+    justify-content: space-between!important;
+}
+.hslider li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.9);
+    font-family: Montserrat, serif;
+    font-weight: 400;
+}
+.hslider li a:hover{
+   color: white;
+    transition: 0.3s;
+}

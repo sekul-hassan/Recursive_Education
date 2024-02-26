@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Assets/CSS/Custom.css'
+import './Assets/CSS/Academic.css'
 import './Assets/CSS/Responsive.css'
 import './Assets/CSS/SideBarResponsive.css'
 import React, {Fragment} from "react";
@@ -13,6 +14,7 @@ import ShuttleProject from "./ProjectPages/ShuttleProject";
 import NcPcProject from "./ProjectPages/NcPcProject";
 import JSPractice from "./PracticePages/JSPractice";
 import ServicePage from "./Pages/ServicePage";
+import AcademicPage from "./Pages/AcademicPage";
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<AboutPage/>}/>
             <Route path="/services" element={<ServicePage/>}/>
+            <Route path="/academic" element={<AcademicPage/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
