@@ -35,26 +35,24 @@ function JSPractice(props) {
 
     return (
         <Fragment>
-            <TopMenu />
+            <TopMenu/>
             <div className="d-flex">
                 <div className="practiceSlider">
-                    <PracticeSideBar practiceLists={practiceLists} onSelectLecture={onSelectLecture} />
+                    <PracticeSideBar practiceLists={practiceLists} onSelectLecture={onSelectLecture}/>
                 </div>
                 <div className="practiceRightPage">
                     {
-                        lecture.id === 1 ? <FormattedSlider/>:
-                        lecture.id === 2 ? <FormattedLoginForm/>:
-                        lecture.id === 3 ? <FormattedTabs/>:
-                        lecture.id === 4 ? <FormattedAccordion/>:
-                        lecture.id === 5 ? <FormattedSideNav/>:
-                        lecture.id === 6 ? <FormattedSlideGallery/>:
-                        lecture.id === 7 ? <ReactSetup />:""
+                        lecture.id === 1 ? <FormattedSlider/> :
+                            lecture.id === 2 ? <FormattedLoginForm/> :
+                                lecture.id === 3 ? <FormattedTabs/> :
+                                    lecture.id === 4 ? <FormattedAccordion/> :
+                                        lecture.id === 5 ? <FormattedSideNav/> :
+                                            lecture.id === 6 ? <FormattedSlideGallery/> :
+                                                lecture.id === 7 ? <ReactSetup/> : ""
                     }
-                  <div className="ml-3">
-                      <Footer pad={0} />
-                  </div>
                 </div>
             </div>
+            <Footer pad={3}/>
         </Fragment>
     );
 }

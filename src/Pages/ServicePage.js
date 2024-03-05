@@ -32,7 +32,7 @@ function ServicePage(props) {
         <Fragment>
             <TopMenu/>
             <ServiceCard serviceList={serviceList}/>
-            <Footer pad={1}/>
+            <Footer/>
         </Fragment>
     );
 }

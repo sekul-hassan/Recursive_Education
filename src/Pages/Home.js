@@ -10,7 +10,7 @@ function Home(props) {
             <TopMenu/>
             <HomeTopBar/>
             <Recent/>
-            <Footer pad={4}/>
+            <Footer/>
         </Fragment>
     );
 }

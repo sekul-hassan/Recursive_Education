@@ -7,14 +7,14 @@ import {
     faCode,
     faInfoCircle,
     faLock, faMoneyBill, faScroll,
-    faTools, faUser
+    faTools
 } from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 
-function Footer({pad}) {
+function Footer() {
 
     return (
-        <Container fluid="true" className={`px-${pad}`}>
+        <Container fluid="true" className="px-3 mt-3 copyRight">
             <Row className="mx-0">
                 <Col className="justify-content-start" lg={4} md={4} sm={4}>
                     <h4 className="title text-dark mt-sm-2">Contact</h4>
@@ -35,8 +35,10 @@ function Footer({pad}) {
                     <Link to="/privacy" className="contactLink" href="#a"><FontAwesomeIcon icon={faLock}/> Privacy Policy</Link><br/>
                     <a className="contactLink" href="#a"><FontAwesomeIcon icon={faScroll}/> Terms & Condition</a><br/>
                     <a className="contactLink" href="#a"><FontAwesomeIcon icon={faMoneyBill}/> Refund Policy</a><br/>
-                    <a className="contactLink" href="#a"><FontAwesomeIcon icon={faUser}/> Community Guidelines</a><br/>
                 </Col>
+            </Row>
+            <Row className="mx-0 mt-2 text-center">
+                <a className="globalDescription contactLink" href="https://recursiveeducation.com">© 2024 <strong>Recursive Education</strong>. All rights reserved.</a>
             </Row>
         </Container>
     );

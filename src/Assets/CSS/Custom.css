@@ -120,9 +120,10 @@
     font-size: 15px;
     font-family: Montserrat, serif;
     font-weight: 500;
+    color: black;
 }
 .contactLink:hover{
-    color: #000000;
+    color: white;
     transition: 0.2s;
 }
 .globalDescription{
@@ -193,4 +194,7 @@
 .projectImg{
     width: 100%;
     height: auto;
+}
+.copyRight{
+    background-color: rgba(0,0,0,0.4);
 }

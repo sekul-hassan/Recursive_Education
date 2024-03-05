@@ -27,7 +27,7 @@ function ProjectPage(props) {
                    }
                </Row>
            </Container>
-           <Footer pad={1}/>
+           <Footer/>
        </Fragment>
     );
 }

@@ -48,11 +48,9 @@ function ShuttleProject(props) {
                                                     activeClass.id === 8 ? <ShuttleCommonComponent
                                                         projectDescription={shuttleRouteDescription}/> : ""
                     }
-                   <div className="ml-3">
-                       <Footer pad={0}/>
-                   </div>
                 </div>
             </div>
+            <Footer/>
         </Fragment>
     );
 }

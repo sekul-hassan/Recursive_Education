@@ -74,11 +74,9 @@ function ClassSix(props) {
                         activeClass.id === 4 ? <AcademicContent lecture={chapter4}/> :
                         activeClass.id === 5 ? <AcademicContent lecture={chapter5}/> :""
                     }
-                    <div className="ml-3">
-                        <Footer pad={0}/>
-                    </div>
                 </div>
             </div>
+            <Footer/>
         </Fragment>
     );
 }
