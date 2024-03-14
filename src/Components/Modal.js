@@ -33,9 +33,9 @@ function Modal({ toggleDummyLogin, dummyLogin }) {
                     type="checkbox"
                     checked="checked"
                     name="remember"
-                    style={{ width: 'auto', marginRight: '5px' }}
+                    style={{ width: 'auto' }}
                 />
-                <label className="form-check-label" htmlFor="remember">
+                <label className="form-check-label mx-1" htmlFor="remember">
                     Remember me
                 </label>
             </div>

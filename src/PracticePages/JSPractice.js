@@ -1,4 +1,6 @@
 import React, { Fragment, useState } from 'react';
+import "../Assets/CSS/Tabs.css";
+import "../Assets/CSS/Login.css";
 import TopMenu from "../Components/TopMenu";
 import PracticeSideBar from "../Components/PracticeSideBar";
 import Footer from "../Components/Footer";
