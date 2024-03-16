@@ -41,15 +41,14 @@
 
 .displayModal {
     position: fixed;
-    left: calc(50% + 25px);
+    left: calc(50% + 50px);
     top: calc(50% + 20px);
     transform: translate(-50%, -50%);
-    width: 70%;
     max-width: calc(100% - 141px);
     height: auto;
     max-height: 500px;
     overflow-y: auto;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(0,0,0,0.8);
     border: 2px solid silver;
     padding: 20px;
 }
@@ -95,7 +94,7 @@
 .cancelBtn{
     background-color: #F44336;
     border: none;
-    padding: 5px 11px 5px 11px !important;
+    padding: 5px 11px 5px 11px;
     color: white;
     font-family: Raleway, serif;
     font-size: 15px;

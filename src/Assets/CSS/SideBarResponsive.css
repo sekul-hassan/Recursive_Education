@@ -33,15 +33,23 @@
     .text{
         left: calc(50% - 42px) !important;
     }
+
     .displayModal{
-        left: 84px!important;
-        width: calc(100% - 84px ) !important;
+        position: fixed;
+        width: 100%!important;
+        left: 50%!important;
+        top: 310px !important;
+        max-width: calc(100% - 40px) !important;
+        height: auto;
+        padding-bottom: 50px!important;
     }
     .cancelBtn{
-        padding:1px !important;
+        padding:0 5px !important;
         font-size: 12px!important;
-        margin: 0!important;
+        height: 30px!important;
+        margin-top: 5px;
     }
+
     .modalContentFooter{
         padding: 10px!important;
     }
