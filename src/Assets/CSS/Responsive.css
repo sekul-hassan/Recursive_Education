@@ -1,15 +1,15 @@
-::-webkit-scrollbar {
-    width: 1px;
-}
+/*::-webkit-scrollbar {*/
+/*    width: 1px;*/
+/*}*/
 
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
+/*::-webkit-scrollbar-track {*/
+/*    background: #f1f1f1;*/
+/*}*/
 
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 5px;
-}
+/*::-webkit-scrollbar-thumb {*/
+/*    background: #888;*/
+/*    border-radius: 5px;*/
+/*}*/
 
 @media only screen and (max-width: 700px) {
     .mt-sm-2{

@@ -1,23 +1,23 @@
 /* SliderCode.css */
 
-/* Customize scrollbar for the entire document */
-body {
-    scrollbar-width: thin;
-    scrollbar-color: #999999 #f5f5f5;
-}
+/*!* Customize scrollbar for the entire document *!*/
+/*body {*/
+/*    scrollbar-width: thin;*/
+/*    scrollbar-color: #999999 #f5f5f5;*/
+/*}*/
 
-/* Define styles for the scrollbar */
-::-webkit-scrollbar {
-    width: 2px; /* Width of the vertical scrollbar */
-}
+/*!* Define styles for the scrollbar *!*/
+/*::-webkit-scrollbar {*/
+/*    width: 2px; !* Width of the vertical scrollbar *!*/
+/*}*/
 
-::-webkit-scrollbar-thumb {
-    background-color: #999999;
-}
+/*::-webkit-scrollbar-thumb {*/
+/*    background-color: #999999;*/
+/*}*/
 
-::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-}
+/*::-webkit-scrollbar-track {*/
+/*    background-color: #f5f5f5;*/
+/*}*/
 
 /* Apply custom styles to the scrollbar within the sliderCode class */
 .code {
