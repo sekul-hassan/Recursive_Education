@@ -3,25 +3,18 @@ import TopMenu from "../Components/TopMenu";
 import Footer from "../Components/Footer";
 import ProjectCard from "../Components/ProjectCard";
 import {Col, Container, Row} from "react-bootstrap";
-import shuttleProject from "../Assets/Images/ProjectImg/need2.png"
-import ncpcProject from "../Assets/Images/ProjectImg/ncpc_site.png"
+import projects from "../ProjectPages/ProjectConfig";
 
 function ProjectPage(props) {
-
-    const projects = [
-        {projectImg:shuttleProject,projectLink:"https://shuttle.recursiveeducation.com/",projectRoute:"/shuttle-project"},
-        {projectImg:ncpcProject,projectLink:"https://pc.cse.juniv.edu/",projectRoute:"/ncpc-project"},
-    ]
-
     return (
        <Fragment>
            <TopMenu/>
            <Container fluid="true" className="mt-3 mb-3">
                <Row className="mx-0">
                    {
-                       projects.map((project)=>(
+                       projects.map((project,idx)=>(
                            <Col md={4} lg={3} sm={12}>
-                               <ProjectCard project={project}/>
+                               {project.demo && <ProjectCard project={project.demo} />}
                            </Col>
                        ))
                    }

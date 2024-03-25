@@ -1,9 +1,7 @@
 import React from 'react';
 import {Nav, Navbar} from "react-bootstrap";
-import {Link} from "react-router-dom";
-import {} from "web-vitals";
 
-function ShuttleSideNav({projectName,classes,onSelectCurrentClass}) {
+function ProjectSideNav({projectName,classes,onSelectCurrentClass}) {
 
 
     return (
@@ -14,7 +12,7 @@ function ShuttleSideNav({projectName,classes,onSelectCurrentClass}) {
                     <h4 className="practiceTitle mt-2">{projectName}</h4>
                     {
                         classes && classes.map((link)=>(
-                            <Link onClick={()=>onSelectCurrentClass(link)} to={link.link}>{link.value}</Link>
+                            <Nav.Link onClick={()=>onSelectCurrentClass(link)}>{link.value}</Nav.Link>
                         ))
                     }
                 </Nav>
@@ -23,5 +21,5 @@ function ShuttleSideNav({projectName,classes,onSelectCurrentClass}) {
     );
 }
 
-export default ShuttleSideNav;
+export default ProjectSideNav;
 

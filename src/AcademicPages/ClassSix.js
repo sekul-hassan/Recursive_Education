@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import TopMenu from "../Components/TopMenu";
-import ShuttleSideNav from "../ShuttleBus/ShuttleSideNav";
+import ProjectSideNav from "../Components/ProjectSideNav";
 import Footer from "../Components/Footer";
 import AcademicNav from "../AcademicComponents/AcademicNav";
 import AcademicContent from "../AcademicComponents/AcademicContent";
@@ -63,7 +63,7 @@ function ClassSix(props) {
             <AcademicNav/>
             <div className="d-flex">
                 <div className="practiceSlider">
-                    <ShuttleSideNav classes={classes} onSelectCurrentClass={onSelectCurrentClass} projectName={projectName}/>
+                    <ProjectSideNav classes={classes} onSelectCurrentClass={onSelectCurrentClass} projectName={projectName}/>
                 </div>
                 <div className="practiceRightPage mx-0">
 

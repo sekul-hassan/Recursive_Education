@@ -10,12 +10,11 @@ import {Route, Routes} from "react-router-dom";
 import Privacy from "./Pages/Privacy";
 import AboutPage from "./Pages/AboutPage";
 import ProjectPage from "./Pages/ProjectPage";
-import ShuttleProject from "./ProjectPages/ShuttleProject";
-import NcPcProject from "./ProjectPages/NcPcProject";
 import JSPractice from "./PracticePages/JSPractice";
 import ServicePage from "./Pages/ServicePage";
 import AcademicPage from "./AcademicPages/AcademicPage";
 import ClassSix from "./AcademicPages/ClassSix";
+import ProjectLecture from "./ProjectPages/ProjectLecture";
 
 
 function App() {
@@ -30,8 +29,7 @@ function App() {
             <Route path="/privacy" element={<Privacy/>}/>
             <Route path="/six" element={<ClassSix/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
-            <Route path="/shuttle-project" element={<ShuttleProject/>}/>
-            <Route path="/ncpc-project" element={<NcPcProject/>}/>
+            <Route path="/project/:id" element={<ProjectLecture/>}/>
         </Routes>
     </Fragment>
   );

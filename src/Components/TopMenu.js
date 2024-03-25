@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 
 function TopMenu(props) {
     const [css, setCss] = useState({
-        navBar: 'navBar',
-        navLink: 'navLink',
-        nabBrand: 'navBrand',
-        smallNav:'smallNav',
-        nav:'nav',
-        logo: black,
+        navBar: 'navBarScroll',
+        navLink: 'navLinkScroll',
+        nabBrand: 'navBrandScroll',
+        smallNav:'smallNavScroll',
+        nav:'navScroll',
+        logo: white,
     });
 
 
