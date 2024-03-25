@@ -1,16 +1,3 @@
-/*::-webkit-scrollbar {*/
-/*    width: 1px;*/
-/*}*/
-
-/*::-webkit-scrollbar-track {*/
-/*    background: #f1f1f1;*/
-/*}*/
-
-/*::-webkit-scrollbar-thumb {*/
-/*    background: #888;*/
-/*    border-radius: 5px;*/
-/*}*/
-
 @media only screen and (max-width: 767px) {
     .mt-sm-2{
         margin-top: 10px!important;
@@ -18,13 +5,21 @@
     .smallNav{
         background-color: white!important;
         margin-right: 20px;
+        height: 30px;
+        width: 50px;
+        text-align: center;
+        padding: 0;
     }
     .smallNavScroll{
         border: 1px solid black;
         margin-right: 20px;
+        height: 30px;
+        width: 50px;
+        text-align: center;
+        padding: 0;
     }
     .logoImg{
-        max-height: 50px;
+        max-height: 45px;
     }
     .nav{
         background-color: rgba(0,0,0,0.7)!important;
@@ -44,11 +39,11 @@
         width: 100%;
         text-align: center;
         padding: 0;
-        max-height: 50px!important;
+        max-height: 45px!important;
     }
     .navBarScroll{
         width: 100%;
-        max-height: 50px;
+        max-height: 45px;
         padding: 0;
         background-color:white !important;
         transition: 0.5s;
@@ -108,6 +103,12 @@
         font-family: Popin, serif;
         font-weight: 400;
     }
-
+    .projectImg{
+        width: 100%;
+        height: auto;
+    }
+    .projectBody{
+        margin-top: 20px;
+    }
 
 }

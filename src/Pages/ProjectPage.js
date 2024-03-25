@@ -9,7 +9,7 @@ function ProjectPage(props) {
     return (
        <Fragment>
            <TopMenu/>
-           <Container fluid="true" className="mt-3 mb-3">
+           <Container fluid="true" className="mb-3">
                <Row className="mx-0">
                    {
                        projects.map((project,idx)=>(

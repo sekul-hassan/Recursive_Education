@@ -1,14 +1,14 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
-import VideoContextSection from "../Components/VideoContextSection";
+import VideoContextSection from "./VideoContextSection";
 
 
-function ShuttleCommonComponent({projectDescription}) {
+function ProjectBody({projectDescription}) {
     const { image, videoLink, title, description, githubLink } = projectDescription;
 
     return (
         <Container fluid="true" className="mb-3">
-            <img className="w-100 h-auto" src={image} alt={image}/>
+            {image && <img className="w-100 h-auto" src={image} alt={image}/>}
             <VideoContextSection title={title} description={description} videoLink={videoLink}/>
             <div className="px-0 mt-2">
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
@@ -18,4 +18,4 @@ function ShuttleCommonComponent({projectDescription}) {
     );
 }
 
-export default ShuttleCommonComponent;
+export default ProjectBody;
