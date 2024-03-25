@@ -1,6 +1,6 @@
 .navBar{
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: rgba(0,0,0,1) !important;
     padding: 0 5% 0 5%;
     transition: 0.5s;
@@ -10,33 +10,37 @@
     font-family: Roboto,serif;
     font-size: 18px;
     font-weight: 300;
-    padding: 0;
-    margin: 0;
     text-decoration: none;
+    width: 80px;
+    text-align: center;
+    height: 50px;
+    padding-top: 11px;
 }
 .navBarScroll{
     width: 100%;
-    height: 60px;
+    height: 50px;
     padding: 0 5% 0 5%;
     background-color:#ffffff !important;
     transition: 0.5s;
 }
 .navLinkScroll{
-    color: rgba(0,0,0,0.7) !important;
+    color: rgba(0,0,0,0.9) !important;
     font-family: Roboto,serif;
     font-size: 18px;
     font-weight: 300;
-    padding: 0;
-    margin: 0;
     text-decoration: none;
+    width: 80px;
+    text-align: center;
+    height: 50px;
+    padding-top: 11px;
 }
 .navLink:hover{
     color: pink!important;
-    border: 1px solid white!important;
+    border: 1px dotted white!important;
 }
 .navLinkScroll:hover{
     color: #0d39e1 !important;
-    border: 1px solid black!important;
+    border: 1px dotted black!important;
 }
 
 .topBarContent {
@@ -112,7 +116,7 @@
 }
 .logoImg{
     width: 100px;
-    height: 60px;
+    height: 50px;
     margin-left: 20px;
 }
 .contactLink{

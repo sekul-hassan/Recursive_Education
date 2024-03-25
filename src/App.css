@@ -23,7 +23,15 @@
 .code {
     overflow-x: auto;
 }
-
+.navbar-toggler{
+    background-color: white!important;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none!important;
+    border: none;
+}
 /* Adjust styles for the horizontal scrollbar */
 .code::-webkit-scrollbar {
     height: 2px; /* Height of the horizontal scrollbar */
