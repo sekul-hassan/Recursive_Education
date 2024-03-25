@@ -7,7 +7,7 @@ import FormatCode from "../Code/FormatCode";
 
 
 
-function SliderCode({cssCode, htmlCode, jsCode}) {
+function CodeSection({cssCode, htmlCode, jsCode}) {
     return (
         <Container fluid="true" className="mt-4">
             <Row className="m-0 p-0 sliderCode">
@@ -35,4 +35,4 @@ function SliderCode({cssCode, htmlCode, jsCode}) {
     );
 }
 
-export default SliderCode;
+export default CodeSection;

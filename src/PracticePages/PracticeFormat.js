@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import VideoContextSection from "../Components/VideoContextSection";
-import SliderCode from "../Components/SliderCode";
+import CodeSection from "../Components/CodeSection";
 
 function PracticeFormat({Component,videoContent,code}) {
 
@@ -9,7 +9,7 @@ function PracticeFormat({Component,videoContent,code}) {
        <Fragment>
            {Component &&  <Component />}
            {videoContent && <VideoContextSection title={videoContent.title} description={videoContent.description} videoLink={videoContent.videoLink}/>}
-           {code &&  <SliderCode htmlCode={code.htmlCode} cssCode={code.cssCode} jsCode={code.jsCode} />}
+           {code &&  <CodeSection htmlCode={code.htmlCode} cssCode={code.cssCode} jsCode={code.jsCode} />}
        </Fragment>
     );
 }
