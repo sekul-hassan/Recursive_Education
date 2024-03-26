@@ -12,9 +12,8 @@ import AboutPage from "./Pages/AboutPage";
 import ProjectPage from "./Pages/ProjectPage";
 import JSPractice from "./PracticePages/JSPractice";
 import ServicePage from "./Pages/ServicePage";
-import AcademicPage from "./AcademicPages/AcademicPage";
-import ClassSix from "./AcademicPages/ClassSix";
 import ProjectLecture from "./ProjectPages/ProjectLecture";
+import AcademicBody from "./Academic/AcademicBody";
 
 
 function App() {
@@ -24,10 +23,11 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<AboutPage/>}/>
             <Route path="/services" element={<ServicePage/>}/>
-            <Route path="/academic" element={<AcademicPage/>}/>
+            <Route path="/academic" element={<AcademicBody/>}/>
+            <Route path="/academic/:id" element={<AcademicBody/>}/>
+            <Route path="/academic/:id/:subject" element={<AcademicBody/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
-            <Route path="/six" element={<ClassSix/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
             <Route path="/project/:id" element={<ProjectLecture/>}/>
         </Routes>
