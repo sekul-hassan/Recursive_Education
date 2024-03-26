@@ -5,10 +5,10 @@ import VideoContextSection from "./VideoContextSection";
 
 function ProjectBody({projectDescription}) {
     const { image, videoLink, title, description, githubLink } = projectDescription;
-
+    console.log(image);
     return (
         <Container fluid="true" className="mb-3">
-            {image && <img className="w-100 h-auto" src={image} alt={image}/>}
+            {image && <img className="w-100 h-auto" src={`/${image}`} alt={image}/>}
             <VideoContextSection title={title} description={description} videoLink={videoLink}/>
             <div className="px-0 mt-2">
                 {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}

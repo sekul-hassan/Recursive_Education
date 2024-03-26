@@ -6,8 +6,6 @@ import AcademicContent from "./AcademicContent";
 function Lecture({lecture}) {
 
     const {subject} = useParams();
-    console.log(lecture);
-    console.log(subject);
 
     const[activeClass,setActiveClass] = useState(lecture[0]);
 

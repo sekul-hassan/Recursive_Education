@@ -2,9 +2,11 @@ import nctb_six from "../Assets/Images/Academic/nctb_six.jpg";
 
 const academic = [
     {
+        id:0,
         level: "Six",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -195,9 +197,11 @@ const academic = [
     },
 
     {
+        id:1,
         level: "Seven",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -388,9 +392,11 @@ const academic = [
     },
 
     {
+        id:2,
         level: "Eight",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -581,9 +587,11 @@ const academic = [
     },
 
     {
+        id:3,
         level: "Nine",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -774,9 +782,11 @@ const academic = [
     },
 
     {
+        id:4,
         level: "Ten",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -967,9 +977,11 @@ const academic = [
     },
 
     {
+        id:5,
         level: "Eleven",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
@@ -1160,9 +1172,11 @@ const academic = [
     },
 
     {
+        id:6,
         level: "Twelve",
         bookList:[
             {
+                id:0,
                 bookName: "Math",
                 bookImag: nctb_six,
                 lecture:[
