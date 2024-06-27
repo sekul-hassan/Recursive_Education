@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import white from '../Assets/Images/white.png';
-import black from '../Assets/Images/black.png';
+import white from '../Assets/Images/logoWhite.png';
+import black from '../Assets/Images/logoBlack.png';
 import { Link } from 'react-router-dom';
 
 function TopMenu(props) {

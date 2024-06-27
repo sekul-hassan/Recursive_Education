@@ -59,7 +59,7 @@
     background-size: cover;
     width: 100%;
     height: 25rem;
-    background: url("../Images/banner.jpg") no-repeat fixed center;
+    background: url("../Images/banner.png") no-repeat fixed center;
 }
 
 .homeTopBackgroundOverlay{
