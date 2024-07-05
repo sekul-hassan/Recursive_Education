@@ -83,7 +83,6 @@ const cssCode = `
         opacity: 1;
     }
 }
-
     `;
 const htmlCode = `
 <!DOCTYPE html>
@@ -167,6 +166,7 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
   }
 }
+
     `
 
 export {cssCode,htmlCode,jsCode};

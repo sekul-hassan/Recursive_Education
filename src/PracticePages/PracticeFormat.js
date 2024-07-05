@@ -8,7 +8,7 @@ function PracticeFormat({Component,videoContent,code}) {
     return (
        <Fragment>
            {Component &&  <Component />}
-           {videoContent && <VideoContextSection title={videoContent.title} description={videoContent.description} videoLink={videoContent.videoLink}/>}
+           {videoContent && <VideoContextSection title={videoContent.title} description={videoContent.description} videoLink={videoContent.videoLink} gitHubLink={videoContent.gitHubLink}/>}
            {code &&  <CodeSection htmlCode={code.htmlCode} cssCode={code.cssCode} jsCode={code.jsCode} />}
        </Fragment>
     );
