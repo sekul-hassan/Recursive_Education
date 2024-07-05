@@ -1,6 +1,6 @@
 
 
-const htmlCode =
+const loginHtml =
 `
 <!DOCTYPE html>
 <html lang="en">
@@ -40,10 +40,10 @@ const htmlCode =
    </div>
    <script src="login.js"></script>
 </body>
-</html>    
+</html>     
 `
 
-const cssCode =
+const loginCss =
 `
 .title{
     text-transform: uppercase;
@@ -144,10 +144,10 @@ const cssCode =
 .cancel:hover{
     background-color: #059862;
     transition: 0.4s;
-}    
+}
 `
 
-const jsCode =
+const loginJs =
 `
 function openBox(){
     let div = document.getElementById('loginDiv');
@@ -163,6 +163,6 @@ function closeBox(){
 
     div.style.display="none";
     above.style.display = "block";
-}    
+}
 `
-export {htmlCode,cssCode,jsCode};
+export {loginCss,loginHtml,loginJs};
