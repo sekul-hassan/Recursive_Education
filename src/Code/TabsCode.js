@@ -1,5 +1,5 @@
 
-const htmlCode =
+const tabHtml =
 `
 <!DOCTYPE html>
 <html lang="en">
@@ -31,10 +31,10 @@ const htmlCode =
     </div>
     <script src="tabs.js"></script>
 </body>
-</html>    
+</html>  
 `
 
-const cssCode =
+const tabCss =
 `
 .container{
     width: 80%;
@@ -66,7 +66,7 @@ const cssCode =
 }
 `
 
-const jsCode =
+const tabJs =
 `
 function showMam(event,mam){
     let mems = document.getElementsByClassName('mam');
@@ -82,4 +82,4 @@ function showMam(event,mam){
 }
 `
 
-export {htmlCode,cssCode,jsCode}
+export {tabCss,tabHtml,tabJs}

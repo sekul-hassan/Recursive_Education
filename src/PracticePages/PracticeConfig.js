@@ -3,10 +3,11 @@ import {cssCode, htmlCode, jsCode} from "../Code/SliderCode";
 import LoginForm from "../Components/LoginForm";
 import Tab from "../Components/Tab";
 import Accordions from "../Components/Accordion";
-import SideNavbar from "../Components/SideNavbar";
 import SlideGallery from "../Components/SlideGallery";
 import ReactSetup from "../ReactComponents/ReactSetup";
 import {loginCss, loginHtml, loginJs} from "../Code/LiginCode";
+import {tabCss, tabHtml, tabJs} from "../Code/TabsCode";
+import {accordionCss, accordionHtml, accordionJs} from "../Code/AccordionCode";
 
 const practiceLists = [
     [
@@ -166,55 +167,98 @@ const practiceLists = [
             }
         },
         {
-            id: 6,
-            link: "/javascript",
-            value: "Tabs",
-            component:Tab,
-            code:{
-                htmlCode: htmlCode,
-                cssCode:cssCode,
-                jsCode:jsCode,
-            } ,
-            videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
-                description: "Using HTML CSS & JavaScript",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
-            }
-        },
-        {
             id: 7,
             link: "/javascript",
-            value: "Accordion",
-            component:Accordions,
+            value: "Tabs part 1",
+            component:Tab,
             code:{
-                htmlCode: htmlCode,
-                cssCode:cssCode,
-                jsCode:jsCode,
+                htmlCode: tabHtml,
+                cssCode:tabCss,
+                jsCode:tabJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
-                description: "Using HTML CSS & JavaScript",
+                title:"HOW TO MAKE A tab using html css and javascript.",
+                description: ".container: Sets the width to 80% of the parent container and centers it using auto margins.\n" +
+                    ".btnDiv: Adds a border and background color, providing a section for the buttons.\n" +
+                    ".btn: Removes the default border and background, adds padding, and changes the cursor to a pointer. The .btn:hover state changes the background color and adds a transition effect for smoothness.\n" +
+                    ".active: Changes the background color for the active button.\n" +
+                    ".mam: Styles each tab content div, adding a border and padding, and ensures the content is hidden by default with display: none.",
                 videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Tabs",
             }
         },
         {
             id: 8,
             link: "/javascript",
-            value: "Side Nav",
-            component:SideNavbar,
+            value: "Tabs part 2",
+            component:Tab,
             code:{
-                htmlCode: htmlCode,
-                cssCode:cssCode,
-                jsCode:jsCode,
+                htmlCode: tabHtml,
+                cssCode:tabCss,
+                jsCode:tabJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
-                description: "Using HTML CSS & JavaScript",
+                title:"HOW TO MAKE A tab using html css and javascript.",
+                description: "This JavaScript function showMam manages the tab switching functionality:\n" +
+                    "\n" +
+                    "Retrieve Elements: It gets all elements with the class mam and btn using document.getElementsByClassName.\n" +
+                    "Hide All Sections: Iterates over all mam elements, hiding them by setting style.display to \"none\". Simultaneously, it removes the \"active\" class from all btn elements.\n" +
+                    "Show Selected Section: Displays the specific section identified by the mam parameter by setting its style.display to \"block\".\n" +
+                    "Activate Button: Adds the \"active\" class to the clicked button using event.currentTarget.className += \" active\".",
                 videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Tabs",
             }
         },
         {
-            id: 7,
+            id: 9,
+            link: "/javascript",
+            value: "Accordion 1",
+            component:Accordions,
+            code:{
+                htmlCode: accordionHtml,
+                cssCode:accordionCss,
+                jsCode:accordionJs,
+            } ,
+            videoContent:{
+                title:"HOW TO MAKE A accordion using html css and javascript.",
+                description: ".accordion: Defines the main section headers of the accordion. It uses display: flex to align child elements horizontally, justify-content: space-between to space them out evenly, and cursor: pointer to indicate interactivity. The background color is slightly transparent.\n" +
+                    "\n" +
+                    ".sign: Styles the plus sign in the accordion headers. It sets the font size, font family, and font weight to make it visually distinct.\n" +
+                    "\n" +
+                    ".accordionBody: Manages the content sections of the accordion. Initially hidden with display: none and max-height: 0, it transitions smoothly when opened due to the transition: max-height 0.2s ease-in. The background color is slightly lighter, and overflow: hidden ensures content doesn't spill out during the transition.",
+                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Accordion"
+            }
+        },
+        {
+            id: 10,
+            link: "/javascript",
+            value: "Accordion 2",
+            component:Accordions,
+            code:{
+                htmlCode: accordionHtml,
+                cssCode:accordionCss,
+                jsCode:accordionJs,
+            } ,
+            videoContent:{
+                title:"HOW TO MAKE A accordion using html css and javascript.",
+                description: "Retrieve Elements: It gets all elements with the class accordionBody and sign using document.getElementsByClassName.\n" +
+                    "Check Sign: It checks if the sign element at the specified index (num) has a \"+\" sign.\n" +
+                    "If it does, the function:\n" +
+                    "Sets the accordionBody at index num to display: block.\n" +
+                    "Changes the sign to \"-\".\n" +
+                    "Sets maxHeight to the element's scrollHeight, expanding the accordion.\n" +
+                    "If the sign is \"-\", it:\n" +
+                    "Sets accordionBody to display: none.\n" +
+                    "Changes the sign to \"+\".\n" +
+                    "Sets maxHeight to \"0px\", collapsing the accordion.",
+                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Accordion"
+            }
+        },
+
+        {
+            id: 11,
             link: "/javascript",
             value: "Slide Gallery",
             component:SlideGallery,

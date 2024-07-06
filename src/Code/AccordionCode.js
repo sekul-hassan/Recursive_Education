@@ -1,4 +1,4 @@
-const htmlCode =
+const accordionHtml =
 `
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +45,7 @@ const htmlCode =
     
 `
 
-const cssCode =
+const accordionCss =
 `
 .accordion{
     display: flex;
@@ -68,7 +68,7 @@ const cssCode =
  }    
 `
 
-const jsCode =
+const accordionJs =
 `
 function openAccordion(num){
     let accordionBody = document.getElementsByClassName('accordionBody');
@@ -86,4 +86,4 @@ function openAccordion(num){
     }
 }
 `
-export {htmlCode,cssCode,jsCode};
+export {accordionHtml,accordionCss,accordionJs};
