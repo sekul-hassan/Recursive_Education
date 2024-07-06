@@ -11,14 +11,14 @@ function VideoContextSection({title,description,videoLink,gitHubLink}) {
 
                 </Col>
                 <Col className="px-0  mt-3" md={6} sm={12} lg={6}>
-                    <div className="px-3">
+                    <div className="px-md-3 px-lg-3 px-sm-0">
                         <h4 className="globalTitle">{title}</h4>
                         <h5 className="globalDescription">{description}</h5>
                     </div>
                 </Col>
             </Row>
             <Row className="mx-0">
-                <h4 className="globalDescription">Git_Hub :
+                <h4 className="globalDescription px-0">Git_Hub :
                     <a href={gitHubLink} target="_blank" className="text-info text-decoration-none" rel="noreferrer"> {gitHubLink}</a></h4>
             </Row>
         </Container>
