@@ -14,7 +14,7 @@ const practiceLists = [
         {
             id: 1,
             link: "/Javascript",
-            value: "Slider 1",
+            value: "Slider part 1",
             component:Slider,
             code:{
                 htmlCode: htmlCode,
@@ -45,7 +45,7 @@ const practiceLists = [
         {
             id: 2,
             link: "/Javascript",
-            value: "Slider 2",
+            value: "Slider part 2",
             component:Slider,
             code:{
                 htmlCode: htmlCode,
@@ -66,7 +66,7 @@ const practiceLists = [
         {
             id: 3,
             link: "/javascript",
-            value: "Login Form 1",
+            value: "Form part 1",
             component:LoginForm,
             code:{
                 htmlCode: loginHtml,
@@ -74,7 +74,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM.",
+                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
                 description: "The .title class styles the title \"Click This Button\", making it uppercase, setting the font size to 17px, and using the font family \"popin, sans-serif\". It ensures the title stands out with a clear and consistent appearance.\n" +
                     "\n" +
                     "For the .login class, it styles the \"Login\" button within the .above section. It features a green background (#059862), removes the border for a sleek look, adds padding to provide spacing around the text, and rounds the corners (border-radius: 10px). The cursor changes to a pointer to indicate it's clickable, and on hover, the button transitions smoothly to a white background with black text and a green border, enhancing user interaction.\n" +
@@ -91,7 +91,7 @@ const practiceLists = [
         {
             id: 4,
             link: "/javascript",
-            value: "Login Form 2",
+            value: "Form part 2",
             component:LoginForm,
             code:{
                 htmlCode: loginHtml,
@@ -99,7 +99,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM.",
+                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
                 description: "The .title class styles the title \"Click This Button\", making it uppercase, setting the font size to 17px, and using the font family \"popin, sans-serif\". It ensures the title stands out with a clear and consistent appearance.\n" +
                     "\n" +
                     "For the .login class, it styles the \"Login\" button within the .above section. It features a green background (#059862), removes the border for a sleek look, adds padding to provide spacing around the text, and rounds the corners (border-radius: 10px). The cursor changes to a pointer to indicate it's clickable, and on hover, the button transitions smoothly to a white background with black text and a green border, enhancing user interaction.\n" +
@@ -116,7 +116,7 @@ const practiceLists = [
         {
             id: 5,
             link: "/javascript",
-            value: "Login Form 3",
+            value: "Form part 3",
             component:LoginForm,
             code:{
                 htmlCode: loginHtml,
@@ -124,7 +124,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
+                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
                 description: "openBox() Function:\n" +
                     "\n" +
                     "When the openBox() function is called (likely triggered by clicking the \"Login\" button with onclick=\"openBox()\"), it first retrieves references to the loginDiv and above elements using document.getElementById().\n" +
@@ -142,7 +142,7 @@ const practiceLists = [
         {
             id: 6,
             link: "/javascript",
-            value: "Login Form 4",
+            value: "Form part 4",
             component:LoginForm,
             code:{
                 htmlCode: loginHtml,
@@ -150,7 +150,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
+                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
                 description: "openBox() Function:\n" +
                     "\n" +
                     "When the openBox() function is called (likely triggered by clicking the \"Login\" button with onclick=\"openBox()\"), it first retrieves references to the loginDiv and above elements using document.getElementById().\n" +

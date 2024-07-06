@@ -6,7 +6,7 @@
         font-weight: 600 !important;
     }
     .sidebar {
-        width: 84px !important;
+        width: 85px !important;
         padding: 0 0 0 5px!important;
         max-height: calc(100vh - 56px) !important;
         overflow-y: auto!important;
