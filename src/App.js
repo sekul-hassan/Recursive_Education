@@ -14,6 +14,8 @@ import JSPractice from "./PracticePages/JSPractice";
 import ServicePage from "./Pages/ServicePage";
 import ProjectLecture from "./ProjectPages/ProjectLecture";
 import AcademicBody from "./Academic/AcademicBody";
+import TermConditionPage from "./Pages/TermConditionPage";
+import RefundPage from "./Pages/RefundPage";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
             <Route path="/about" element={<AboutPage/>}/>
             <Route path="/services" element={<ServicePage/>}/>
             <Route path="/academic" element={<AcademicBody/>}/>
+            <Route path="/terms" element={<TermConditionPage/>}/>
+            <Route path="/refund" element={<RefundPage/>}/>
             <Route path="/academic/:id" element={<AcademicBody/>}/>
             <Route path="/academic/:id/:subject" element={<AcademicBody/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>

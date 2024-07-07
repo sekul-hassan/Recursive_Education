@@ -279,7 +279,7 @@ const practiceLists = [
                     "Initially, showSlide(1) is called to display the first slide.\n" +
                     "\n" +
                     "This way, users can change slides by clicking on the preview images or the navigation buttons",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                videoLink: "https://youtu.be/WW9oXrDQbcU?si=4zMD2_OnoE1lYXRh",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/slideGallery-shohidullah"
             }
         },

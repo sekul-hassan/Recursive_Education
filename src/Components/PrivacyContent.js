@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap";
 function PrivacyContent(props) {
     return (
         <Fragment>
-            <Container fluid="true" className="px-4 mt-4">
+            <Container fluid="true" className="mt-4 mx-1 px-2">
                 <h4 className="title text-dark">Privacy Policy</h4>
                 <h4 className="globalDescription">Last updated: [12/31/2023]</h4>
                 <p className="globalDescription text-warning">

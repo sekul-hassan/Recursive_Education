@@ -75,17 +75,16 @@
 .PrivacyTopBarContent {
     position: absolute;
     width: 100%;
-    top: 11rem;
+    top: 6.8rem;
     text-align: center;
 }
 
 .title{
     color: white;
-    font-size: 22px;
+    font-size: 19px;
     font-family: Popin, serif;
-    font-weight: 600;
+    font-weight: 300;
     text-transform: uppercase;
-
 }
 .subTitle{
     color: white;
@@ -146,15 +145,15 @@
 .privacyTop{
     background-size: cover;
     width: 100%;
-    height: 300px;
-    background: url("../Images/banner.jpg") no-repeat fixed center;
+    height: 150px;
+    background: url("../Images/banner.png") no-repeat fixed center;
 }
 
 .privacyTopOverlay{
     background-size: cover;
     background: rgba(0,0,0,0.5);
     width: 100%;
-    height: 300px;
+    height: 150px;
 }
 .privacyTopOverlay a:hover{
     color: #0D6EFD !important;
@@ -201,7 +200,9 @@
     border-radius: 4px;
 }
 .copyRight{
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 5px 5px 0 0;
+    margin: 10px!important;
 }
 .projectCardFooter{
     background-color: #059862;
