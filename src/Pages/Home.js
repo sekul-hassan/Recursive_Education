@@ -3,6 +3,7 @@ import HomeTopBar from "../Components/HomeTopBar";
 import Recent from "../Components/Recent";
 import Footer from "../Components/Footer";
 import TopMenu from "../Components/TopMenu";
+import OursIntro from "../Components/OursIntro";
 
 function Home(props) {
     return (
@@ -10,6 +11,7 @@ function Home(props) {
             <TopMenu/>
             <HomeTopBar/>
             <Recent/>
+            <OursIntro/>
             <Footer/>
         </Fragment>
     );

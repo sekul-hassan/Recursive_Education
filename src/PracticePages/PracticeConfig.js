@@ -8,6 +8,7 @@ import ReactSetup from "../ReactComponents/ReactSetup";
 import {loginCss, loginHtml, loginJs} from "../Code/LiginCode";
 import {tabCss, tabHtml, tabJs} from "../Code/TabsCode";
 import {accordionCss, accordionHtml, accordionJs} from "../Code/AccordionCode";
+import {galleryCss, galleryHtml, galleryJs} from "../Code/SliderGallery";
 
 const practiceLists = [
     [
@@ -183,7 +184,7 @@ const practiceLists = [
                     ".btn: Removes the default border and background, adds padding, and changes the cursor to a pointer. The .btn:hover state changes the background color and adds a transition effect for smoothness.\n" +
                     ".active: Changes the background color for the active button.\n" +
                     ".mam: Styles each tab content div, adding a border and padding, and ensures the content is hidden by default with display: none.",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                videoLink: "https://youtu.be/wY23c8o8cH4?si=aAxD_ARYb4OdP-dS",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Tabs",
             }
         },
@@ -205,7 +206,7 @@ const practiceLists = [
                     "Hide All Sections: Iterates over all mam elements, hiding them by setting style.display to \"none\". Simultaneously, it removes the \"active\" class from all btn elements.\n" +
                     "Show Selected Section: Displays the specific section identified by the mam parameter by setting its style.display to \"block\".\n" +
                     "Activate Button: Adds the \"active\" class to the clicked button using event.currentTarget.className += \" active\".",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                videoLink: "https://youtu.be/nKiyp7dNzPQ?si=RpEUy8o5FTGuHDTB",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Tabs",
             }
         },
@@ -226,7 +227,7 @@ const practiceLists = [
                     ".sign: Styles the plus sign in the accordion headers. It sets the font size, font family, and font weight to make it visually distinct.\n" +
                     "\n" +
                     ".accordionBody: Manages the content sections of the accordion. Initially hidden with display: none and max-height: 0, it transitions smoothly when opened due to the transition: max-height 0.2s ease-in. The background color is slightly lighter, and overflow: hidden ensures content doesn't spill out during the transition.",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                videoLink: "https://youtu.be/Zx5anxlWuSo?si=BHScivG7FjfH7I0w",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Accordion"
             }
         },
@@ -252,7 +253,7 @@ const practiceLists = [
                     "Sets accordionBody to display: none.\n" +
                     "Changes the sign to \"+\".\n" +
                     "Sets maxHeight to \"0px\", collapsing the accordion.",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                videoLink: "https://youtu.be/1n2dx5TzFIE?si=MPCRTjRGRGb-b0il",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Accordion"
             }
         },
@@ -263,14 +264,46 @@ const practiceLists = [
             value: "Slide Gallery",
             component:SlideGallery,
             code:{
-                htmlCode: htmlCode,
-                cssCode:cssCode,
-                jsCode:jsCode,
+                htmlCode: galleryHtml,
+                cssCode:galleryCss,
+                jsCode:galleryJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
-                description: "Using HTML CSS & JavaScript",
+                title:"HOW TO MAKE A slide gallery",
+                description: ".slideImg ensures images are responsive, occupying full width without distortion.\n" +
+                    ".slides positions the container relatively for absolute positioning of child elements.\n" +
+                    ".slide hides all slides by default.\n" +
+                    ".slideNumber positions the slide number text at the top left of each slide.\n" +
+                    ".caption styles the image captions with a black background, white text, centered alignment, and padding.\n" +
+                    ".prev and .next position navigation buttons in the middle of the slider, with a border, and change color on hover.\n" +
+                    ".preview arranges the preview images in a row.\n" +
+                    ".previewImg makes preview images responsive and clickable.",
                 videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/slideGallery-shohidullah"
+            }
+        },
+        {
+            id: 12,
+            link: "/javascript",
+            value: "Slide Gallery",
+            component:SlideGallery,
+            code:{
+                htmlCode: galleryHtml,
+                cssCode:galleryCss,
+                jsCode:galleryJs,
+            } ,
+            videoContent:{
+                title:"HOW TO MAKE A slide gallery",
+                description: ".slideImg ensures images are responsive, occupying full width without distortion.\n" +
+                    ".slides positions the container relatively for absolute positioning of child elements.\n" +
+                    ".slide hides all slides by default.\n" +
+                    ".slideNumber positions the slide number text at the top left of each slide.\n" +
+                    ".caption styles the image captions with a black background, white text, centered alignment, and padding.\n" +
+                    ".prev and .next position navigation buttons in the middle of the slider, with a border, and change color on hover.\n" +
+                    ".preview arranges the preview images in a row.\n" +
+                    ".previewImg makes preview images responsive and clickable.",
+                videoLink: "https://youtu.be/gZC4Za8uA3I",
+                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/slideGallery-shohidullah"
             }
         },
     ],

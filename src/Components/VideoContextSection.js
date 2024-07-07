@@ -11,7 +11,7 @@ function VideoContextSection({title,description,videoLink,gitHubLink}) {
                 </Col>
                 <Col className="px-0  mt-3" md={6} sm={12} lg={6}>
                     <div className="px-md-3 px-lg-3 px-sm-0">
-                        <strong><h4 className="globalTitle">{title}</h4></strong>
+                        <strong><h4 className="globalSubTitle text-dark">{title}</h4></strong>
                         <strong><h5 className="globalDescription">{description}</h5></strong>
                     </div>
                 </Col>
