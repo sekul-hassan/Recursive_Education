@@ -4,7 +4,7 @@ import {Container} from "react-bootstrap";
 function Terms(props) {
     return (
         <Container fluid="true" className="mt-4 mx-1 px-2">
-            <h4 className="globalTitle">Introduction</h4>
+            <h4 className="title">Introduction</h4>
             <p className="globalDescription">
                 Welcome to Recursive Education. These Terms and Conditions govern your use of our website located
                 at <strong><a
@@ -15,7 +15,7 @@ function Terms(props) {
                 our website and services.
             </p>
 
-            <h4 className="globalTitle">Acceptance of Terms</h4>
+            <h4 className="title">Acceptance of Terms</h4>
             <p className="globalDescription">
                 By using <strong>Recursive Education's</strong> website, you affirm that you are at least 18 years old
                 or have parental
@@ -23,21 +23,21 @@ function Terms(props) {
                 regulations.
             </p>
 
-            <h4 className="globalTitle">Changes to Terms</h4>
+            <h4 className="title">Changes to Terms</h4>
             <p className="globalDescription">
                 <strong>Recursive Education</strong> reserves the right to modify or replace these Terms and Conditions
                 at any time. We will notify you of any changes by posting the new terms on our website. Your continued
                 use of the website after any such changes constitutes your acceptance of the new Terms and Conditions.
             </p>
 
-            <h4 className="globalTitle">Use of the Website</h4>
-            <h4 className="globalSubTitle">1. License</h4>
+            <h4 className="title">Use of the Website</h4>
+            <h4 className="title">1. License</h4>
             <p className="globalDescription">
                 <strong>Recursive Education</strong> grants you a limited, non-exclusive, non-transferable, and
                 revocable license to access and use our website for personal, non-commercial purposes. You must not use
                 the website for any unlawful or prohibited purpose.
             </p>
-            <h4 className="globalSubTitle">2. User Conduct</h4>
+            <h4 className="title">2. User Conduct</h4>
             <p className="globalDescription">You agree not to:</p>
             <ul>
                 <li>Violate any applicable laws or regulations.</li>
@@ -47,7 +47,7 @@ function Terms(props) {
                 <li>Collect or store personal data about other users without their consent.</li>
             </ul>
 
-            <h4 className="globalSubTitle">3. User Conduct</h4>
+            <h4 className="title">3. User Conduct</h4>
             <p className="globalDescription">
                 All content on the Recursive Education website, including text, graphics, logos, images, videos, and
                 software, is the property of <strong>Recursive Education</strong> or its content suppliers and is
@@ -55,7 +55,7 @@ function Terms(props) {
                 distribute, or create derivative works from any content on our website without prior written permission.
             </p>
 
-            <h4 className="globalSubTitle">Contact Us</h4>
+            <h4 className="title">Contact Us</h4>
             <ul>
                 <li>Email: sekulhassan301@gmail.com</li>
                 <li>Address: Savar, Dhaka , Jahangirnagar University.</li>

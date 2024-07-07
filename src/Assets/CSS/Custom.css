@@ -80,7 +80,7 @@
 }
 
 .title{
-    color: white;
+    color: black;
     font-size: 19px;
     font-family: Popin, serif;
     font-weight: 300;
@@ -116,7 +116,7 @@
     color: rgba(0,0,0,1);
     font-family: Montserrat, serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
 }
 .logoImg{
     width: 100px;
@@ -125,13 +125,13 @@
 }
 .contactLink{
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-family: Montserrat, serif;
-    font-weight: 500;
-    color: black;
+    font-weight: 400!important;
+    color: rgba(0,0,0,1);
 }
 .contactLink:hover{
-    color: white;
+    color: #ffba89;
     transition: 0.2s;
 }
 .globalDescription{
@@ -200,7 +200,7 @@
     border-radius: 4px;
 }
 .copyRight{
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.03);
     border-radius: 5px 5px 0 0;
     margin: 10px!important;
 }
