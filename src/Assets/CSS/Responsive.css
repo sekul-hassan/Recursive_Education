@@ -79,17 +79,12 @@
         font-weight: 500;
     }
 
-    .homeTopBackground {
-        height: 30rem;
-    }
-
-    .homeTopBackgroundOverlay{
-        height: 30rem;
-    }
     .topBarContent {
-        top: 14.5rem;
+        top: 12.5rem;
     }
-
+    .globalDescription{
+        line-height: 1.4rem;
+    }
     .title{
         color: white;
         font-size: 18px;

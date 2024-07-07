@@ -24,7 +24,7 @@ const practiceLists = [
                 jsCode:jsCode,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
+                title:"HOW TO MAKE A CAROUSEL USING HTML CSS AND JAVASCRIPT",
                 description: "HTML:\n" +
                     "\n" +
                     "slideShowContainer: Contains image slides with captions and navigation buttons (prev and next).\n" +
@@ -55,7 +55,7 @@ const practiceLists = [
                 jsCode:jsCode,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A CAROUSEL",
+                title:"HOW TO MAKE A CAROUSEL USING HTML CSS AND JAVASCRIPT",
                 description: "slideIndex: Tracks the current slide, initialized to 1.\n" +
                     "showSlides(n): Displays the slide corresponding to n. It hides all slides (mySlides) and resets navigation dots (dot). It ensures slideIndex wraps around the slides' length. It displays the current slide and marks its corresponding dot as active.\n" +
                     "plusSlides(n): Adjusts slideIndex by n and updates the displayed slide using showSlides.\n" +
@@ -76,7 +76,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
+                title:"HOW TO MAKE A LOGIN FORM. USING HTML CSS AND JAVASCRIPT.",
                 description: "The .title class styles the title \"Click This Button\", making it uppercase, setting the font size to 17px, and using the font family \"popin, sans-serif\". It ensures the title stands out with a clear and consistent appearance.\n" +
                     "\n" +
                     "For the .login class, it styles the \"Login\" button within the .above section. It features a green background (#059862), removes the border for a sleek look, adds padding to provide spacing around the text, and rounds the corners (border-radius: 10px). The cursor changes to a pointer to indicate it's clickable, and on hover, the button transitions smoothly to a white background with black text and a green border, enhancing user interaction.\n" +
@@ -101,7 +101,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
+                title:"HOW TO MAKE A LOGIN FORM. USING HTML CSS AND JAVASCRIPT.",
                 description: "The .title class styles the title \"Click This Button\", making it uppercase, setting the font size to 17px, and using the font family \"popin, sans-serif\". It ensures the title stands out with a clear and consistent appearance.\n" +
                     "\n" +
                     "For the .login class, it styles the \"Login\" button within the .above section. It features a green background (#059862), removes the border for a sleek look, adds padding to provide spacing around the text, and rounds the corners (border-radius: 10px). The cursor changes to a pointer to indicate it's clickable, and on hover, the button transitions smoothly to a white background with black text and a green border, enhancing user interaction.\n" +
@@ -126,7 +126,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
+                title:"HOW TO MAKE A LOGIN FORM. USING HTML CSS AND JAVASCRIPT.",
                 description: "openBox() Function:\n" +
                     "\n" +
                     "When the openBox() function is called (likely triggered by clicking the \"Login\" button with onclick=\"openBox()\"), it first retrieves references to the loginDiv and above elements using document.getElementById().\n" +
@@ -152,7 +152,7 @@ const practiceLists = [
                 jsCode:loginJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A LOGIN FORM. Using html , css , and javascript.",
+                title:"HOW TO MAKE A LOGIN FORM.USING HTML CSS AND JAVASCRIPT.",
                 description: "openBox() Function:\n" +
                     "\n" +
                     "When the openBox() function is called (likely triggered by clicking the \"Login\" button with onclick=\"openBox()\"), it first retrieves references to the loginDiv and above elements using document.getElementById().\n" +
@@ -178,7 +178,7 @@ const practiceLists = [
                 jsCode:tabJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A tab using html css and javascript.",
+                title:"HOW TO MAKE A TAB USING HTML CSS AND JAVASCRIPT.",
                 description: ".container: Sets the width to 80% of the parent container and centers it using auto margins.\n" +
                     ".btnDiv: Adds a border and background color, providing a section for the buttons.\n" +
                     ".btn: Removes the default border and background, adds padding, and changes the cursor to a pointer. The .btn:hover state changes the background color and adds a transition effect for smoothness.\n" +
@@ -199,7 +199,7 @@ const practiceLists = [
                 jsCode:tabJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A tab using html css and javascript.",
+                title:"HOW TO MAKE A TAB USING HTML CSS AND JAVASCRIPT.",
                 description: "This JavaScript function showMam manages the tab switching functionality:\n" +
                     "\n" +
                     "Retrieve Elements: It gets all elements with the class mam and btn using document.getElementsByClassName.\n" +
@@ -221,7 +221,7 @@ const practiceLists = [
                 jsCode:accordionJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A accordion using html css and javascript.",
+                title:"HOW TO MAKE A ACCORDION USING HTML CSS AND JAVASCRIPT.",
                 description: ".accordion: Defines the main section headers of the accordion. It uses display: flex to align child elements horizontally, justify-content: space-between to space them out evenly, and cursor: pointer to indicate interactivity. The background color is slightly transparent.\n" +
                     "\n" +
                     ".sign: Styles the plus sign in the accordion headers. It sets the font size, font family, and font weight to make it visually distinct.\n" +
@@ -242,7 +242,7 @@ const practiceLists = [
                 jsCode:accordionJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A accordion using html css and javascript.",
+                title:"HOW TO MAKE A accordion USING HTML CSS AND JAVASCRIPT.",
                 description: "Retrieve Elements: It gets all elements with the class accordionBody and sign using document.getElementsByClassName.\n" +
                     "Check Sign: It checks if the sign element at the specified index (num) has a \"+\" sign.\n" +
                     "If it does, the function:\n" +
@@ -269,39 +269,16 @@ const practiceLists = [
                 jsCode:galleryJs,
             } ,
             videoContent:{
-                title:"HOW TO MAKE A slide gallery",
-                description: ".slideImg ensures images are responsive, occupying full width without distortion.\n" +
-                    ".slides positions the container relatively for absolute positioning of child elements.\n" +
-                    ".slide hides all slides by default.\n" +
-                    ".slideNumber positions the slide number text at the top left of each slide.\n" +
-                    ".caption styles the image captions with a black background, white text, centered alignment, and padding.\n" +
-                    ".prev and .next position navigation buttons in the middle of the slider, with a border, and change color on hover.\n" +
-                    ".preview arranges the preview images in a row.\n" +
-                    ".previewImg makes preview images responsive and clickable.",
-                videoLink: "https://youtu.be/gZC4Za8uA3I",
-                gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/slideGallery-shohidullah"
-            }
-        },
-        {
-            id: 12,
-            link: "/javascript",
-            value: "Slide Gallery",
-            component:SlideGallery,
-            code:{
-                htmlCode: galleryHtml,
-                cssCode:galleryCss,
-                jsCode:galleryJs,
-            } ,
-            videoContent:{
-                title:"HOW TO MAKE A slide gallery",
-                description: ".slideImg ensures images are responsive, occupying full width without distortion.\n" +
-                    ".slides positions the container relatively for absolute positioning of child elements.\n" +
-                    ".slide hides all slides by default.\n" +
-                    ".slideNumber positions the slide number text at the top left of each slide.\n" +
-                    ".caption styles the image captions with a black background, white text, centered alignment, and padding.\n" +
-                    ".prev and .next position navigation buttons in the middle of the slider, with a border, and change color on hover.\n" +
-                    ".preview arranges the preview images in a row.\n" +
-                    ".previewImg makes preview images responsive and clickable.",
+                title:"HOW TO MAKE A SLIDE GALLERY.",
+                description: "First, the slideIndex variable tracks the current slide position.\n" +
+                    "\n" +
+                    "The showSlide(num) function displays the specified slide. It hides all slides and preview images, then shows the specified slide and changes the opacity of the corresponding preview image.\n" +
+                    "\n" +
+                    "The showNext(num) function increments or decrements the slideIndex to show the next or previous slide.\n" +
+                    "\n" +
+                    "Initially, showSlide(1) is called to display the first slide.\n" +
+                    "\n" +
+                    "This way, users can change slides by clicking on the preview images or the navigation buttons",
                 videoLink: "https://youtu.be/gZC4Za8uA3I",
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/slideGallery-shohidullah"
             }
