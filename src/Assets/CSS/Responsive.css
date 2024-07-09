@@ -84,7 +84,8 @@
         top: 10.5rem;
     }
     .globalDescription{
-        line-height: 1.2rem;
+        line-height: 1.4rem;
+        font-size: 14px;
     }
     .title{
         color: white;
