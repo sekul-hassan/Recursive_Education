@@ -23,7 +23,7 @@ const projects = [
         },
         classes:[
             {
-                id: -2,
+                id: 0,
                 link: "/Portfolio",
                 value: "Introduction",
                 lecture: {
@@ -32,7 +32,7 @@ const projects = [
                 }
             },
             {
-                id: -1,
+                id: 1,
                 link: "/Portfolio",
                 value: "Setup",
                 lecture: {
@@ -43,7 +43,7 @@ const projects = [
                 }
             },
             {
-                id:0,
+                id:2,
                 link:"/Portfolio",
                 value: "Home-top",
                 lecture: {
@@ -64,7 +64,7 @@ const projects = [
                 }
             },
             {
-                id:1,
+                id:3,
                 link:"/Portfolio",
                 value: "Top-most",
                 lecture: {
@@ -76,12 +76,28 @@ const projects = [
                 }
             },
             {
-                id:2,
+                id:4,
                 link:"/Portfolio",
-                value: "Nav",
+                value: "Nav part 1",
                 lecture: {
                     image:navbar,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    videoLink:"https://youtu.be/jqPsoUZWB5o?si=9yObP1FzXgquOEYY",
+                    title:"CREATE A RESPONSIVE NAVBAR USING REACT.",
+                    description:"The useEffect hook in this React component is used to manage the CSS class changes based on the user's scroll position. Initially, the component sets up state variables (navBackground, navbar, navLink) to hold CSS class names using the useState hook.\n" +
+                        "\n" +
+                        "Inside useEffect, a handleScroll function is defined, which updates these CSS classes when the user scrolls. If the scroll position (window.scrollY) is greater than 1, the state is updated to apply one set of CSS classes (navBackgroundScroll, navbarScroll, navLinkScroll). If not, another set of classes (navBackground, navbar, navLink) is applied.\n" +
+                        "\n" +
+                        "The useEffect hook adds the handleScroll function as an event listener to the scroll event when the component mounts. The cleanup function in useEffect removes the event listener when the component unmounts to avoid memory leaks. This ensures the CSS classes change dynamically as the user scrolls, updating the appearance of the navigation bar.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                }
+            },
+            {
+                id:5,
+                link:"/Portfolio",
+                value: "Nav part 2",
+                lecture: {
+                    image:navbar,
+                    videoLink:"https://youtu.be/EuIwG3BjPy0?si=7YRqJprGUBujGd5t",
                     title:"CREATE A RESPONSIVE NAVBAR USING REACT.",
                     description:"The useEffect hook in this React component is used to manage the CSS class changes based on the user's scroll position. Initially, the component sets up state variables (navBackground, navbar, navLink) to hold CSS class names using the useState hook.\n" +
                         "\n" +
@@ -93,7 +109,7 @@ const projects = [
             },
 
             {
-                id:3,
+                id:6,
                 link:"/Portfolio",
                 value: "Footer",
                 lecture: {
@@ -105,7 +121,7 @@ const projects = [
                 }
             },
             {
-                id:4,
+                id:7,
                 link:"/Portfolio",
                 value: "Global-top",
                 lecture: {
@@ -117,7 +133,7 @@ const projects = [
                 }
             },
             {
-                id:5,
+                id:8,
                 link:"/Portfolio",
                 value: "About",
                 lecture: {
@@ -129,7 +145,7 @@ const projects = [
                 }
             },
             {
-                id:6,
+                id:9,
                 link:"/Portfolio",
                 value: "Project",
                 lecture: {
@@ -141,7 +157,7 @@ const projects = [
                 }
             },
             {
-                id:7,
+                id:10,
                 link:"/Portfolio",
                 value: "Details",
                 lecture: {
@@ -154,7 +170,7 @@ const projects = [
             },
 
             {
-                id:8,
+                id:11,
                 link:"/Portfolio",
                 value: "Skill",
                 lecture: {
@@ -166,7 +182,7 @@ const projects = [
                 }
             },
             {
-                id:9,
+                id:12,
                 link:"/Portfolio",
                 value: "Resume",
                 lecture: {

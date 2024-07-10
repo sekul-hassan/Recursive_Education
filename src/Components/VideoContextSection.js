@@ -16,10 +16,10 @@ function VideoContextSection({title,description,videoLink,gitHubLink}) {
                     </div>
                 </Col>
             </Row>
-            <Row className="mx-0">
-                <h4 className="globalDescription px-0">Git_Hub  : <a href={gitHubLink} target="_blank" className="text-info text-decoration-none" rel="noreferrer"> {gitHubLink}</a></h4>
-                <h4 className="globalDescription px-0">YouTube  : <a href="https://www.youtube.com/@RecursiveEducation-Friends" target="_blank" className="text-info text-decoration-none" rel="noreferrer"> https://www.youtube.com/@RecursiveEducation-Friends</a></h4>
-                <h4 className="globalDescription px-0">Facebook : <a href="https://www.facebook.com/groups/453076464106268" target="_blank" className="text-info text-decoration-none" rel="noreferrer"> https://www.facebook.com/groups/453076464106268</a></h4>
+            <Row className="mx-0 overflow-x-hidden">
+                <h4 className="globalDescription overflow-x-hidden px-0">Git_Hub  : <a href={gitHubLink} target="_blank" className="text-info text-decoration-none" rel="noreferrer"> {gitHubLink}</a></h4>
+                <h4 className="globalDescription overflow-x-hidden px-0">YouTube  : <a href="https://www.youtube.com/@RecursiveEducation-Friends" target="_blank" className="text-info text-decoration-none" rel="noreferrer"> https://www.youtube.com/@RecursiveEducation-Friends</a></h4>
+                <h4 className="globalDescription overflow-x-hidden px-0">Facebook : <a href="https://www.facebook.com/groups/453076464106268" target="_blank" className="text-info text-decoration-none" rel="noreferrer"> https://www.facebook.com/groups/453076464106268</a></h4>
             </Row>
         </Container>
     );

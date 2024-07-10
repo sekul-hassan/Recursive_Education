@@ -21,7 +21,7 @@ function ProjectLecture(props) {
             {
                 project ? (
                     <div className="d-flex">
-                        <div className="practiceSlider">
+                        <div className="practiceSlider overflow-x-hidden">
                             <ProjectSideNav classes={project.classes} onSelectCurrentClass={onSelectCurrentClass} projectName={project.projectName}/>
                         </div>
                         <div className="practiceRightPage">

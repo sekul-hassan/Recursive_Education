@@ -5,7 +5,7 @@ function ProjectSideNav({projectName,classes,onSelectCurrentClass}) {
 
 
     return (
-        <Navbar expand={true} className="practiceList">
+        <Navbar expand={true} className="practiceList overflow-x-hidden">
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav" className="show">
                 <Nav className="flex-column sidebar">
