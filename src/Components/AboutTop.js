@@ -5,7 +5,7 @@ function AboutTop(props) {
         <Container fluid="true" className="aboutTop">
             <div className="privacyTopOverlay">
                <div className="PrivacyTopBarContent">
-                   <h4 className="title">Who We Are..?</h4>
+                   <h4 className="title text-light">Who We Are..?</h4>
                </div>
             </div>
         </Container>
