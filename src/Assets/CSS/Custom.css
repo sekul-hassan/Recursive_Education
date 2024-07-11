@@ -226,3 +226,10 @@
     overflow-x: hidden;
     text-align: center;
 }
+.showMore{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline;
+    white-space: nowrap;
+}
