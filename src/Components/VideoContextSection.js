@@ -18,7 +18,7 @@ function VideoContextSection({title, description, videoLink, gitHubLink}) {
                 </Col>
                 <Col className="px-0 mt-3" md={6} sm={12} lg={6}>
                     <div className="px-md-3 px-lg-3 px-sm-0">
-                        <strong><h4 className="globalSubTitle text-dark">{title}</h4></strong>
+                        <strong><h1 className="globalSubTitle text-dark">{title}</h1></strong>
                         <strong><h5 className="globalDescription">
                             <ShowMoreText
                                 lines={6}
@@ -43,18 +43,18 @@ function VideoContextSection({title, description, videoLink, gitHubLink}) {
                         {gitHubLink}
                     </a>
                 </h4>
-                <h4 className="globalDescription overflow-x-hidden px-0">
+                <h2 className="globalDescription overflow-x-hidden px-0">
                     YouTube:
                     <a href="https://www.youtube.com/@RecursiveEducation-Friends" target="_blank" className="text-info text-decoration-none" rel="noreferrer">
                         https://www.youtube.com/@RecursiveEducation-Friends
                     </a>
-                </h4>
-                <h4 className="globalDescription overflow-x-hidden px-0">
+                </h2>
+                <h3 className="globalDescription overflow-x-hidden px-0">
                     Facebook:
                     <a href="https://www.facebook.com/groups/453076464106268" target="_blank" className="text-info text-decoration-none" rel="noreferrer">
                         https://www.facebook.com/groups/453076464106268
                     </a>
-                </h4>
+                </h3>
             </Row>
         </Container>
     );
