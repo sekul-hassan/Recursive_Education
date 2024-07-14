@@ -175,11 +175,24 @@ const projects = [
                 lecture: {
                     image:topMost,
                     videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"HOW TO CREATE A GLOBAL BANNER SECTION AND REACT BOOTSTRAP.",
-                    description:"Coming soon.",
+                    title:"RESPONSIVE PROJECT CARD DESIGN USING REACT AND REACT BOOTSTRAP.",
+                    description:"The Project component is a React functional component that uses React Bootstrap for layout and styling.\n" +
+                        "\n" +
+                        "Main Functionality: It renders a navigation bar (NavBar), a global header (GlobalTop), a grid of project cards (ProjectCard), and a footer (Footer). The GlobalTop displays a header text, and each ProjectCard displays an image and a description text.\n" +
+                        "\n" +
+                        "CSS Functionality:\n" +
+                        "\n" +
+                        "container fluid=\"true\" className=\"px-3\": Ensures the container spans the full width and adds padding.\n" +
+                        "row and col classes: Organize project cards in a responsive grid.\n" +
+                        "mt-3: Adds a margin-top to separate elements.\n" +
+                        "cardBody p-0: Removes padding from the card body.\n" +
+                        "projectCardImg: Styles the image within the project card.\n" +
+                        "cardFooter: Styles the footer of the card, displaying the text.\n" +
+                        "The ProjectCard component, used multiple times in the Project component, receives image and text as props to display project details dynamically.",
                     githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/project",
                 }
             },
+
             {
                 id:10,
                 link:"/Portfolio",
@@ -187,9 +200,20 @@ const projects = [
                 lecture: {
                     image:projectDerails,
                     videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    title:"SHOWING PROJECT DETAILS WITHIN REACT BOOTSTRAP CAROUSEL.",
+                    description:"Container: Wraps the entire content and makes it responsive.\n" +
+                        "Row and Col: Organize content into two equal-width columns (sm={12} md={6} lg={6}).\n" +
+                        "First Column: Contains a header (FEATURE IMAGES) and a Carousel with three images (img1, img2, img3).\n" +
+                        "Second Column: Contains a header (REACT PROJECT), a description paragraph, and links to a GitHub repository and live project.\n" +
+                        "CSS Functionality:\n" +
+                        "\n" +
+                        "mt-3: Adds a top margin to the container.\n" +
+                        "sliderCol: Styles for the columns, likely controlling padding/margins.\n" +
+                        "title: Styles for the headers.\n" +
+                        "description: Styles for the description text.\n" +
+                        "slideImg: Styles for the images in the carousel.\n" +
+                        "This component displays featured images and project details side-by-side.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/projectDetails",
                 }
             },
 
@@ -200,11 +224,12 @@ const projects = [
                 lecture: {
                     image:skill,
                     videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    title:"HOW TO ADD YOUR SKILLS IN YOUR PORTFOLIO.",
+                    description:"The Skills component is a React functional component using React Bootstrap to display a list of skills and experiences, each prefixed with a title and styled for clarity.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/skills",
                 }
             },
+
             {
                 id:12,
                 link:"/Portfolio",
@@ -212,9 +237,74 @@ const projects = [
                 lecture: {
                     image:resume,
                     videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    title:"HOW TO WRITE A RESUME WITHIN YOUR PORTFOLIO WEBSITE & HTML TO DOWNLOAD PDF.",
+                    description:"The Resume component is a React functional component that uses React Bootstrap to create a resume layout with two main sections: contact and education details on the left, and personal information and projects on the right.\n" +
+                        "\n" +
+                        "Container: A responsive container with full width (fluid=\"true\"), top margin (mt-3), padding (px-4), left-aligned text (text-start), and light-colored text (text-light).\n" +
+                        "\n" +
+                        "Row: Contains two columns:\n" +
+                        "\n" +
+                        "Left Column (resumeLeft): Displays a profile image, contact information (portfolio, phone, email, GitHub, LinkedIn, address), education details, and expertise list with various skills.\n" +
+                        "Right Column: Displays the person's name and title, a brief description, project details with live and GitHub links, and references.\n" +
+                        "Styling:\n" +
+                        "\n" +
+                        "mt-3: Adds top margin to the container and elements.\n" +
+                        "text-start: Left-aligns text.\n" +
+                        "text-light: Light text color.\n" +
+                        "hrClass: Adds horizontal rules for separation.\n" +
+                        "globalTitle and description: Style different text elements to enhance readability and visual hierarchy.\n" +
+                        "This component effectively organizes resume content in a clear and visually appealing manner.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/resume",
+                }
+            },
+
+            {
+                id:13,
+                link:"/Portfolio",
+                value: "About confi",
+                lecture: {
+                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    title:"HOW TO CONFIGURATION JSON FOR STATIC DATABASE.",
+                    description:"In React, JSON (JavaScript Object Notation) is used to structure and store data in a readable format. In the AboutContent component, aboutConfig is a JSON object imported from AboutConfig.js, containing details like name, description, education, and contact information. This JSON object organizes data into key-value pairs, making it easy to access and render dynamically within JSX. Each key (name, description, etc.) corresponds to a specific piece of information displayed in the component. This approach ensures clarity, maintainability, and flexibility in managing and displaying structured data across the application, facilitating seamless updates and modifications to the displayed content.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/aboutConfig",
+                }
+            },
+
+            {
+                id:14,
+                link:"/Portfolio",
+                value: "Skills config",
+                lecture: {
+                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    title:"HOW TO CONFIGURATION JSON FOR STATIC DATABASE.",
+                    description: "In this React component, skillConfig is a JSON array imported from SkillConfig.js. Each object within skillConfig represents a skill with properties like id, name, and description.\n" +
+                        "\n" +
+                        "Importing and Mapping: The Skills component maps over skillConfig, rendering each skill's name and description dynamically.\n" +
+                        "\n" +
+                        "Dynamic Rendering: Using map(), it iterates through skillConfig, generating paragraphs (<p>) where name is styled as globalTitle and description as description.\n" +
+                        "\n" +
+                        "Structured Data: JSON provides a structured format to store and organize data, making it easy to manage and update skills information separately from the component logic. This approach enhances code maintainability and readability, facilitating straightforward integration of new skills or modifications to existing ones in the application.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/skillConfig",
+                }
+            },
+
+            {
+                id:15,
+                link:"/Portfolio",
+                value: "Project conf",
+                lecture: {
+                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    title:"HOW TO CONFIGURATION JSON FOR STATIC DATABASE.",
+                    description: "Project Listing (Project Component):\n" +
+                        "\n" +
+                        "Project Component: Renders a list of projects using data from projectConfig. Each project is displayed in a Col within a Row, utilizing ProjectCard to show a preview of the project with its description and demo image.\n" +
+                        "ProjectCard Component: Displays each project as a clickable card (Card) with an image (demoImage) and a brief description (description). Clicking on a card links to ProjectDetails based on projectId.\n" +
+                        "Project Details (ProjectDetails Component):\n" +
+                        "\n" +
+                        "Routing and Parameters: Uses useParams from react-router-dom to fetch the projectId from the URL, then retrieves corresponding project details from projectConfig.\n" +
+                        "Conditional Rendering: If the project exists (project !== undefined), renders Details component showing more detailed information about the project, including a carousel of images and additional project details. If the project doesn't exist, displays a message indicating that the project was not found.\n" +
+                        "These components leverage React's routing (react-router-dom) and Bootstrap for responsive layout and styling, providing a seamless user experience to explore and view project details.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/projectConfig",
                 }
             },
         ]
