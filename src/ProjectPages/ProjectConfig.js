@@ -31,6 +31,7 @@ const projects = [
                     githubLink: "https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id: 1,
                 link: "/Portfolio",
@@ -42,6 +43,7 @@ const projects = [
                     githubLink: "https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id:2,
                 link:"/Portfolio",
@@ -63,6 +65,7 @@ const projects = [
                     githubLink: "https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id:3,
                 link:"/Portfolio",
@@ -75,6 +78,7 @@ const projects = [
                     githubLink: "https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id:4,
                 link:"/Portfolio",
@@ -91,6 +95,7 @@ const projects = [
                     githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id:5,
                 link:"/Portfolio",
@@ -114,36 +119,55 @@ const projects = [
                 value: "Footer",
                 lecture: {
                     image:footer,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
+                    videoLink:"https://youtu.be/i6G87ceIhFE?si=JMMB1W8HYnxVxUL-",
+                    title:"HOW TO CREATE A FOOTER USING REACT AND REACT BOOTSTRAP.",
+                    description:"The Footer component is a React functional component that renders a footer section using React Bootstrap and FontAwesome icons.\n" +
+                        "\n" +
+                        "The Container from React Bootstrap (fluid=\"true\") makes the footer span the full width of the page.\n" +
+                        "Inside the container, a div with class iconDiv contains four anchor (<a>) tags, each wrapping a FontAwesomeIcon component. These icons represent LinkedIn, GitHub, Facebook, and YouTube.\n" +
+                        "Below the icons, a div with class footerCredit displays a copyright notice. The notice includes a link to \"recursiveeducation.com\".\n" +
+                        "Each link currently has an empty href attribute, which should be filled with the respective URLs for the social media profiles. The component is exported for use in other parts of the application.",
                     githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
                 }
             },
+
             {
                 id:7,
                 link:"/Portfolio",
                 value: "Global-top",
                 lecture: {
                     image:globalTop,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    videoLink:"https://youtu.be/QE6UJg3r5TM?si=SGfuUmjuGPeO5mxT",
+                    title:"HOW TO CREATE A GLOBAL BANNER SECTION AND REACT BOOTSTRAP.",
+                    description:"globalTopBackground: This class likely sets the background properties for the entire Container to provide a distinct background (e.g., an image, gradient, or solid color).\n" +
+                        "\n" +
+                        "globalTopBackgroundOverlay: This class probably applies an overlay effect over the background, which could include a semi-transparent color to make the text more readable.\n" +
+                        "\n" +
+                        "content: This class centers the content vertically and horizontally within the overlay or provides padding/margin to ensure the content is properly spaced.\n" +
+                        "\n" +
+                        "title: This class styles the text, making it larger or bolder to stand out as a title. The text-light class from Bootstrap adds a light color to the text, enhancing contrast against darker backgrounds..",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/globalTop",
                 }
             },
+
             {
                 id:8,
                 link:"/Portfolio",
                 value: "About",
                 lecture: {
                     image:about,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    videoLink:"https://youtu.be/Vio9uD8AayY?si=t7rzImn7OwVLpFWd",
+                    title:"HOW TO CREATE A ABOUT PORTION IN PORTFOLIO USING REACT AND REACT BOOTSTRAP.",
+                    description:"Container: Ensures the content is responsive and spans the full width of the screen (fluid=\"true\").\n" +
+                        "text-center: Centers the content horizontally.\n" +
+                        "imgDiv: Contains an image from aboutConfig.image if aboutConfig is not null.\n" +
+                        "title: Displays the name from aboutConfig.name as a heading.\n" +
+                        "boldDes: Links to a description from aboutConfig.description.\n" +
+                        "The remaining div includes several p elements with description class, displaying various details from aboutConfig such as university, college, school, addresses, religion, marital status, date of birth, contact number, email, LinkedIn, and GitHub, each prefixed by a globalTitle span.",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/aboutContent",
                 }
             },
+
             {
                 id:9,
                 link:"/Portfolio",
@@ -151,9 +175,9 @@ const projects = [
                 lecture: {
                     image:topMost,
                     videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
+                    title:"HOW TO CREATE A GLOBAL BANNER SECTION AND REACT BOOTSTRAP.",
                     description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/project",
                 }
             },
             {
