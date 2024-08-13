@@ -174,7 +174,7 @@ const projects = [
                 value: "Project",
                 lecture: {
                     image:topMost,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    videoLink:"https://youtu.be/Jr9MOZFDCQ0?si=KoCJ7UH8DIEXnH6q",
                     title:"RESPONSIVE PROJECT CARD DESIGN USING REACT AND REACT BOOTSTRAP.",
                     description:"The Project component is a React functional component that uses React Bootstrap for layout and styling.\n" +
                         "\n" +
@@ -199,7 +199,7 @@ const projects = [
                 value: "Details",
                 lecture: {
                     image:projectDerails,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    videoLink:"https://youtu.be/yXEKNAJ1c80?si=RWMJ0Jb9I5ScZ1Ee",
                     title:"SHOWING PROJECT DETAILS WITHIN REACT BOOTSTRAP CAROUSEL.",
                     description:"Container: Wraps the entire content and makes it responsive.\n" +
                         "Row and Col: Organize content into two equal-width columns (sm={12} md={6} lg={6}).\n" +
@@ -223,7 +223,7 @@ const projects = [
                 value: "Skill",
                 lecture: {
                     image:skill,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+                    videoLink:"https://youtu.be/k4_fL22l0-0?si=1OPCCIVoBor5LbjQ",
                     title:"HOW TO ADD YOUR SKILLS IN YOUR PORTFOLIO.",
                     description:"The Skills component is a React functional component using React Bootstrap to display a list of skills and experiences, each prefixed with a title and styled for clarity.",
                     githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/skills",

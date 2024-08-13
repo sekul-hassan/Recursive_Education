@@ -8,7 +8,7 @@ const oursInfoConfig = [
         image: sekul,
         name:"Sekul Hassan",
         education: "(Honors Final Year)",
-        department: "Department ofComputer Science and Engineering, Jahangirnagar University."
+        department: "Department of Computer Science and Engineering, Jahangirnagar University."
     },
     {
         image: shohidullah,
