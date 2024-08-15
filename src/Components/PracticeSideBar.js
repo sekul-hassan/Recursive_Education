@@ -16,7 +16,7 @@ function PracticeSideBar({ practiceLists , onSelectLecture }) {
                                 {practiceList.map((item, subIndex) => (
                                     <Fragment key={subIndex}>
                                         {subIndex === 0 ? (
-                                            <h4 className="practiceTitle mt-2">{item.value}</h4>
+                                            <h4 className="practiceTitle mt-2 mb-0">{item.value}</h4>
                                         ) : (
                                             <Link onClick={()=>{onSelectLecture(item)}} to={item.link}>{item.value}</Link>
                                         )}

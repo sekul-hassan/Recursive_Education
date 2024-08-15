@@ -9,8 +9,25 @@ import {loginCss, loginHtml, loginJs} from "../Code/LiginCode";
 import {tabCss, tabHtml, tabJs} from "../Code/TabsCode";
 import {accordionCss, accordionHtml, accordionJs} from "../Code/AccordionCode";
 import {galleryCss, galleryHtml, galleryJs} from "../Code/SliderGallery";
+import Javascript from "../LanguagePages/Javascript";
+import DSA from "../LanguagePages/DSA";
 
 const practiceLists = [
+    [
+        { id: 0, link: "Javascript", value: "Language" },
+        {
+            id: 1,
+            link: "/Javascript",
+            value: "Javascript",
+            component:Javascript,
+        },
+        {
+            id: 2,
+            link: "/Javascript",
+            value: "DSA",
+            component:DSA,
+        },
+    ],
     [
         { id: 0, link: "/Javascript", value: "Javascript" },
         {
@@ -293,6 +310,7 @@ const practiceLists = [
             component:ReactSetup,
         },
     ],
+
 ]
 
 export default practiceLists;
