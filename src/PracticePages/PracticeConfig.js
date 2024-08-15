@@ -10,26 +10,58 @@ import {tabCss, tabHtml, tabJs} from "../Code/TabsCode";
 import {accordionCss, accordionHtml, accordionJs} from "../Code/AccordionCode";
 import {galleryCss, galleryHtml, galleryJs} from "../Code/SliderGallery";
 import Javascript from "../LanguagePages/Javascript";
-import DSA from "../LanguagePages/DSA";
+import Array from "../LanguagePages/Array";
+import Object from "../LanguagePages/Object";
+import SetMap from "../LanguagePages/SetMap";
 
 const practiceLists = [
     [
-        { id: 0, link: "Javascript", value: "Language" },
+        { id: 0, link: "Javascript", value: "Javascript" },
         {
             id: 1,
             link: "/Javascript",
-            value: "Javascript",
+            value: "Basic",
             component:Javascript,
         },
         {
             id: 2,
             link: "/Javascript",
-            value: "DSA",
-            component:DSA,
+            value: "Array",
+            component:Array,
+        },
+        {
+            id: 3,
+            link: "/Javascript",
+            value: "Object",
+            component:Object,
+        },
+        {
+            id: 4,
+            link: "/Javascript",
+            value: "Set/Map",
+            component:SetMap,
+        },
+        {
+            id: 5,
+            link: "/Javascript",
+            value: "Condition",
+            component:SetMap,
+        },
+        {
+            id: 6,
+            link: "/Javascript",
+            value: "Loop",
+            component:SetMap,
+        },
+        {
+            id: 7,
+            link: "/Javascript",
+            value: "DOM",
+            component:SetMap,
         },
     ],
     [
-        { id: 0, link: "/Javascript", value: "Javascript" },
+        { id: 0, link: "/Javascript", value: "Practice" },
         {
             id: 1,
             link: "/Javascript",
