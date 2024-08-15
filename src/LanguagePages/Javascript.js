@@ -127,10 +127,6 @@ function Javascript(props) {
                     জাভাস্ক্রিপ্টে ফাংশন কল করার সময় যে মানগুলি পাঠানো হয়, সেগুলিকে arguments (অ্যাগুমেন্টস) বলা হয়। আর ফাংশন সংজ্ঞায়িত করার সময় যেসব মান গ্রহণের জন্য প্যারামিটার নির্ধারণ করা হয়, সেগুলিকে parameters (প্যারামিটারস) বলা হয়।
                 </p>
             </h4>
-            <h4 className="globalSubTitle text-dark mt-3"><strong className="title text-dark">Javascript : </strong> </h4>
-            <h4 className="globalSubTitle text-dark mt-3"><strong className="title text-dark">Javascript : </strong> </h4>
-            <h4 className="globalSubTitle text-dark mt-3"><strong className="title text-dark">Javascript : </strong> </h4>
-            <h4 className="globalSubTitle text-dark mt-3"><strong className="title text-dark">Javascript : </strong> </h4>
         </Container>
     );
 }

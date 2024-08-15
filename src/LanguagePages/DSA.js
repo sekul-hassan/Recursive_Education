@@ -1,161 +1,222 @@
 import React from 'react';
-import {Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function Dsa(props) {
     return (
         <Container fluid="true" className="text-start text-dark globalSubTitle link-light-3">
-            <p className=" mt-2"><strong>Array : </strong>
-                একই ডেটা টাইপের একাধিক মান সংরক্ষণের জন্য array ব্যবহার করা হয়। জাভাস্ক্রিপ্টে অ্যারে তৈরির জন্য []
-                ব্র্যাকেট ব্যবহার করা হয়।<br/>
-                Example : <br/>
-              <code>
-                  let numbers = [2, 3, 4, 5]; // এখানে [] ব্র্যাকেটের মধ্যে একটি অ্যারে তৈরি করা হয়েছে<br/>
-                  অ্যারে তৈরির সময় [] ব্র্যাকেট ব্যবহার করে মানগুলি কমা দ্বারা পৃথক করা হয় এবং অ্যারের মধ্যে সেগুলি রাখা
-                  হয়।<br/>
-                  এছাড়াও, অ্যারে বিভিন্ন ডেটা টাইপের মান ধারণ করতে পারে : <br/>
-                  let mixedArray = [1, 'hello', true, null];<br/>
-              </code>
-               Example : <br/>
-                <code>
-                    const cars = [];<br/>
-                    cars[0]= "Saab";<br/>
-                    cars[1]= "Volvo";<br/>
-                    cars[2]= "BMW";<br/>
-                </code>
-                Example : <br/>
-                <code>
-                    const cars = new Array("Saab", "Volvo", "BMW");<br/>
-                </code>
-                Accessing : <br/>
-                <code>
-                    <p>console.log(cars[0]); </p> '// output saab' <br/>
-                </code>
-                Changing element : <br/>
-                <code>
-                    cars[0] = "Opel"; <br/>
-                </code>
-                <code>
-                    array.length // return length of array <br/>
-                    array.sort() // sort the array <br/>
-                    array.push() // মেথডটি একটি array এর শেষে একটি বা একাধিক এলিমেন্ট যোগ করে এবং নতুন array এর length রিটার্ন করে। <br/>
-                    pop() মেথডটি একটি array এর শেষ এলিমেন্টটি সরিয়ে ফেলে এবং সেই সরানো এলিমেন্টটি রিটার্ন করে। <br/>
-
-                </code>
-            </p>
-
-            <p className=" mt-2">
-                <strong>Object : </strong>
-                জাভাস্ক্রিপ্টে অবজেক্ট ডিক্লেয়ার করার জন্য &#123;  &#125; ব্র্যাকেট ব্যবহার করা হয়।
-                যখন একটি কিছুর একাধিক প্রপার্টি থাকে, তখন আমরা সেই প্রপার্টিগুলি অবজেক্টের ভিতরে ডিক্লেয়ার করি।
-                <br/>
-               Example :
-                <br/>
-                <code>
-                    let person = &#123;
-                    name: 'Alice',
-                    age: 30,
-                    job: 'Engineer'
-                    &#125;;
-                </code><br/>
-                <span>
-                    জাভাস্ক্রিপ্টে new কিওয়ার্ড ব্যবহার করে অবজেক্ট তৈরি করা সম্ভব, তবে এটি কিছুটা ভিন্নভাবে করা হয়। আমরা সাধারণত ক্লাস ব্যবহার করে অবজেক্ট তৈরি করি, কিন্তু new কিওয়ার্ড ব্যবহার করে অবজেক্ট তৈরি করতে চাইলে Object কনস্ট্রাক্টর ব্যবহার করা হয়।
-                </span>
-                Example : <br/>
-               <code>
-                   let person = new Object();<br/>
-                   person.name = 'Alice';<br/>
-                   person.age = 30;<br/>
-                   person.job = 'Engineer';<br/>
-               </code>
-                <span>
-                     name, age, এবং job হল অবজেক্টের প্রপার্টি। প্রতিটি প্রপার্টি একটি কিজ (key) এবং তার মান (value) দিয়ে গঠিত।
-                </span>
-            </p>
-
-            <p className=" mt-2">
-                <strong>Object Methods </strong><br/>
-                <span> Access : অবজেক্টের প্রপার্টি অ্যাক্সেস করতে ডট নোটেশন ব্যবহার করতে পারেন। এই পদ্ধতিতে, অবজেক্টের নাম এবং প্রপার্টির নামের মধ্যে একটি ডট (.) ব্যবহার করা হয়।</span><br/>
-                Example : <br/>
-                <code>
-                    '// ডট নোটেশন ব্যবহার করে প্রপার্টি অ্যাক্সেস করা' <br/>
-                    console.log(person.name);  // আউটপুট: Alice <br/>
-                    console.log(person.age);   // আউটপুট: 30 <br/>
-                    console.log(person.job);   // আউটপুট: Engineer <br/>
-                </code>
-
-                <span>Delete : আপনি JavaScript-এ একটি অবজেক্টের প্রপার্টি মুছে ফেলতে delete কীওয়ার্ড ব্যবহার করতে পারেন।</span><br/>
-                <code>
-                    '// একটি প্রপার্টি মুছে ফেলা'<br/>
-                    delete person.age;
-                </code>
-
-            </p>
-
             <p className="mt-2">
-                <strong>Display object : </strong> JavaScript-এ অবজেক্ট ডিপ্লে করার জন্য চারটি প্রধান পদ্ধতি ব্যবহার করা
-                যেতে পারে <br/>
-                <li>Displaying the Object Properties by name</li>
+                <strong>Array:</strong> একই ডেটা টাইপের একাধিক মান সংরক্ষণের জন্য array ব্যবহার করা হয়।
+                জাভাস্ক্রিপ্টে অ্যারে তৈরির জন্য [] ব্র্যাকেট ব্যবহার করা হয়।
+                <br />
+                Example:
+                <br />
                 <code>
-                    person.name
+                    let numbers = [2, 3, 4, 5]; // এখানে [] ব্র্যাকেটের মধ্যে একটি অ্যারে তৈরি করা হয়েছে<br />
+                    অ্যারে তৈরির সময় [] ব্র্যাকেট ব্যবহার করে মানগুলি কমা দ্বারা পৃথক করা হয় এবং অ্যারের মধ্যে সেগুলি রাখা হয়।
+                    <br />
+                    এছাড়াও, অ্যারে বিভিন্ন ডেটা টাইপের মান ধারণ করতে পারে:
+                    <br />
+                    let mixedArray = [1, 'hello', true, null];
                 </code>
-                <li>Displaying the Object Properties in a Loop</li>
+                <br />
+                Example:
+                <br />
                 <code>
-                    let text = "";<br/>
-                    for (let x in person) &#123;<br/>
-                    text += person[x] + " ";<br/>
-                    &#125; <br/>
-                    console.log(text);
+                    const cars = [];
+                    <br />
+                    cars[0] = "Saab";
+                    <br />
+                    cars[1] = "Volvo";
+                    <br />
+                    cars[2] = "BMW";
                 </code>
-                <li>Displaying the Object using Object.values()</li>
-                <span>
-                    Object.values() ফাংশনটি একটি অবজেক্টের সমস্ত প্রপার্টি মানগুলির একটি অ্যারে প্রদান করে। এটি অবজেক্টের কীগুলির পরিবর্তে মানগুলির অ্যারে রিটার্ন করে।<br/>
-                </span>
+                <br />
+                Example:
+                <br />
                 <code>
-                    let values = Object.values(person); <br/>
-                    console.log(values);<br/>
+                    const cars = new Array("Saab", "Volvo", "BMW");
                 </code>
-
-                <li>Object.entries()</li>
-                <span>
-                    Object.entries() ফাংশনটি একটি অবজেক্টের সমস্ত প্রপার্টি এবং তাদের মানের একটি অ্যারে প্রদান করে, যেখানে প্রতিটি উপাদান একটি [key, value] পেয়ার হিসেবে থাকে। <br/>
-                </span>
+                <br />
+                Accessing:
+                <br />
                 <code>
-                    let person = &#123;<br/>
-                    name: 'Alice',<br/>
-                    age: 30,<br/>
-                    job: 'Engineer'<br/>
-                    &#125;;<br/>
-
-
-                    let entries = Object.entries(person);<br/>
-
-                    console.log(entries); <br/>
-                    '// আউটপুট: [['name', 'Alice'], ['age', 30], ['job', 'Engineer']]' <br/>
+                    console.log(cars[0]); // output saab
                 </code>
-                <li>Using JSON.stringify()</li>
-                <span>
-                    JSON.stringify() ফাংশনটি একটি অবজেক্টকে স্ট্রিং ফরম্যাটে রূপান্তরিত করে। এটি সাধারণত অবজেক্টকে JSON ফরম্যাটে রূপান্তরের জন্য ব্যবহৃত হয়, যা পরবর্তীতে সেভ, পাঠানো বা অন্য কোন স্ট্রিং অপারেশন করার জন্য উপকারী। <br/>
-                </span>
+                <br />
+                Changing element:
+                <br />
                 <code>
-                    let person = &#123;<br/>
-                    name: 'Alice',<br/>
-                    age: 30,<br/>
-                    job: 'Engineer'<br/>
-                    &#125;;<br/>
-
-                    let jsonString = JSON.stringify(person);
-
-                    console.log(jsonString);<br/>
-                    '// আউটপুট' <br/>
-                    &#123;"name":"Alice","age":30,"job":"Engineer"&#125;
-
+                    cars[0] = "Opel";
                 </code>
-
+                <br />
+                Array methods:
+                <br />
+                <code>
+                    array.length // return length of array
+                    <br />
+                    let fruits = ['apple', 'banana', 'mango'];
+                    <br />
+                    console.log(fruits.length); // আউটপুট: 3
+                    <br />
+                    array.toString() // মেথডটি array কে একটি string এ রূপান্তর করে, যেখানে প্রতিটি এলিমেন্ট কমা দিয়ে আলাদা করা থাকে।
+                    <br />
+                    let fruits = ['apple', 'banana', 'mango'];
+                    <br />
+                    console.log(fruits.toString()); // আউটপুট: 'apple,banana,mango'
+                    <br />
+                    array.at() মেথডটি array এর নির্দিষ্ট পজিশনের এলিমেন্ট রিটার্ন করে। পজিটিভ এবং নেগেটিভ উভয় ইনডেক্স ব্যবহার করা যায়। নেগেটিভ ইনডেক্স array এর শেষ থেকে গোনা হয়।
+                    <br />
+                    let fruits = ['apple', 'banana', 'mango'];
+                    <br />
+                    console.log(fruits.at(1)); // আউটপুট: 'banana'
+                    <br />
+                    console.log(fruits.at(-1)); // আউটপুট: 'mango'
+                    <br />
+                    array.join() মেথডটি array এর সব এলিমেন্টগুলিকে একটি string এ রূপান্তর করে এবং একটি নির্দিষ্ট separator (যেমন, কমা, স্পেস) ব্যবহার করে তাদের সংযুক্ত করে।
+                    <br />
+                    let fruits = ['apple', 'banana', 'mango'];
+                    <br />
+                    console.log(fruits.join(', ')); // আউটপুট: 'apple, banana, mango'
+                    <br />
+                    console.log(fruits.join(' - ')); // আউটপুট: 'apple - banana - mango'
+                    <br />
+                    array.push() // মেথডটি একটি array এর শেষে একটি বা একাধিক এলিমেন্ট যোগ করে এবং নতুন array এর length রিটার্ন করে।
+                    <br />
+                    let fruits = ['apple', 'banana'];
+                    <br />
+                    fruits.push('mango');
+                    <br />
+                    console.log(fruits); // আউটপুট: ['apple', 'banana', 'mango']
+                    <br />
+                    let newLength = fruits.push('orange');
+                    <br />
+                    console.log(newLength); // আউটপুট: 4
+                    <br />
+                    array.pop() মেথডটি একটি array এর শেষ এলিমেন্টটি সরিয়ে ফেলে এবং সেই সরানো এলিমেন্টটি রিটার্ন করে।
+                    <br />
+                    let fruits = ['apple', 'banana', 'mango'];
+                    <br />
+                    let lastFruit = fruits.pop();
+                    <br />
+                    console.log(lastFruit); // আউটপুট: 'mango'
+                    <br />
+                    console.log(fruits); // আউটপুট: ['apple', 'banana']
+                </code>
+                <br />
+                Search methods:
+                <br />
+                <code>
+                    <li>indexOf(): Array এর মধ্যে নির্দিষ্ট এলিমেন্টের প্রথম occurrence এর index রিটার্ন করে।</li>
+                    <p>
+                        let fruits = ['apple', 'banana', 'mango', 'banana'];
+                        <br />
+                        let index = fruits.indexOf('banana');
+                        <br />
+                        console.log(index); // আউটপুট: 1
+                        <br />
+                        let notFoundIndex = fruits.indexOf('orange');
+                        <br />
+                        console.log(notFoundIndex); // আউটপুট: -1
+                    </p>
+                    <li>includes(): Array এর মধ্যে নির্দিষ্ট এলিমেন্ট আছে কিনা তা true বা false রিটার্ন করে।</li>
+                    <p>
+                        let fruits = ['apple', 'banana', 'mango'];
+                        <br />
+                        let hasBanana = fruits.includes('banana');
+                        <br />
+                        console.log(hasBanana); // আউটপুট: true
+                        <br />
+                        let hasOrange = fruits.includes('orange');
+                        <br />
+                        console.log(hasOrange); // আউটপুট: false
+                    </p>
+                    <li>find(): Array এর মধ্যে নির্দিষ্ট condition পূরণ করা প্রথম এলিমেন্ট রিটার্ন করে। যদি কোন এলিমেন্ট না পাওয়া যায়, এটি undefined রিটার্ন করে।</li>
+                    <p>
+                        let numbers = [5, 12, 8, 130, 44];
+                        <br />
+                        let found = numbers.find(element => element > 10);
+                        <br />
+                        console.log(found); // আউটপুট: 12
+                    </p>
+                    <li>findIndex(): Array এর মধ্যে নির্দিষ্ট condition পূরণ করা প্রথম এলিমেন্টের index রিটার্ন করে। যদি কোন এলিমেন্ট না পাওয়া যায়, এটি -1 রিটার্ন করে।</li>
+                    <p>
+                        let numbers = [5, 12, 8, 130, 44];
+                        <br />
+                        let foundIndex = numbers.findIndex(element => element > 10);
+                        <br />
+                        console.log(foundIndex); // আউটপুট: 1
+                    </p>
+                </code>
+                <br />
+                Sort methods:
+                <br />
+                <code>
+                    <li>sort(): Array এর এলিমেন্টগুলোকে alphabetically বা numerically sort করে।</li>
+                    <p>
+                        let fruits = ['mango', 'apple', 'banana'];
+                        <br />
+                        fruits.sort();
+                        <br />
+                        console.log(fruits); // আউটপুট: ['apple', 'banana', 'mango']
+                        <br />
+                        let numbers = [40, 100, 1, 5, 25, 10];
+                        <br />
+                        numbers.sort();
+                        <br />
+                        console.log(numbers); // আউটপুট: [1, 5, 10, 25, 40, 100]
+                    </p>
+                    <li>reverse(): Array এর এলিমেন্টগুলোকে উল্টে দেয়, অর্থাৎ শেষ থেকে শুরু পর্যন্ত।</li>
+                    <p>
+                        let fruits = ['mango', 'apple', 'banana'];
+                        <br />
+                        fruits.reverse();
+                        <br />
+                        console.log(fruits); // আউটপুট: ['banana', 'apple', 'mango']
+                    </p>
+                </code>
+                <br />
+                Iteration methods:
+                <br />
+                <code>
+                    <li>forEach() মেথডটি array এর প্রতিটি এলিমেন্টের জন্য একটি ফাংশন কল করে। এটি কোন value রিটার্ন করে না, শুধু প্রতিটি এলিমেন্টের উপর কাজ করে।</li>
+                    <p>
+                        let fruits = ['apple', 'banana', 'mango'];
+                        <br />
+                        fruits.forEach(fruit => console.log(fruit)); // আউটপুট:
+                        <br />
+                        "// 'apple'"<br />
+                        "// 'banana'"
+                        <br />
+                        "// 'mango'"
+                    </p>
+                    <li>map(): Array এর প্রতিটি এলিমেন্টের জন্য একটি ফাংশন চালিয়ে একটি নতুন array রিটার্ন করে।</li>
+                    <p>
+                        let numbers = [1, 2, 3, 4];
+                        <br />
+                        let doubled = numbers.map(num => num * 2);
+                        <br />
+                        console.log(doubled); // আউটপুট: [2, 4, 6, 8]
+                    </p>
+                    <li>filter(): Array এর প্রতিটি এলিমেন্টের জন্য একটি condition পরীক্ষা করে এবং condition পূরণ করা এলিমেন্টগুলোকে নিয়ে একটি নতুন array তৈরি করে।</li>
+                    <p>
+                        let numbers = [1, 2, 3, 4, 5];
+                        <br />
+                        let even = numbers.filter(num => num % 2 === 0);
+                        <br />
+                        console.log(even); // আউটপুট: [2, 4]
+                    </p>
+                    <li>reduce(): Array এর সব এলিমেন্টগুলিকে একটি single value তে রূপান্তর করে। এটি accumulator এবং current value নামক দুটি প্যারামিটার গ্রহণ করে।</li>
+                    <p>
+                        let numbers = [1, 2, 3, 4];
+                        <br />
+                        let sum = numbers.reduce((acc, current) => acc + current, 0);
+                        <br />
+                        console.log(sum); // আউটপুট: 10
+                    </p>
+                </code>
             </p>
-
         </Container>
     );
 }
 
 export default Dsa;
-
