@@ -28,8 +28,7 @@ function Dsa(props) {
                 </code>
                 Accessing : <br/>
                 <code>
-                    console.log(cars[0]); <br/>
-                    // output saab <br/>
+                    <p>console.log(cars[0]); </p> '// output saab' <br/>
                 </code>
                 Changing element : <br/>
                 <code>
@@ -78,7 +77,7 @@ function Dsa(props) {
                 <span> Access : অবজেক্টের প্রপার্টি অ্যাক্সেস করতে ডট নোটেশন ব্যবহার করতে পারেন। এই পদ্ধতিতে, অবজেক্টের নাম এবং প্রপার্টির নামের মধ্যে একটি ডট (.) ব্যবহার করা হয়।</span><br/>
                 Example : <br/>
                 <code>
-                    // ডট নোটেশন ব্যবহার করে প্রপার্টি অ্যাক্সেস করা <br/>
+                    '// ডট নোটেশন ব্যবহার করে প্রপার্টি অ্যাক্সেস করা' <br/>
                     console.log(person.name);  // আউটপুট: Alice <br/>
                     console.log(person.age);   // আউটপুট: 30 <br/>
                     console.log(person.job);   // আউটপুট: Engineer <br/>
@@ -86,7 +85,7 @@ function Dsa(props) {
 
                 <span>Delete : আপনি JavaScript-এ একটি অবজেক্টের প্রপার্টি মুছে ফেলতে delete কীওয়ার্ড ব্যবহার করতে পারেন।</span><br/>
                 <code>
-                    // একটি প্রপার্টি মুছে ফেলা<br/>
+                    '// একটি প্রপার্টি মুছে ফেলা'<br/>
                     delete person.age;
                 </code>
 
@@ -130,8 +129,8 @@ function Dsa(props) {
 
                     let entries = Object.entries(person);<br/>
 
-                    console.log(entries);<br/>
-                    // আউটপুট: [['name', 'Alice'], ['age', 30], ['job', 'Engineer']] <br/>
+                    console.log(entries); <br/>
+                    '// আউটপুট: [['name', 'Alice'], ['age', 30], ['job', 'Engineer']]' <br/>
                 </code>
                 <li>Using JSON.stringify()</li>
                 <span>
@@ -147,7 +146,7 @@ function Dsa(props) {
                     let jsonString = JSON.stringify(person);
 
                     console.log(jsonString);<br/>
-                    // আউটপুট <br/>
+                    '// আউটপুট' <br/>
                     &#123;"name":"Alice","age":30,"job":"Engineer"&#125;
 
                 </code>
