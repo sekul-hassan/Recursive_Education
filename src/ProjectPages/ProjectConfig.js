@@ -310,124 +310,124 @@ const projects = [
         ]
     },
 
-
-    {
-        projectName: "shuttle",
-        demo: {
-               projectImg:shuttleProject,
-               projectLink:"https://shuttle.recursiveeducation.com/",
-               projectRoute:"/shuttle"
-           },
-        classes:[
-            {
-                   id:0,
-                   link:"/shuttle-project",
-                   value: "Nav",
-                   lecture: {
-                       image:shuttleHomeTop,
-                       videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                       title:"Coming soon.",
-                       description:"Coming soon.",
-                       githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                   }
-               },
-            {
-                   id:1,
-                   link:"/shuttle-project",
-                   value: "Nav",
-                   lecture: {
-                       image:shuttleHomeTop,
-                       videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                       title:"Coming soon.",
-                       description:"Coming soon.",
-                       githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                   }
-               },
-            {
-                   id:2,
-                   link:"/shuttle-project",
-                   value: "Nav",
-                   lecture: {
-                       image:shuttleHomeTop,
-                       videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                       title:"Coming soon.",
-                       description:"Coming soon.",
-                       githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                   }
-               },
-            {
-                   id:3,
-                   link:"/shuttle-project",
-                   value: "Nav",
-                   lecture: {
-                       image:shuttleHomeTop,
-                       videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                       title:"Coming soon.",
-                       description:"Coming soon.",
-                       githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                   }
-               },
-        ]
-    },
-
-    {
-        projectName: "ncpc-project",
-        demo: {
-            projectImg:ncpcProject,
-            projectLink:"https://shuttle.recursiveeducation.com/",
-            projectRoute:"/ncpc-project"
-        },
-        classes:[
-            {
-                id:0,
-                link:"/shuttle-project",
-                value: "Nav",
-                lecture: {
-                    image:shuttleHomeTop,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                }
-            },
-            {
-                id:1,
-                link:"/shuttle-project",
-                value: "Nav",
-                lecture: {
-                    image:shuttleHomeTop,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                }
-            },
-            {
-                id:2,
-                link:"/shuttle-project",
-                value: "Nav",
-                lecture: {
-                    image:shuttleHomeTop,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                }
-            },
-            {
-                id:3,
-                link:"/shuttle-project",
-                value: "Nav",
-                lecture: {
-                    image:shuttleHomeTop,
-                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
-                    title:"Coming soon.",
-                    description:"Coming soon.",
-                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
-                }
-            },
-        ]
-    },
+    //
+    // {
+    //     projectName: "shuttle",
+    //     demo: {
+    //            projectImg:shuttleProject,
+    //            projectLink:"https://shuttle.recursiveeducation.com/",
+    //            projectRoute:"/shuttle"
+    //        },
+    //     classes:[
+    //         {
+    //                id:0,
+    //                link:"/shuttle-project",
+    //                value: "Nav",
+    //                lecture: {
+    //                    image:shuttleHomeTop,
+    //                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                    title:"Coming soon.",
+    //                    description:"Coming soon.",
+    //                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //                }
+    //            },
+    //         {
+    //                id:1,
+    //                link:"/shuttle-project",
+    //                value: "Nav",
+    //                lecture: {
+    //                    image:shuttleHomeTop,
+    //                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                    title:"Coming soon.",
+    //                    description:"Coming soon.",
+    //                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //                }
+    //            },
+    //         {
+    //                id:2,
+    //                link:"/shuttle-project",
+    //                value: "Nav",
+    //                lecture: {
+    //                    image:shuttleHomeTop,
+    //                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                    title:"Coming soon.",
+    //                    description:"Coming soon.",
+    //                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //                }
+    //            },
+    //         {
+    //                id:3,
+    //                link:"/shuttle-project",
+    //                value: "Nav",
+    //                lecture: {
+    //                    image:shuttleHomeTop,
+    //                    videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                    title:"Coming soon.",
+    //                    description:"Coming soon.",
+    //                    githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //                }
+    //            },
+    //     ]
+    // },
+    //
+    // {
+    //     projectName: "ncpc-project",
+    //     demo: {
+    //         projectImg:ncpcProject,
+    //         projectLink:"https://shuttle.recursiveeducation.com/",
+    //         projectRoute:"/ncpc-project"
+    //     },
+    //     classes:[
+    //         {
+    //             id:0,
+    //             link:"/shuttle-project",
+    //             value: "Nav",
+    //             lecture: {
+    //                 image:shuttleHomeTop,
+    //                 videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                 title:"Coming soon.",
+    //                 description:"Coming soon.",
+    //                 githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //             }
+    //         },
+    //         {
+    //             id:1,
+    //             link:"/shuttle-project",
+    //             value: "Nav",
+    //             lecture: {
+    //                 image:shuttleHomeTop,
+    //                 videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                 title:"Coming soon.",
+    //                 description:"Coming soon.",
+    //                 githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //             }
+    //         },
+    //         {
+    //             id:2,
+    //             link:"/shuttle-project",
+    //             value: "Nav",
+    //             lecture: {
+    //                 image:shuttleHomeTop,
+    //                 videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                 title:"Coming soon.",
+    //                 description:"Coming soon.",
+    //                 githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //             }
+    //         },
+    //         {
+    //             id:3,
+    //             link:"/shuttle-project",
+    //             value: "Nav",
+    //             lecture: {
+    //                 image:shuttleHomeTop,
+    //                 videoLink:"https://www.youtube.com/watch?v=gZC4Za8uA3I",
+    //                 title:"Coming soon.",
+    //                 description:"Coming soon.",
+    //                 githubLink:"https://github.com/sekul-hassan/portfolio_templete/tree/footer",
+    //             }
+    //         },
+    //     ]
+    // },
 ];
 
 export default projects;

@@ -9,7 +9,7 @@ function AcademicNav({academic}) {
             <ul className="hslider mx-0 px-2">
                 {
                     academic && academic.map((ack,idx)=> (
-                        <li className="mx-2"><Link to={`/academic/${ack.level}`} href="#abc">{ack.level}</Link></li>
+                        <li className="mx-2"><Link to={`/academic/${ack.level}`}>{ack.level}</Link></li>
                     ))
                 }
             </ul>
