@@ -23,43 +23,45 @@ import Json from "../LanguagePages/Json";
 import ScopHoisting from "../LanguagePages/Scop&Hoisting";
 import Bitwise from "../LanguagePages/Bitwise";
 import AsyncAwait from "../LanguagePages/Async";
+import Intro from "../DBMS/Intro";
+import Query from "../DBMS/Query";
 
 const practiceLists = [
     [
-        { id: 0, link: "Javascript", value: "Javascript" },
+        { id: 0, link: "/Javascript", value: "Javascript" },
         {
             id: 1,
-            link: "/Javascript",
+            link: "/basic",
             value: "Basic",
             component:Javascript,
         },
         {
             id: 2,
-            link: "/Javascript",
+            link: "/array",
             value: "Array",
             component:Array,
         },
         {
             id: 3,
-            link: "/Javascript",
+            link: "/set/map",
             value: "Set/Map",
             component:SetMap,
         },
         {
             id: 4,
-            link: "/Javascript",
+            link: "/object",
             value: "Object",
             component:Object,
         },
         {
             id: 5,
-            link: "/Javascript",
+            link: "/number",
             value: "Number",
             component:Number,
         },
         {
             id: 6,
-            link: "/Javascript",
+            link: "/string",
             value: "String",
             component:String,
         },
@@ -67,58 +69,58 @@ const practiceLists = [
 
         {
             id: 7,
-            link: "/Javascript",
+            link: "/condition",
             value: "Condition",
             component:Condition,
         },
         {
             id: 8,
-            link: "/Javascript",
+            link: "/loop",
             value: "Loop",
             component:Loops,
         },
         {
             id: 9,
-            link: "/Javascript",
+            link: "/bitwise",
             value: "Bitwise",
             component:Bitwise,
         },
         {
             id: 10,
-            link: "/Javascript",
+            link: "/events",
             value: "Events",
             component:Events,
         },
         {
             id: 11,
-            link: "/Javascript",
+            link: "/dom",
             value: "DOM",
             component:Dom,
         },
         {
             id: 12,
-            link: "/Javascript",
+            link: "/scope&hoisting",
             value: "Scope&Hoisting",
             component:ScopHoisting,
         },
         {
             id: 13,
-            link: "/Javascript",
+            link: "/async",
             value: "Async",
             component:AsyncAwait,
         },
         {
             id: 14,
-            link: "/Javascript",
+            link: "/json",
             value: "Json",
             component:Json,
         },
     ],
     [
-        { id: 0, link: "/Javascript", value: "Practice" },
+        { id: 0, link: "/practiceJs", value: "Practice" },
         {
             id: 1,
-            link: "/Javascript",
+            link: "/slider1",
             value: "Slider part 1",
             component:Slider,
             code:{
@@ -149,7 +151,7 @@ const practiceLists = [
         },
         {
             id: 2,
-            link: "/Javascript",
+            link: "/slider2",
             value: "Slider part 2",
             component:Slider,
             code:{
@@ -170,7 +172,7 @@ const practiceLists = [
         },
         {
             id: 3,
-            link: "/javascript",
+            link: "/form1",
             value: "Form part 1",
             component:LoginForm,
             code:{
@@ -195,7 +197,7 @@ const practiceLists = [
         },
         {
             id: 4,
-            link: "/javascript",
+            link: "/form2",
             value: "Form part 2",
             component:LoginForm,
             code:{
@@ -220,7 +222,7 @@ const practiceLists = [
         },
         {
             id: 5,
-            link: "/javascript",
+            link: "/form3",
             value: "Form part 3",
             component:LoginForm,
             code:{
@@ -246,7 +248,7 @@ const practiceLists = [
         },
         {
             id: 6,
-            link: "/javascript",
+            link: "/form4",
             value: "Form part 4",
             component:LoginForm,
             code:{
@@ -272,7 +274,7 @@ const practiceLists = [
         },
         {
             id: 7,
-            link: "/javascript",
+            link: "/tabs1",
             value: "Tabs part 1",
             component:Tab,
             code:{
@@ -293,7 +295,7 @@ const practiceLists = [
         },
         {
             id: 8,
-            link: "/javascript",
+            link: "/tabs2",
             value: "Tabs part 2",
             component:Tab,
             code:{
@@ -315,7 +317,7 @@ const practiceLists = [
         },
         {
             id: 9,
-            link: "/javascript",
+            link: "/accordion1",
             value: "Accordion 1",
             component:Accordions,
             code:{
@@ -336,7 +338,7 @@ const practiceLists = [
         },
         {
             id: 10,
-            link: "/javascript",
+            link: "/accordion2",
             value: "Accordion 2",
             component:Accordions,
             code:{
@@ -360,10 +362,9 @@ const practiceLists = [
                 gitHubLink: "https://github.com/sekul-hassan/practiceJs/tree/main/Accordion"
             }
         },
-
         {
             id: 11,
-            link: "/javascript",
+            link: "/sliderGallery",
             value: "Slide Gallery",
             component:SlideGallery,
             code:{
@@ -388,10 +389,25 @@ const practiceLists = [
         },
     ],
     [
-        { id: 0, link: "Javascript", value: "React" },
+        {id:0,link:"/dbms",value:"DBMS"},
         {
             id: 1,
-            link: "/javascript",
+            link: "/basic",
+            value: "Basic",
+            component:Intro
+        },
+        {
+            id: 2,
+            link: "/queries",
+            value: "Queries",
+            component:Query
+        }
+    ],
+    [
+        { id: 0, link: "React", value: "React" },
+        {
+            id: 1,
+            link: "/setup",
             value: "Setup",
             component:ReactSetup,
         },

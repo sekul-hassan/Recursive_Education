@@ -13,7 +13,7 @@ function AcademicBody(props) {
     const [defaultId, setDefaultId] = useState(null);
 
     useEffect(() => {
-        setDefaultId(id || "Six");
+        setDefaultId(id || "S.S.C");
     }, [id]);
 
     const level = academic.find((lev) => defaultId === lev.level);

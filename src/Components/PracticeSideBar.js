@@ -13,12 +13,17 @@ function PracticeSideBar({ practiceLists , onSelectLecture }) {
                     <Nav className="flex-column sidebar">
                         {practiceLists.map((practiceList, index) => (
                             <Fragment key={index}>
+
                                 {practiceList.map((item, subIndex) => (
                                     <Fragment key={subIndex}>
                                         {subIndex === 0 ? (
                                             <h4 className="practiceTitle mt-2 mb-0">{item.value}</h4>
                                         ) : (
-                                            <Link onClick={()=>{onSelectLecture(item)}} to={item.link}>{item.value}</Link>
+                                            <Link
+                                                onClick={() => { onSelectLecture(item) }}
+                                                to={`${practiceList[0].link}${item.link}`}>
+                                                {item.value}
+                                            </Link>
                                         )}
                                     </Fragment>
                                 ))}
