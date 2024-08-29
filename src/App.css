@@ -74,3 +74,8 @@
 .link-light-3{
     line-height: 30px;
 }
+code{
+    color: red!important;
+    margin: 0!important;
+    padding: 0!important;
+}

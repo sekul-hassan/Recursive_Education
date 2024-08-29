@@ -103,17 +103,6 @@ function Intro(props) {
                 DQL হচ্ছে Data Manipulation Language এর একটি subset। DQL এর প্রধান command হল SELECT statement, যা একটি table থেকে data retrieve করতে ব্যবহৃত হয় table এর কোন পরিবর্তন ছাড়াই।
             </h5>
 
-            <h5 className="title">Database Management System (DBMS) –</h5>
-            <h5 className="globalDescription">
-                DBMS হল একটি software system যা database create, maintain এবং manage করতে ব্যবহৃত হয়। উদাহরণস্বরূপ, MySQL, Oracle ইত্যাদি জনপ্রিয় commercial DBMS গুলি বিভিন্ন application এ ব্যবহৃত হয়।
-            </h5>
-            <ul className="globalDescription">
-                <li><strong>Data Definition:</strong> এটি database এ data এর organization define করার জন্য definitions create, modify এবং remove করতে সহায়তা করে।</li>
-                <li><strong>Data Updation:</strong> এটি database এ actual data insert, modify এবং delete করতে সহায়তা করে।</li>
-                <li><strong>Data Retrieval:</strong> এটি database থেকে data retrieve করতে সহায়তা করে, যা বিভিন্ন purposes এর জন্য application গুলি দ্বারা ব্যবহার করা যেতে পারে।</li>
-                <li><strong>User Administration:</strong> এটি users register এবং monitor করতে, data security enforce করতে, performance monitor করতে, data integrity বজায় রাখতে, concurrency control handle করতে এবং unexpected failure এর কারণে corrupt হওয়া তথ্য recover করতে সহায়তা করে।</li>
-            </ul>
-
             <h5 className="title">Applications of DBMS –</h5>
             <h5 className="globalDescription">
                 DBMS এর প্রধান applications হল:

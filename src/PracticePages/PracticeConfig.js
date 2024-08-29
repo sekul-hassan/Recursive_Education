@@ -24,7 +24,8 @@ import ScopHoisting from "../LanguagePages/Scop&Hoisting";
 import Bitwise from "../LanguagePages/Bitwise";
 import AsyncAwait from "../LanguagePages/Async";
 import Intro from "../DBMS/Intro";
-import Query from "../DBMS/Query";
+import DDL from "../DBMS/DDL";
+import DML from "../DBMS/DML";
 
 const practiceLists = [
     [
@@ -398,9 +399,15 @@ const practiceLists = [
         },
         {
             id: 2,
-            link: "/queries",
-            value: "Queries",
-            component:Query
+            link: "/ddl_queries",
+            value: "DDL",
+            component:DDL
+        },
+        {
+            id: 3,
+            link: "/dml_queries",
+            value: "DML",
+            component:DML
         }
     ],
     [
