@@ -26,6 +26,8 @@ import AsyncAwait from "../LanguagePages/Async";
 import Intro from "../DBMS/Intro";
 import DDL from "../DBMS/DDL";
 import DML from "../DBMS/DML";
+import DCL from "../DBMS/DCL";
+import TCL from "../DBMS/TCL";
 
 const practiceLists = [
     [
@@ -408,7 +410,20 @@ const practiceLists = [
             link: "/dml_queries",
             value: "DML",
             component:DML
-        }
+        },
+        {
+            id: 4,
+            link: "/tcl_queries",
+            value: "TCL",
+            component:TCL
+        },
+        {
+            id: 5,
+            link: "/dcl_queries",
+            value: "DCL",
+            component:DCL
+        },
+
     ],
     [
         { id: 0, link: "React", value: "React" },

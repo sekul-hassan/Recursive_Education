@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function DDL(props) {
     return (
-        <Container fluid="true" className="text-dark">
+        <Container fluid="true" className="globalDescription text-dark">
             <h3 className="title mt-3">CREATE TABLE Command Example</h3>
             <pre>
                 <code>

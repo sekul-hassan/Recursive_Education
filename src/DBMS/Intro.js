@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 
 function Intro(props) {
     return (
-        <Container fluid="true" className="text-dark">
+        <Container fluid="true" className="text-dark globalDescription">
             <h3 className="title">Introduction of DBMS (Database Management System) –</h3>
             <h5 className="globalDescription">
                 Database Management System (DBMS) হচ্ছে একটি software system যা data কে একটি structured manner এ manage এবং organize করার জন্য design করা হয়েছে।
@@ -12,7 +12,7 @@ function Intro(props) {
                 DBMS data store এবং retrieve করার জন্য convenient and efficient manner offer করে।
             </h5>
 
-            <h5 className="title">Key Features of DBMS –</h5>
+            <h3 className="title">Key Features of DBMS –</h3>
             <h5 className="globalDescription">
                 <strong>Data modeling:</strong> একটি DBMS data model create এবং modify করার জন্য tools প্রদান করে, যা database এ data এর structure এবং relationships define করে।
             </h5>
