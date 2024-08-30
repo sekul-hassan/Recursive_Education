@@ -29,6 +29,8 @@ import DML from "../DBMS/DML";
 import DCL from "../DBMS/DCL";
 import TCL from "../DBMS/TCL";
 import BasicNode from "../NodeJS/BasicNode";
+import Modules from "../NodeJS/Modules";
+import Email from "../NodeJS/Email";
 
 const practiceLists = [
     [
@@ -433,6 +435,18 @@ const practiceLists = [
             link:"/basic",
             value: "Basic",
             component:BasicNode
+        },
+        {
+            id: 2,
+            link:"/modules",
+            value: "Modules",
+            component:Modules
+        },
+        {
+            id: 3,
+            link:"/emailJS",
+            value: "EmailJS",
+            component:Email
         }
     ],
     [

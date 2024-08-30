@@ -43,9 +43,7 @@
     background-color: #f0f0f0;
 }
 
-.Xoverflow::-webkit-scrollbar {
-    height: 2px;
-}
+
 .Xoverflow{
     padding: 0!important;
     margin: 0!important;

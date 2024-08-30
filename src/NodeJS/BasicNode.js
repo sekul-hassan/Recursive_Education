@@ -1,4 +1,6 @@
 import React from 'react';
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function BasicNode() {
     return (
@@ -25,17 +27,21 @@ function BasicNode() {
             <span className="globalSubTitle">Creating a Basic Node.js Server:</span>
             <span>নিচের কোডটি একটি basic Node.js server তৈরি করে যা HTTP request handle করে:</span>
             <br/>
-            <code>
-                {`const http = require('http');`} <br/>
-                {`const server = http.createServer((req, res) => {`} <br/>
-                {`  res.statusCode = 200;`} <br/>
-                {`  res.setHeader('Content-Type', 'text/plain');`} <br/>
-                {`  res.end('Hello, World!');`} <br/>
-                {`});`} <br/>
-                {`server.listen(3000, () => {`} <br/>
-                {`  console.log('Server running at http://localhost:3000/');`} <br/>
-                {`});`} <br/>
-            </code>
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`const http = require('http');
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello, World!');
+});
+
+server.listen(3000, () => {
+    console.log('Server running at http://localhost:3000/');
+});
+`}
+            </SyntaxHighlighter>
+            <br />
             <span>এই কোডটি একটি HTTP server তৈরি করে যা port 3000 এ listen করে এবং "Hello, World!" মেসেজ রেসপন্স হিসেবে পাঠায়।</span>
             <br/><br/>
 
