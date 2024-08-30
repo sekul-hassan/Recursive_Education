@@ -100,7 +100,7 @@ sequelize.sync({ force: true });
             </span>
             <br /><br />
 
-            <span className="globalSubTitle">3. Many-to-Many Association:</span>
+            <span className="globalSubTitle">3. Many-to-Many Association(N:N):</span>
             <span>
                 Many-to-Many অ্যাসোসিয়েশন মানে একাধিক রেকর্ড এক মডেলে একাধিক রেকর্ডের সাথে সম্পর্কিত।
             </span>

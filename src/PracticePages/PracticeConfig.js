@@ -34,6 +34,10 @@ import Email from "../NodeJS/Email";
 import SequelizeBasic from "../Sequelize/SequelizeBasic";
 import Associations from "../Sequelize/Associations";
 import Sync from "../Sequelize/Sync";
+import EagerLoading from "../Sequelize/EagerLoading";
+import AssociationScopes from "../Sequelize/AssociationScopes";
+import PolymorphicAssociations from "../Sequelize/PolymorphicAssociations";
+import Keys from "../DBMS/Keys";
 
 const practiceLists = [
     [
@@ -407,24 +411,30 @@ const practiceLists = [
         },
         {
             id: 2,
+            link: "/keys",
+            value: "Keys",
+            component:Keys
+        },
+        {
+            id: 3,
             link: "/ddl_queries",
             value: "DDL",
             component:DDL
         },
         {
-            id: 3,
+            id: 4,
             link: "/dml_queries",
             value: "DML",
             component:DML
         },
         {
-            id: 4,
+            id: 5,
             link: "/tcl_queries",
             value: "TCL",
             component:TCL
         },
         {
-            id: 5,
+            id: 6,
             link: "/dcl_queries",
             value: "DCL",
             component:DCL
@@ -462,16 +472,35 @@ const practiceLists = [
         },
         {
             id: 2,
+            link:"/sync",
+            value: "Sync",
+            component:Sync
+        },
+        {
+            id: 3,
             link:"/association",
             value: "Association",
             component:Associations
         },
         {
-            id: 3,
-            link:"/sync",
-            value: "Sync",
-            component:Sync
+            id: 4,
+            link:"/eager",
+            value: "Eager",
+            component:EagerLoading
         },
+        {
+            id: 5,
+            link:"/associationScopes",
+            value: "AssociationScopes",
+            component:AssociationScopes
+        },
+        {
+            id: 6,
+            link:"/polymorphicAssociations",
+            value: "PolymorphicAssociations",
+            component:PolymorphicAssociations
+        },
+
     ],
     [
         { id: 0, link: "React", value: "React" },
