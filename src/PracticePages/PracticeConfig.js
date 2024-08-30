@@ -28,6 +28,7 @@ import DDL from "../DBMS/DDL";
 import DML from "../DBMS/DML";
 import DCL from "../DBMS/DCL";
 import TCL from "../DBMS/TCL";
+import BasicNode from "../NodeJS/BasicNode";
 
 const practiceLists = [
     [
@@ -424,6 +425,15 @@ const practiceLists = [
             component:DCL
         },
 
+    ],
+    [
+        {id:0,link: "/nodeJS",value:"NodeJS"},
+        {
+            id: 1,
+            link:"/basic",
+            value: "Basic",
+            component:BasicNode
+        }
     ],
     [
         { id: 0, link: "React", value: "React" },
