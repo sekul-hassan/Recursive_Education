@@ -31,6 +31,9 @@ import TCL from "../DBMS/TCL";
 import BasicNode from "../NodeJS/BasicNode";
 import Modules from "../NodeJS/Modules";
 import Email from "../NodeJS/Email";
+import SequelizeBasic from "../Sequelize/SequelizeBasic";
+import Associations from "../Sequelize/Associations";
+import Sync from "../Sequelize/Sync";
 
 const practiceLists = [
     [
@@ -448,6 +451,27 @@ const practiceLists = [
             value: "EmailJS",
             component:Email
         }
+    ],
+    [
+        {id:0,link:"/sequelize",value:"Sequelize"},
+        {
+            id: 1,
+            link:"/basic",
+            value: "Basic",
+            component:SequelizeBasic
+        },
+        {
+            id: 2,
+            link:"/association",
+            value: "Association",
+            component:Associations
+        },
+        {
+            id: 3,
+            link:"/sync",
+            value: "Sync",
+            component:Sync
+        },
     ],
     [
         { id: 0, link: "React", value: "React" },
