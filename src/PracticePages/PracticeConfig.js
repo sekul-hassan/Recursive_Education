@@ -38,6 +38,7 @@ import EagerLoading from "../Sequelize/EagerLoading";
 import AssociationScopes from "../Sequelize/AssociationScopes";
 import PolymorphicAssociations from "../Sequelize/PolymorphicAssociations";
 import Keys from "../DBMS/Keys";
+import CPPBasic from "../CPP/CPPBasic";
 
 const practiceLists = [
     [
@@ -501,6 +502,15 @@ const practiceLists = [
             component:PolymorphicAssociations
         },
 
+    ],
+    [
+        {id:0,link:"/cpp", value: "CPP"},
+        {
+            id:1,
+            link:"/basic",
+            value: "CPP",
+            component:CPPBasic
+        },
     ],
     [
         { id: 0, link: "React", value: "React" },
