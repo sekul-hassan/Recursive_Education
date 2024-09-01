@@ -1,15 +1,3 @@
-import Slider from "../Components/Slider";
-import {cssCode, htmlCode, jsCode} from "../Code/SliderCode";
-import LoginForm from "../Components/LoginForm";
-import Tab from "../Components/Tab";
-import Accordions from "../Components/Accordion";
-import SlideGallery from "../Components/SlideGallery";
-import ReactSetup from "../ReactComponents/ReactSetup";
-import {loginCss, loginHtml, loginJs} from "../Code/LiginCode";
-import {tabCss, tabHtml, tabJs} from "../Code/TabsCode";
-import {accordionCss, accordionHtml, accordionJs} from "../Code/AccordionCode";
-import {galleryCss, galleryHtml, galleryJs} from "../Code/SliderGallery";
-import Javascript from "../LanguagePages/Javascript";
 import Array from "../LanguagePages/Array";
 import Object from "../LanguagePages/Object";
 import SetMap from "../LanguagePages/SetMap";
@@ -28,8 +16,30 @@ import DDL from "../DBMS/DDL";
 import DML from "../DBMS/DML";
 import DCL from "../DBMS/DCL";
 import TCL from "../DBMS/TCL";
+import BasicNode from "../NodeJS/BasicNode";
+import Modules from "../NodeJS/Modules";
+import Email from "../NodeJS/Email";
+import SequelizeBasic from "../Sequelize/SequelizeBasic";
+import Associations from "../Sequelize/Associations";
+import Sync from "../Sequelize/Sync";
+import EagerLoading from "../Sequelize/EagerLoading";
+import AssociationScopes from "../Sequelize/AssociationScopes";
+import PolymorphicAssociations from "../Sequelize/PolymorphicAssociations";
+import Keys from "../DBMS/Keys";
+import CPPBasic from "../CPP/CPPBasic";
+import CppAdvance from "../CPP/CppAdvance";
+import Function from "../CPP/Function";
+import Recursion from "../CPP/Recursion";
+import Oop from "../CPP/OOP";
+import Encapsulation from "../CPP/Encapsulation";
+import Inheritance from "../CPP/Inheritance";
+import Polymorphism from "../CPP/Polymorphism";
+import Abstraction from "../CPP/Abstraction";
+import CppDSA from "../CPP/CppDSA";
+import Javascript from "../LanguagePages/Javascript";
 
-const learningConfig = [
+const practiceLists = [
+    // javascript
     [
         { id: 0, link: "/Javascript", value: "Javascript" },
         {
@@ -46,8 +56,8 @@ const learningConfig = [
         },
         {
             id: 3,
-            link: "/set/map",
-            value: "Set/Map",
+            link: "/set&map",
+            value: "Set&Map",
             component:SetMap,
         },
         {
@@ -119,7 +129,7 @@ const learningConfig = [
             component:Json,
         },
     ],
-
+    // dbms
     [
         {id:0,link:"/dbms",value:"DBMS"},
         {
@@ -130,41 +140,164 @@ const learningConfig = [
         },
         {
             id: 2,
+            link: "/keys",
+            value: "Keys",
+            component:Keys
+        },
+        {
+            id: 3,
             link: "/ddl_queries",
             value: "DDL",
             component:DDL
         },
         {
-            id: 3,
+            id: 4,
             link: "/dml_queries",
             value: "DML",
             component:DML
         },
         {
-            id: 4,
+            id: 5,
             link: "/tcl_queries",
             value: "TCL",
             component:TCL
         },
         {
-            id: 5,
+            id: 6,
             link: "/dcl_queries",
             value: "DCL",
             component:DCL
         },
 
     ],
-
+    // node js
     [
-        { id: 0, link: "/React", value: "React" },
+        {id:0,link: "/nodeJS",value:"NodeJS"},
         {
             id: 1,
-            link: "/setup",
-            value: "Setup",
-            component:ReactSetup,
+            link:"/basic",
+            value: "Basic",
+            component:BasicNode
+        },
+        {
+            id: 2,
+            link:"/modules",
+            value: "Modules",
+            component:Modules
+        },
+        {
+            id: 3,
+            link:"/emailJS",
+            value: "EmailJS",
+            component:Email
+        }
+    ],
+    // sequelize
+    [
+        {id:0,link:"/sequelize",value:"Sequelize"},
+        {
+            id: 1,
+            link:"/basic",
+            value: "Basic",
+            component:SequelizeBasic
+        },
+        {
+            id: 2,
+            link:"/sync",
+            value: "Sync",
+            component:Sync
+        },
+        {
+            id: 3,
+            link:"/association",
+            value: "Association",
+            component:Associations
+        },
+        {
+            id: 4,
+            link:"/eager",
+            value: "Eager",
+            component:EagerLoading
+        },
+        {
+            id: 5,
+            link:"/associationScopes",
+            value: "AssociationScopes",
+            component:AssociationScopes
+        },
+        {
+            id: 6,
+            link:"/polymorphicAssociations",
+            value: "PolymorphicAssociations",
+            component:PolymorphicAssociations
+        },
+
+    ],
+    // cpp
+    [
+        {id:0,link:"/cpp", value: "CPP"},
+        {
+            id:1,
+            link:"/basic",
+            value: "CPP",
+            component:CPPBasic
+        },
+        {
+            id:2,
+            link:"/advance",
+            value: "Advance",
+            component:CppAdvance
+        },
+        {
+            id:3,
+            link:"/function",
+            value: "Function",
+            component:Function
+        },
+        {
+            id:4,
+            link:"/recursion",
+            value: "Recursion",
+            component:Recursion
+        },
+        {
+            id:5,
+            link:"/cppDsa",
+            value: "DSA",
+            component:CppDSA
+        },
+        {
+            id:6,
+            link:"/oop",
+            value: "OOP",
+            component:Oop
+        },
+        {
+            id:7,
+            link:"/encapsulation",
+            value: "Encapsulation",
+            component:Encapsulation
+        },
+        {
+            id:8,
+            link:"/inheritance",
+            value: "Inheritance",
+            component:Inheritance
+        },
+        {
+            id:9,
+            link:"/polymorphism",
+            value: "Polymorphism",
+            component:Polymorphism
+        },
+        {
+            id:10,
+            link:"/abstraction",
+            value: "Abstraction",
+            component:Abstraction
         },
     ],
 
 ]
 
-export default learningConfig;
+export default practiceLists;

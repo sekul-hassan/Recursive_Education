@@ -23,6 +23,9 @@
     .practiceSlider{
         width: 84px !important;
         float: left;
+        border: 1px solid silver;
+        border-top: none;
+        height: 94vh;
     }
     .practiceRightPage{
         padding: 1px 5px 1px 5px!important;

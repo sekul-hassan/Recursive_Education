@@ -38,6 +38,9 @@
     width: 121px;
     float: left;
     min-width: 79px;
+    border: 1px solid silver;
+    border-top: none;
+    height: 94vh;
 }
 .practiceRightPage{
     width: calc(100% - 121px);
