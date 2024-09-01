@@ -8,7 +8,7 @@ function LearningNav({navData}) {
             <ul className="hslider mx-0 px-2">
                 {
                     navData && navData.map((ack,idx)=> (
-                        <li className="mx-2"><Link to={`/learn/${ack.level}`}>{ack.level}</Link></li>
+                        <li className="mx-2"><Link to={`/learn${ack[0].link}`}>{ack[0].value}</Link></li>
                     ))
                 }
             </ul>
