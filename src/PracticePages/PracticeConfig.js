@@ -39,6 +39,15 @@ import AssociationScopes from "../Sequelize/AssociationScopes";
 import PolymorphicAssociations from "../Sequelize/PolymorphicAssociations";
 import Keys from "../DBMS/Keys";
 import CPPBasic from "../CPP/CPPBasic";
+import CppAdvance from "../CPP/CppAdvance";
+import Function from "../CPP/Function";
+import Recursion from "../CPP/Recursion";
+import Oop from "../CPP/OOP";
+import Encapsulation from "../CPP/Encapsulation";
+import Inheritance from "../CPP/Inheritance";
+import Polymorphism from "../CPP/Polymorphism";
+import Abstraction from "../CPP/Abstraction";
+import CppDSA from "../CPP/CppDSA";
 
 const practiceLists = [
     [
@@ -510,6 +519,60 @@ const practiceLists = [
             link:"/basic",
             value: "CPP",
             component:CPPBasic
+        },
+        {
+            id:2,
+            link:"/advance",
+            value: "Advance",
+            component:CppAdvance
+        },
+        {
+            id:3,
+            link:"/function",
+            value: "Function",
+            component:Function
+        },
+        {
+            id:4,
+            link:"/recursion",
+            value: "Recursion",
+            component:Recursion
+        },
+        {
+            id:5,
+            link:"/cppDsa",
+            value: "DSA",
+            component:CppDSA
+        },
+        {
+            id:6,
+            link:"/oop",
+            value: "OOP",
+            component:Oop
+        },
+        {
+            id:7,
+            link:"/encapsulation",
+            value: "Encapsulation",
+            component:Encapsulation
+        },
+        {
+            id:8,
+            link:"/inheritance",
+            value: "Inheritance",
+            component:Inheritance
+        },
+        {
+            id:9,
+            link:"/polymorphism",
+            value: "Polymorphism",
+            component:Polymorphism
+        },
+        {
+            id:10,
+            link:"/abstraction",
+            value: "Abstraction",
+            component:Abstraction
         },
     ],
     [
