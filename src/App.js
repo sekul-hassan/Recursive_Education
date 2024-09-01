@@ -16,6 +16,7 @@ import ProjectLecture from "./ProjectPages/ProjectLecture";
 import AcademicBody from "./Academic/AcademicBody";
 import TermConditionPage from "./Pages/TermConditionPage";
 import RefundPage from "./Pages/RefundPage";
+import Learn from "./Learning/Learn";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/academic" element={<AcademicBody/>}/>
             <Route path="/terms" element={<TermConditionPage/>}/>
             <Route path="/refund" element={<RefundPage/>}/>
+            <Route path="/learn" element={<Learn/>}/>
             <Route path="/academic/:id" element={<AcademicBody/>}/>
             <Route path="/academic/:id/:subject" element={<AcademicBody/>}/>
             <Route path="/javascript" element={<JSPractice/>}/>
