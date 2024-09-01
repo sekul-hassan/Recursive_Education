@@ -16,16 +16,16 @@ import ServiceCard from "../Components/ServiceCard";
 function ServicePage(props) {
 
     const serviceList = [
-        {logo:c,description:"Learn those from expert.",from:"Sekul hassan and GE Shohidullh"},
-        {logo:cpp,description:"Learn those from expert.",from:"Sekul hassan and GE Shohidullh"},
-        {logo:java,description:"Learn those from expert.",from:"Sekul hassan"},
-        {logo:python,description:"Learn those from expert.",from:"Sekul hassan"},
-        {logo:html,description:"Learn those from expert.",from:"GE Shohidullh"},
-        {logo:css,description:"Learn those from expert.",from:"GE Shohidullh"},
-        {logo:js,description:"Learn those from expert.",from:"SK Shahidul"},
-        {logo:react,description:"Learn those from expert.",from:"Sekul hassan"},
-        {logo:spring,description:"Learn those from expert.",from:"Sekul hassan"},
-        {logo:academic,description:"Learn those from expert.",from:"All are expert"},
+        {logo:c,description:"Learning those from expert.",from:"Sekul hassan and GE Shohidullh"},
+        {logo:cpp,description:"Learning those from expert.",from:"Sekul hassan and GE Shohidullh"},
+        {logo:java,description:"Learning those from expert.",from:"Sekul hassan"},
+        {logo:python,description:"Learning those from expert.",from:"Sekul hassan"},
+        {logo:html,description:"Learning those from expert.",from:"GE Shohidullh"},
+        {logo:css,description:"Learning those from expert.",from:"GE Shohidullh"},
+        {logo:js,description:"Learning those from expert.",from:"SK Shahidul"},
+        {logo:react,description:"Learning those from expert.",from:"Sekul hassan"},
+        {logo:spring,description:"Learning those from expert.",from:"Sekul hassan"},
+        {logo:academic,description:"Learning those from expert.",from:"All are expert"},
     ]
 
     return (
