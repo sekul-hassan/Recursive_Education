@@ -4,6 +4,7 @@ import Recent from "../Components/Recent";
 import Footer from "../Components/Footer";
 import TopMenu from "../Components/TopMenu";
 import OursIntro from "../Components/OursIntro";
+import DSABasic from "../DSA/DSABasic";
 
 function Home(props) {
     return (
@@ -12,6 +13,7 @@ function Home(props) {
             <HomeTopBar/>
             <Recent/>
             <OursIntro/>
+            <DSABasic/>
             <Footer/>
         </Fragment>
     );
