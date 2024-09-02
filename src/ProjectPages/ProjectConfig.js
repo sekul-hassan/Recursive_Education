@@ -1,6 +1,3 @@
-import shuttleHomeTop from "../Assets/Images/ProjectImg/shuttleHomeTop.png";
-import shuttleProject from "../Assets/Images/ProjectImg/need2.png";
-import ncpcProject from "../Assets/Images/ProjectImg/ncpc_site.png";
 import portfolio from "../Assets/Images/Portfolio/portfolio.png";
 import navbar from "../Assets/Images/Portfolio/navbar.png";
 import homeTop from "../Assets/Images/Portfolio/homeTop.png";
