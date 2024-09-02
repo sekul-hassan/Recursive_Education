@@ -27,7 +27,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<AboutPage/>}/>
             <Route path="/services" element={<ServicePage/>}/>
-            <Route path="/academic" element={<AcademicBody/>}/>
+            {/*<Route path="/academic" element={<AcademicBody/>}/>*/}
             <Route path="/terms" element={<TermConditionPage/>}/>
             <Route path="/refund" element={<RefundPage/>}/>
             <Route path="/learn" element={<Learn/>}/>
