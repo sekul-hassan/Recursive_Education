@@ -6,8 +6,7 @@ function SequelizeBasic() {
     return (
         <div className="globalDescription">
             <span className="globalSubTitle">Introduction to Sequelize:</span> <br/>
-            <span>Sequelize হল একটি promise-based ORM (Object-Relational Mapping) library যা Node.js এর সাথে ব্যবহৃত হয়। এটি বিভিন্ন SQL databases যেমন PostgreSQL, MySQL, MariaDB, SQLite, এবং Microsoft SQL Server এর সাথে কাজ করতে সাহায্য করে।</span>
-
+            <span>Sequelize হল একটি promise-based ORM (Object-Relational Mapping) library যা Node.js এর সাথে ব্যবহৃত হয়। এটি বিভিন্ন SQL databases যেমন PostgreSQL, MySQL, MariaDB, SQLite, এবং Microsoft SQL Server এর সাথে কাজ করতে সাহায্য করে।</span><br/>
 
             <span className="globalSubTitle">Setting Up Sequelize:</span> <br/>
             <span>Sequelize এবং একটি SQL database এর সাথে যোগাযোগ করার জন্য প্রথমে Sequelize package এবং database driver install করতে হবে:</span>
