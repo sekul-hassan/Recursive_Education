@@ -1,99 +1,80 @@
 import React from 'react';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 function Object(props) {
     return (
-        <p>
-            <strong>Object:</strong> জাভাস্ক্রিপ্টে object হল একটি data structure যা key-value pair আকারে তথ্য
-            সংরক্ষণ করে। প্রতিটি key কে property বলা হয় এবং তার corresponding value কে বলা হয় value।
-            <br/>
+        <div className="mt-2">
+            <strong>Object:</strong>
+            <div className="globalDescription">
+                জাভাস্ক্রিপ্টে object হল একটি data structure যা key-value pair আকারে তথ্য সংরক্ষণ করে। প্রতিটি key কে property বলা হয় এবং তার corresponding value কে বলা হয় value।
+            </div>
+            <br />
             Example:
-            <br/>
-            <code>
-                const person = {"{"}
-                <br/>
-                &nbsp;&nbsp;firstName: "John",
-                <br/>
-                &nbsp;&nbsp;lastName: "Doe",
-                <br/>
-                &nbsp;&nbsp;age: 30,
-                <br/>
-                &nbsp;&nbsp;address: {"{"}
-                <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;city: "New York",
-                <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;zipCode: 10001
-                <br/>
-                &nbsp;&nbsp;{"}"},
-                <br/>
-                {"}"};
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`const person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    address: {
+        city: "New York",
+        zipCode: 10001
+    }
+};`}
+            </SyntaxHighlighter>
+            <br />
             Accessing Object Properties:
-            <br/>
-            <code>
-                console.log(person.firstName); // Output: John
-                <br/>
-                console.log(person["lastName"]); // Output: Doe
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`console.log(person.firstName); // Output: John
+console.log(person["lastName"]); // Output: Doe`}
+            </SyntaxHighlighter>
+            <br />
             Modifying Object Properties:
-            <br/>
-            <code>
-                person.age = 31;
-                <br/>
-                console.log(person.age); // Output: 31
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`person.age = 31;
+console.log(person.age); // Output: 31`}
+            </SyntaxHighlighter>
+            <br />
             Adding New Properties:
-            <br/>
-            <code>
-                person.email = "john.doe@example.com";
-                <br/>
-                console.log(person.email); // Output: john.doe@example.com
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`person.email = "john.doe@example.com";
+console.log(person.email); // Output: john.doe@example.com`}
+            </SyntaxHighlighter>
+            <br />
             Object Methods:
-            <br/>
-            <code>
-                const person = {"{"}
-                <br/>
-                &nbsp;&nbsp;firstName: "John",
-                <br/>
-                &nbsp;&nbsp;lastName: "Doe",
-                <br/>
-                &nbsp;&nbsp;fullName: function() {"{"}
-                <br/>
-                &nbsp;&nbsp;&nbsp;&nbsp;return this.firstName + " " + this.lastName;
-                <br/>
-                &nbsp;&nbsp;{"}"},
-                <br/>
-                {"}"};
-                <br/>
-                console.log(person.fullName()); // Output: John Doe
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`const person = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+console.log(person.fullName()); // Output: John Doe`}
+            </SyntaxHighlighter>
+            <br />
             Looping Through Object Properties:
-            <br/>
-            <code>
-                for (let key in person) {"{"}
-                <br/>
-                &nbsp;&nbsp;console.log(key + ": " + person[key]);
-                <br/>
-                {"}"}
-            </code>
-            <br/>
+            <br />
+            <SyntaxHighlighter language="javascript" style={solarizedlight}>
+                {`for (let key in person) {
+    console.log(key + ": " + person[key]);
+}`}
+            </SyntaxHighlighter>
+            <br />
             Example Output:
-            <br/>
-            <code>
-                firstName: John
-                <br/>
-                lastName: Doe
-                <br/>
-                age: 31
-                <br/>
-                email: john.doe@example.com
-            </code>
-        </p>
+            <br />
+            <SyntaxHighlighter language="plaintext" style={solarizedlight}>
+                {`firstName: John
+lastName: Doe
+age: 31
+email: john.doe@example.com`}
+            </SyntaxHighlighter>
+        </div>
     );
 }
 

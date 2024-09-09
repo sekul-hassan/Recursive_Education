@@ -11,16 +11,18 @@ function LearnBody(props) {
     const [lecture, setLecture] = useState(learningConfig[0][1]);
     const [list,setList] = useState([]);
     const{language} = useParams();
+    const selectLanguage = language || "Javascript";
+    // alert(selectLanguage);
     const onSelectLecture = (lecture) => {
         setLecture(lecture);
     }
 
     useEffect(() => {
-        const data = learningConfig.find((item)=>item[0].link==="/"+language);
+        const data = learningConfig.find((item)=>item[0].link==="/"+selectLanguage);
         setLecture(data[1]);
         setList(data)
         console.log(data)
-    }, [language]);
+    }, [selectLanguage]);
 
     return (
         <Fragment>

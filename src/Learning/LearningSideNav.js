@@ -5,7 +5,7 @@ import {Nav, Navbar} from "react-bootstrap";
 function LearningSideNav({ practiceLists , onSelectLecture }) {
 
     const{language} = useParams();
-
+    const selectedLanguage = language || "Javascript";
     return (
         <Fragment>
             <Navbar expand={true} className="practiceList">
@@ -16,7 +16,7 @@ function LearningSideNav({ practiceLists , onSelectLecture }) {
                            item.component && (
                                <Link
                                    onClick={() => { onSelectLecture(item) }}
-                                   to={`/learn/${language}${item.link}`}>
+                                   to={`/learn/${selectedLanguage}${item.link}`}>
                                    {item.value}
                                </Link>
                            )
