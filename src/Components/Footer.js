@@ -14,7 +14,7 @@ import {Link} from "react-router-dom";
 function Footer() {
 
     return (
-        <Container fluid="true" className="p-2 copyRight">
+        <Container fluid="true" className="p-2 mt-4 copyRight">
             <Row className="mx-0">
                 <Col className="justify-content-start" lg={4} md={4} sm={4}>
                     <h4 className="globalSubTitle text-dark mt-sm-2">Contact</h4>

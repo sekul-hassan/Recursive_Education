@@ -1,24 +1,60 @@
 .navBar{
     width: 100%;
-    height: 50px;
-    background-color: rgba(0,0,0,1) !important;
+    height: 55px;
+    background-color: #1aca9d;
     padding: 0 5% 0 5%;
     transition: 0.5s;
+    box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 5px 4px -1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2);
 }
+.homeTopBackground {
+    background-size: cover;
+    width: 100%;
+    height: 25rem;
+    background: linear-gradient(to bottom right, #1aca9d 50%, #77B1D2 50%);
+
+}
+
+/*wave work start  */
+.svgBlock1{
+    width: 100%;
+    height: 100%;
+}
+
+
+.svgContainer{
+    width: 100%;
+    background: linear-gradient(to bottom right, #1aca9d 90%, #77B1D2 10%);
+    position: relative;
+    height: auto;
+}
+.svgRow{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+/*wave work end*/
+
+
 .navLink{
-    color: white !important;
-    font-family: Roboto,serif;
-    font-size: 18px;
-    font-weight: 300;
+    color: white ;
+    font-family: Montserrat,serif;
+    font-size: 15px;
+    font-weight: 400;
     text-decoration: none;
-    width: 80px;
+    text-transform: uppercase;
     text-align: center;
-    height: 50px;
-    padding-top: 11px;
+    padding: 13px 11px 11px 11px;
+
 }
 .navBarScroll{
     width: 100%;
-    height: 50px;
+    height: 55px;
     padding: 0 5% 0 5%;
     background-color:#ffffff !important;
     transition: 0.5s;
@@ -28,50 +64,28 @@
 }
 .navLinkScroll{
     color: rgba(0,0,0,0.9) !important;
-    font-family: Roboto,serif;
-    font-size: 18px;
-    font-weight: 300;
+    font-family: Montserrat,serif;
+    font-size: 15px;
+    font-weight: 400;
     text-decoration: none;
-    width: 80px;
-    text-align: center;
-    height: 50px;
-    padding-top: 11px;
+    text-transform: uppercase;
+    padding: 13px 11px 11px 11px;
 }
 .navLink:hover{
-    color: pink!important;
-    border: 1px dotted white!important;
+    color: black!important;
 }
 .navLinkScroll:hover{
-    color: #0d39e1 !important;
-    border: 1px dotted black!important;
+    color: #1aca9d !important;
 }
 
 .topBarContent {
     position: absolute;
     width: 100%;
-    top: 11rem;
+    top: 13rem;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
 }
-
-.homeTopBackground {
-    background-size: cover;
-    margin-top: -50px;
-    width: 100%;
-    height: 25rem;
-    background: url("../Images/banner.png") no-repeat fixed center;
-}
-
-.homeTopBackgroundOverlay{
-    margin-top: -50px;
-    background-size: cover;
-    background: rgba(0,0,0,0.7);
-    width: 100%;
-    height: 25rem;
-    position: relative;
-}
-
 .PrivacyTopBarContent {
     position: absolute;
     width: 100%;
@@ -85,6 +99,7 @@
     font-family: Popin, serif;
     font-weight: 300;
     text-transform: uppercase;
+    margin-bottom: 0;
 }
 .subTitle{
     color: white;
@@ -117,10 +132,11 @@
     font-family: Montserrat, serif;
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 0;
 }
 .logoImg{
     width: 100px;
-    height: 50px;
+    height: 55px;
     margin-left: 20px;
 }
 .contactLink{
@@ -141,6 +157,7 @@
     color: rgba(0,0,0,0.8);
     line-height: 1.8rem;
     text-decoration: none;
+    margin-bottom: 0;
 }
 .privacyTop{
     background-size: cover;
@@ -200,9 +217,8 @@
     border-radius: 4px;
 }
 .copyRight{
-    background-color: rgba(0,0,0,0.03);
+    background-color: rgba(67, 214, 247, 0.1);
     border-radius: 5px 5px 0 0;
-    margin: 10px!important;
 }
 .projectCardFooter{
     background-color: #059862;

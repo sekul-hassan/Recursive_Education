@@ -109,3 +109,9 @@
     }
 
 }
+
+@media (max-width: 1020px) {
+    .svgContainer{
+        height: 430px;
+    }
+}
