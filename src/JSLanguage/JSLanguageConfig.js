@@ -149,7 +149,213 @@ const jsLanguageConfig = {
                 "Web Development ",
             ]
         },
-        {linkTag : "/learn/Javascrip"}
+        {linkTag : "/learn/Javascrip/basic"}
+    ],
+    array:[
+        {
+            title: "Array : ",
+            description: " একই ডেটা টাইপের একাধিক মান সংরক্ষণের জন্য array ব্যবহার করা হয়। জাভাস্ক্রিপ্টে অ্যারে তৈরির জন্য [] ব্র্যাকেট ব্যবহার করা হয়।",
+            example:[
+                {code : "let numbers = [2, 3, 4, 5]; // এখানে [] ব্র্যাকেটের মধ্যে একটি অ্যারে তৈরি করা হয়েছে\n" +
+                        "// অ্যারে তৈরির সময় [] ব্র্যাকেট ব্যবহার করে মানগুলি কমা দ্বারা পৃথক করা হয় এবং অ্যারের মধ্যে সেগুলি রাখা হয়।\n" +
+                        "\n" +
+                        "// এছাড়াও, অ্যারে বিভিন্ন ডেটা টাইপের মান ধারণ করতে পারে:\n" +
+                        "let mixedArray = [1, 'hello', true, null];"},
+                {code : "const cars = [];\n" +
+                        "cars[0] = \"Saab\";\n" +
+                        "cars[1] = \"Volvo\";\n" +
+                        "cars[2] = \"BMW\";" }
+            ],
+        },
+        {
+            title: "Array methods : ",
+            minTitle:[
+                {
+                    title: "array.length ",
+                    description: "// return length of array",
+                    code:"let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "console.log(fruits.length); // আউটপুট: 3",
+                },
+                {
+                    title: "array.toString() ",
+                    description: "// মেথডটি array কে একটি string এ রূপান্তর করে, যেখানে প্রতিটি এলিমেন্ট কমা দিয়ে আলাদা করা থাকে।",
+                    code:"let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "console.log(fruits.toString()); // আউটপুট: apple,banana,mango",
+                },
+                {
+                    title: "array.at() ",
+                    description: "// মেথডটি array এর নির্দিষ্ট পজিশনের এলিমেন্ট রিটার্ন করে। পজিটিভ এবং নেগেটিভ উভয় ইনডেক্স ব্যবহার করা যায়। নেগেটিভ ইনডেক্স array এর শেষ থেকে গোনা হয়।",
+                    code:"let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "console.log(fruits.at(1)); // আউটপুট: 'banana'\n" +
+                        "console.log(fruits.at(-1)); // আউটপুট: 'mango'",
+                },
+                {
+                    title: "array.join()",
+                    description: "// মেথডটি array এর সব এলিমেন্টগুলিকে একটি string এ রূপান্তর করে এবং একটি নির্দিষ্ট separator (যেমন, কমা, স্পেস) ব্যবহার করে তাদের সংযুক্ত করে।",
+                    code:"let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "console.log(fruits.join(', ')); // আউটপুট: 'apple, banana, mango'\n" +
+                        "console.log(fruits.join(' - ')); // আউটপুট: 'apple - banana - mango'",
+                },
+                {
+                    title: "array.push() ",
+                    description: "// মেথডটি একটি array এর শেষে একটি বা একাধিক এলিমেন্ট যোগ করে এবং নতুন array এর length রিটার্ন করে।",
+                    code:"let fruits = ['apple', 'banana'];\n" +
+                        "fruits.push('mango');\n" +
+                        "console.log(fruits); // আউটপুট: ['apple', 'banana', 'mango']\n" +
+                        "let newLength = fruits.push('orange');\n" +
+                        "console.log(newLength); // আউটপুট: 4",
+                },
+                {
+                    title: "array.pop()  ",
+                    description: "// মেথডটি একটি array এর শেষ এলিমেন্টটি সরিয়ে ফেলে এবং সেই সরানো এলিমেন্টটি রিটার্ন করে।",
+                    code:"let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "let lastFruit = fruits.pop();\n" +
+                        "console.log(lastFruit); // আউটপুট: 'mango'\n" +
+                        "console.log(fruits); // আউটপুট: ['apple', 'banana']",
+                },
+            ]
+        },
+        {
+            title: "Search methods : ",
+            minTitle: [
+                {
+                    title: "indexOf() ",
+                    description: "// Array এর মধ্যে নির্দিষ্ট এলিমেন্টের প্রথম occurrence এর index রিটার্ন করে।",
+                    code: "let fruits = ['apple', 'banana', 'mango', 'banana'];\n" +
+                        "let index = fruits.indexOf('banana');\n" +
+                        "console.log(index); // আউটপুট: 1\n" +
+                        "let notFoundIndex = fruits.indexOf('orange');\n" +
+                        "console.log(notFoundIndex); // আউটপুট: -1"
+                },
+                {
+                    title: "array.includes() ",
+                    description: "// Array এর মধ্যে নির্দিষ্ট এলিমেন্ট আছে কিনা তা true বা false রিটার্ন করে।",
+                    code: "let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "let hasBanana = fruits.includes('banana');\n" +
+                        "console.log(hasBanana); // আউটপুট: true\n" +
+                        "let hasOrange = fruits.includes('orange');\n" +
+                        "console.log(hasOrange); // আউটপুট: false"
+                },
+                {
+                    title: "array.find()  ",
+                    description: "// Array এর মধ্যে নির্দিষ্ট condition পূরণ করা প্রথম এলিমেন্ট রিটার্ন করে। যদি কোন এলিমেন্ট না পাওয়া যায়, এটি undefined রিটার্ন করে।",
+                    code: "let numbers = [5, 12, 8, 130, 44];\n" +
+                        "let found = numbers.find(element => element > 10);\n" +
+                        "console.log(found); // আউটপুট: 12"
+                },
+                {
+                    title: "array.findIndex() ",
+                    description: " // Array এর মধ্যে নির্দিষ্ট condition পূরণ করা প্রথম এলিমেন্টের index রিটার্ন করে। যদি কোন এলিমেন্ট না পাওয়া যায়, এটি -1 রিটার্ন করে।",
+                    code: "let numbers = [5, 12, 8, 130, 44];\n" +
+                        "let foundIndex = numbers.findIndex(element => element > 10);\n" +
+                        "console.log(foundIndex); // আউটপুট: 1"
+                },
+                {
+                    title: "array.shift() ",
+                    description: "// অ্যারের প্রথম উপাদানটি মুছে ফেলে এবং সেই মুছে ফেলা উপাদানটি রিটার্ন করে।",
+                    code: "let fruits = ['apple', 'banana', 'cherry'];\n" +
+                        "let firstFruit = fruits.shift();\n" +
+                        "console.log(firstFruit); // 'apple'\n" +
+                        "console.log(fruits); // ['banana', 'cherry']"
+                },
+                {
+                    title: "array.unshift() ",
+                    description: "// অ্যারের শুরুতে এক বা একাধিক উপাদান add করে এবং নতুন অ্যারের length return করে।",
+                    code: "let numbers = [2, 3, 4];\n" +
+                        "numbers.unshift(0, 1);\n" +
+                        "console.log(numbers); // [0, 1, 2, 3, 4]"
+                },
+                {
+                    title: "delete array[index] ",
+                    description: "// অ্যারের একটি উপাদান মুছে ফেলে, কিন্তু অ্যারে তে একটি Hole রেখে দেয় (অর্থাৎ, উপাদানগুলি সরানো হয় না এবং অ্যারের দৈর্ঘ্য পরিবর্তিত হয় না)।",
+                    code: "let myArray = [1, 2, 3, 4, 5];\n" +
+                        "\n" +
+                        "// Deleting the element at index 2\n" +
+                        "delete myArray[2];\n" +
+                        "\n" +
+                        "console.log(myArray);  // Output: [1, 2, empty, 4, 5]\n" +
+                        "console.log(myArray.length);  // Output: 5\n"
+                },
+                {
+                    title: "array.splice() ",
+                    description: "// একটি নির্দিষ্ট ইনডেক্সে উপাদান যোগ করা বা মুছে ফেলা।",
+                    code: "let array = [1, 2, 3, 4, 5];\n" +
+                        "array.splice(2, 2, 'a', 'b');\n" +
+                        "console.log(array); // [1, 2, 'a', 'b', 5]"
+                },
+            ]
+        },
+        {
+            title: "Sort methods : ",
+            minTitle: [
+                {
+                    title: "array.sort() ",
+                    description:   "// Array এর এলিমেন্টগুলোকে alphabetically বা numerically sort করে।",
+                    code: "let fruits = ['mango', 'apple', 'banana'];\n" +
+                        "fruits.sort();\n" +
+                        "console.log(fruits); // আউটপুট: ['apple', 'banana', 'mango']\n" +
+                        "let numbers = [40, 100, 1, 5, 25, 10];\n" +
+                        "numbers.sort();\n" +
+                        "console.log(numbers); // আউটপুট: [1, 5, 10, 25, 40, 100]"
+                },
+                {
+                    title: "array.reverse() ",
+                    description: "// Array এর এলিমেন্টগুলোকে উল্টে দেয়, অর্থাৎ শেষ থেকে শুরু পর্যন্ত।",
+                    code: "let fruits = ['mango', 'apple', 'banana'];\n" +
+                        "fruits.reverse();\n" +
+                        "console.log(fruits); // আউটপুট: ['banana', 'apple', 'mango']"
+                },
+            ]
+        },
+        {
+            title: "Iteration methods : ",
+            minTitle: [
+                {
+                    title: "array.forEach() ",
+                    description: "// মেথডটি array এর প্রতিটি এলিমেন্টের জন্য একটি ফাংশন কল করে। এটি কোন value রিটার্ন করে না, শুধু প্রতিটি এলিমেন্টের উপর কাজ করে।",
+                    code: "let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "fruits.forEach(fruit => console.log(fruit)); // আউটপুট:\n" +
+                        "'// apple'\n" +
+                        "'// banana'\n" +
+                        "'// mango'"
+                },
+                {
+                    title: "array.map() ",
+                    description: "// Array এর প্রতিটি এলিমেন্টের জন্য একটি ফাংশন চালিয়ে একটি নতুন array রিটার্ন করে।",
+                    code: "let numbers = [1, 2, 3, 4];\n" +
+                        "let doubled = numbers.map(num => num * 2);\n" +
+                        "console.log(doubled); // আউটপুট: [2, 4, 6, 8]"
+                },
+                {
+                    title: "array.filter() ",
+                    description: "// Array এর প্রতিটি এলিমেন্টের জন্য একটি condition পরীক্ষা করে এবং condition পূরণ করা এলিমেন্টগুলোকে নিয়ে একটি নতুন array তৈরি করে।",
+                    code: "let fruits = ['apple', 'banana', 'mango'];\n" +
+                        "fruits.forEach(fruit => console.log(fruit)); // আউটপুট:\n" +
+                        "'// apple'\n" +
+                        "'// banana'\n" +
+                        "'// mango'"
+                },
+                {
+                    title: "array.reduce() ",
+                    description: "// Array এর সব এলিমেন্টগুলিকে একটি single value তে রূপান্তর করে। এটি accumulator এবং current value নামক দুটি প্যারামিটার গ্রহণ করে।",
+                    code: "let numbers = [1, 2, 3, 4];\n" +
+                        "let sum = numbers.reduce((acc, current) => acc + current, 0);\n" +
+                        "console.log(sum); // আউটপুট: 10"
+                },
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "array",
+                "DSA",
+                "JS ",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/array"}
     ]
 }
 
