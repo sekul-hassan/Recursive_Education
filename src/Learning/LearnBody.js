@@ -43,6 +43,7 @@ function LearnBody(props) {
 
                 </div>
             </div>
+
             <Footer/>
         </Fragment>
     );
