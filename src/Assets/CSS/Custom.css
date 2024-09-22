@@ -13,7 +13,6 @@
     width: 100%;
     height: 25rem;
     background: linear-gradient(to bottom right, #1aca9d 50%, #77B1D2 50%);
-
 }
 
 /*wave work start  */
@@ -235,17 +234,26 @@
     object-fit: cover;
 }
 
-.slider-container {
-    width: 100%;
-    padding: 0 10%;
-    margin-bottom: -18px;
-    overflow-x: hidden;
-    text-align: center;
-}
+/*.slider-container {*/
+/*    width: 100%;*/
+/*    padding: 0 10%;*/
+/*    margin-bottom: -18px;*/
+/*    overflow-x: hidden;*/
+/*    text-align: center;*/
+/*}*/
 .showMore{
     color: blue;
     cursor: pointer;
     text-decoration: underline;
     display: inline;
     white-space: nowrap;
+}
+.someBG{
+    background-color: rgba(26, 202, 157, 0.45);
+    /*background-color: #384055;*/
+}
+.someBG1{
+    background-color: rgba(221, 232, 226, 0.48);
+    overflow-x: hidden;
+    padding-top: 20px;
 }

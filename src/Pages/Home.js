@@ -12,8 +12,8 @@ function Home(props) {
             <TopMenu/>
             <HomeTopBar/>
             <Learn/>
-            <OursIntro/>
             <Recent/>
+            <OursIntro/>
             <Footer/>
         </Fragment>
     );

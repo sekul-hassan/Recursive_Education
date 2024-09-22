@@ -18,7 +18,7 @@ const OursIntro = () => {
     };
 
     return (
-        <Container fluid="true" className="slider-container mt-2">
+        <Container fluid="true" className="someBG1 text-center p-xl-5 p-md-3 p-sm-2">
             <h4 className="globalTitle text-dark">Ours Info</h4>
             <Slider {...settings}>
                 {oursInfoConfig && oursInfoConfig.map((info, idx) => (

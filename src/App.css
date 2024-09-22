@@ -77,3 +77,8 @@ code{
     margin: 0!important;
     padding: 0!important;
 }
+.tag{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}

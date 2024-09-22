@@ -7,7 +7,7 @@ function Recent(props) {
     const topFour = projects[0].classes.slice(2,4);
 
     return (
-       <Container fluid="true" className="mt-3">
+       <Container fluid="true" className="someBG p-xl-5 p-md-3 p-sm-2">
            <h4 className="globalTitle text-dark text-center mbNeg">Recent Activity</h4>
            <Row className="mx-0">
                {topFour && topFour.map((practice, idx) => (

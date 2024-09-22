@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Learn(props) {
     return (
-        <Container fluid="true" className=" svgContainer">
+        <Container fluid="true" className="p-xl-5 p-md-3 p-sm-2 svgContainer">
             <svg className="svgBlock1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
                     fill="#77B1D2"

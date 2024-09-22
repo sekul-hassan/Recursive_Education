@@ -356,7 +356,188 @@ const jsLanguageConfig = {
             ]
         },
         {linkTag : "/learn/Javascrip/array"}
-    ]
+    ],
+
+    setMat:[
+        {
+            title:"Set : ",
+            description: "জাভাস্ক্রিপ্টের Set একটি ডেটা স্ট্রাকচার যা ইউনিক value store করে। ",
+            example:[
+                {
+                    code: "let numbers = new Set([1, 2, 3, 4]);\n" +
+                        "console.log(numbers); // Set {1, 2, 3, 4}"
+                },
+            ]
+        },
+        {
+            title: "Set Methods : ",
+            minTitle:[
+                {
+                    title: "set.add(value) ",
+                    description: " নতুন value add করা।",
+                    code: "let fruits = new Set();\n" +
+                        "fruits.add('apple');\n" +
+                        "fruits.add('banana');\n" +
+                        "console.log(fruits); // Set {'apple', 'banana'}"
+                },
+
+                {
+                    title: "set.delete(value) ",
+                    description: "একটি নির্দিষ্ট value মুছে ফেলা।",
+                    code: "let fruits = new Set(['apple', 'banana', 'cherry']);\n" +
+                        "fruits.delete('banana');\n" +
+                        "console.log(fruits); // Set {'apple', 'cherry'}"
+                },
+                {
+                    title: "set.has(value) ",
+                    description: "একটি value Set এ উপস্থিত আছে কিনা পরীক্ষা করা। ",
+                    code: "let numbers = new Set([1, 2, 3, 4]);\n" +
+                        "console.log(numbers.has(3)); // true\n" +
+                        "console.log(numbers.has(5)); // false"
+                },
+                {
+                    title: "set.size ",
+                    description: "Set এর মধ্যে মোট এলিমেন্ট সংখ্যা।",
+                    code: "let numbers = new Set([1, 2, 3]);\n" +
+                        "console.log(numbers.size); // 3"
+                },
+            ]
+        },
+        {
+            title: "Map Methods : ",
+            minTitle: [
+                {
+                    title: "map.set(key, value)",
+                    description: "নতুন key-value pair set করা।",
+                    code: "let map = new Map();\n" +
+                        "map.set('name', 'Alice');\n" +
+                        "map.set('age', 30);\n" +
+                        "console.log(map); // Map {'name' => 'Alice', 'age' => 30}"
+                },
+                {
+                    title: "map.get(key)",
+                    description: "একটি কী এর জন্য সংশ্লিষ্ট value রিটার্ন করা।",
+                    code: "let map = new Map([['name', 'Alice'], ['age', 30]]);\n" +
+                        "console.log(map.get('name')); // 'Alice'\n" +
+                        "console.log(map.get('age')); // 30"
+                },
+                {
+                    title: "map.has(key)",
+                    description: "একটি key Map এ উপস্থিত আছে কিনা পরীক্ষা করা।",
+                    code: "let map = new Map([['name', 'Alice']]);\n" +
+                        "console.log(map.has('name')); // true\n" +
+                        "console.log(map.has('age')); // false"
+                },
+                {
+                    title: "map.delete(key)",
+                    description: "একটি নির্দিষ্ট key-value pair মুছে ফেলা।",
+                    code: "let map = new Map([['name', 'Alice'], ['age', 30]]);\n" +
+                        "map.delete('age');\n" +
+                        "console.log(map); // Map {'name' => 'Alice'}"
+                },
+                {
+                    title: "map.clear()",
+                    description: "Map এর সব key-value pair মুছে ফেলা।",
+                    code: "let map = new Map([['name', 'Alice'], ['age', 30]]);\n" +
+                        "map.clear();\n" +
+                        "console.log(map); // Map {}"
+                },
+                {
+                    title: "map.size",
+                    description: "Map এর মধ্যে মোট key-value pair সংখ্যা।",
+                    code: "let map = new Map([['name', 'Alice'], ['age', 30]]);\n" +
+                        "console.log(map.size); // 2"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "DSA ",
+                "Set Map ",
+                "JS ",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/set&map"}
+    ],
+
+    object:[
+        {
+            title: "Object : ",
+            description: " জাভাস্ক্রিপ্টে object হল একটি data structure যা key-value pair আকারে তথ্য সংরক্ষণ করে। প্রতিটি key কে property বলা হয় এবং তার corresponding value কে বলা হয় value।\n",
+            example:[
+                {
+                    code:"const person = {\n" +
+                        "    firstName: \"John\",\n" +
+                        "    lastName: \"Doe\",\n" +
+                        "    age: 30,\n" +
+                        "    address: {\n" +
+                        "        city: \"New York\",\n" +
+                        "        zipCode: 10001\n" +
+                        "    }\n" +
+                        "};"
+                },
+            ],
+            minTitle:[
+                {
+                    title: "Accessing Object Properties ",
+                    code:"console.log(person.firstName); // Output: John\n" +
+                        "console.log(person[\"lastName\"]); // Output: Doe"
+                },
+                {
+                    title: "Modifying Object Properties ",
+                    code: "person.age = 31;\n" +
+                        "console.log(person.age); // Output: 31"
+                },
+                {
+                    title: "Adding New Properties ",
+                    code: "person.email = \"john.doe@example.com\";\n" +
+                        "console.log(person.email); // Output: john.doe@example.com"
+                },{
+
+                    title: "Object Methods ",
+                    code: "const person = {\n" +
+                        "    firstName: \"John\",\n" +
+                        "    lastName: \"Doe\",\n" +
+                        "    fullName: function() {\n" +
+                        "        return this.firstName + \" \" + this.lastName;\n" +
+                        "    }\n" +
+                        "};\n" +
+                        "console.log(person.fullName()); // Output: John Doe"
+                },
+                {
+
+                    title: "Looping Through Object Properties:",
+                    code: "for (let key in person) {\n" +
+                        "    console.log(key + \": \" + person[key]);\n" +
+                        "}"
+                },
+            ]
+        },
+        {
+            title: "Example Output ",
+            code:"firstName: John\n" +
+                "lastName: Doe\n" +
+                "age: 31\n" +
+                "email: john.doe@example.com"
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Object",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/object"}
+    ],
+
 }
 
 export default jsLanguageConfig;

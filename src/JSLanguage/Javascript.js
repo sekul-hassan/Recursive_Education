@@ -21,7 +21,7 @@ function Javascript(props) {
                                 }
                             </ol>
                         }
-                        <div className="mt-3 w-100 d-flex">
+                        <div className="tag">
                             {
                                 language.tags && language.tags.map(tag => (
                                     <h1 className="title"><Link to={language.linkTag} className="px-1" ><strong>{tag}</strong></Link></h1>

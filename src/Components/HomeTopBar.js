@@ -8,7 +8,7 @@ function HomeTopBar(props) {
     return (
         <Fragment>
             <Container fluid="true">
-                <div  className="homeTopBackground">
+                <div  className="homeTopBackground p-xl-5 p-md-3 p-sm-2">
                     <div className="homeTopBackgroundOverlay">
                         <div className="topBarContent text-center">
                             <h4 className="globalTitle text-white  mt-4"><TypeWriting

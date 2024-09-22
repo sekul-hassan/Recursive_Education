@@ -30,7 +30,7 @@ function Array(props) {
                                 ))
                             }
                         </ol>
-                        <div className="mt-3 w-100 d-flex">
+                        <div className="tag">
                             {
                                 item.tags && item.tags.map(tag => (
                                     <h1 className="title"><Link to={item.linkTag} className="px-1"><strong>{tag}</strong></Link></h1>

@@ -1,79 +1,53 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import JSLanguageConfig from "./JSLanguageConfig";
+import {Link} from "react-router-dom";
 
 function Object(props) {
     return (
         <div className="mt-2">
-            <strong>Object:</strong>
-            <div className="globalDescription">
-                জাভাস্ক্রিপ্টে object হল একটি data structure যা key-value pair আকারে তথ্য সংরক্ষণ করে। প্রতিটি key কে property বলা হয় এবং তার corresponding value কে বলা হয় value।
-            </div>
-            <br />
-            Example:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`const person = {
-    firstName: "John",
-    lastName: "Doe",
-    age: 30,
-    address: {
-        city: "New York",
-        zipCode: 10001
-    }
-};`}
-            </SyntaxHighlighter>
-            <br />
-            Accessing Object Properties:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`console.log(person.firstName); // Output: John
-console.log(person["lastName"]); // Output: Doe`}
-            </SyntaxHighlighter>
-            <br />
-            Modifying Object Properties:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`person.age = 31;
-console.log(person.age); // Output: 31`}
-            </SyntaxHighlighter>
-            <br />
-            Adding New Properties:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`person.email = "john.doe@example.com";
-console.log(person.email); // Output: john.doe@example.com`}
-            </SyntaxHighlighter>
-            <br />
-            Object Methods:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`const person = {
-    firstName: "John",
-    lastName: "Doe",
-    fullName: function() {
-        return this.firstName + " " + this.lastName;
-    }
-};
-console.log(person.fullName()); // Output: John Doe`}
-            </SyntaxHighlighter>
-            <br />
-            Looping Through Object Properties:
-            <br />
-            <SyntaxHighlighter language="javascript" style={solarizedlight}>
-                {`for (let key in person) {
-    console.log(key + ": " + person[key]);
-}`}
-            </SyntaxHighlighter>
-            <br />
-            Example Output:
-            <br />
-            <SyntaxHighlighter language="plaintext" style={solarizedlight}>
-                {`firstName: John
-lastName: Doe
-age: 31
-email: john.doe@example.com`}
-            </SyntaxHighlighter>
+                {
+                    JSLanguageConfig.object && JSLanguageConfig.object.map((item, index) => (
+                        <Fragment>
+                                <h1 className="globalDescription"><strong
+                                    className="title">{item.title}</strong>{item.description}
+                                </h1>
+                                {
+                                    item.example && item.example.map((item, index) => (
+                                        <SyntaxHighlighter className="mt-3" language="javascript"
+                                                           style={solarizedlight}>{item.code}</SyntaxHighlighter>
+                                    ))
+                                }
+                                {
+                                        item.code && (<SyntaxHighlighter className="mt-3" language="javascript"
+                                                                         style={solarizedlight}>{item.code}</SyntaxHighlighter>)
+                                }
+                                <ol>
+                                        {
+                                            item.minTitle && item.minTitle.map((item, index) => (
+                                                <Fragment>
+                                                        <li><h1 className="globalDescription"><strong
+                                                            className="subTitle text-dark">{item.title}</strong>
+                                                        </h1>{item.description}</li>
+                                                        <SyntaxHighlighter className="mt-3" language="javascript"
+                                                                           style={solarizedlight}>{item.code}</SyntaxHighlighter>
+                                                </Fragment>
+                                            ))
+                                        }
+                                </ol>
+                                <div className="tag">
+                                        {
+                                            item.tags && item.tags.map(tag => (
+                                                <h1 className="title"><Link to={item.linkTag}
+                                                                            className="px-1"><strong>{tag}</strong></Link></h1>
+                                            ))
+                                        }
+                                </div>
+                        </Fragment>
+                    ))
+                }
+
         </div>
     );
 }

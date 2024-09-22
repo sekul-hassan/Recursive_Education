@@ -56,4 +56,7 @@
     .modalContentFooter{
         padding: 10px!important;
     }
+    .tag{
+        display: inline-block;
+    }
 }
