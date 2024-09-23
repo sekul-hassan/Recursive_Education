@@ -538,6 +538,672 @@ const jsLanguageConfig = {
         {linkTag : "/learn/Javascrip/object"}
     ],
 
+    number:[
+        {
+            title:" Number Operations : ",
+            description:"JavaScript-এ Number টাইপের Data নিয়ে বিভিন্ন ধরনের অপারেশন করা যায়। ",
+        },
+        {
+            title: " Number Properties : ",
+            description:"JavaScript-এর Number এর কিছু property আছে, যেমন MAX_VALUE, MIN_VALUE, NaN ইত্যাদি।",
+            code:"console.log(Number.MAX_VALUE); // Output: 1.7976931348623157e+308\n" +
+                "console.log(Number.MIN_VALUE); // Output: 5e-324\n" +
+                "console.log(Number.NaN); // Output: NaN (Not a Number)"
+        },
+        {
+            title: "Number Methods : ",
+            description: "JavaScript-এ Number-এর জন্য অনেক গুলো মেথড আছে। নিচে কিছু উল্লেখযোগ্য মেথডের উদাহরণ দেওয়া হলো : ",
+            minTitle:[
+                {
+                    title: "toFixed() ",
+                    description: "এই মেথডটি একটি নম্বরের নির্দিষ্ট সংখ্যক দশমিক স্থান পর্যন্ত কাটে এবং একটি স্ট্রিং রিটার্ন করে।",
+                    code: "let num = 5.6789;\n" +
+                        "let result = num.toFixed(2);\n" +
+                        "console.log(result); // Output: \"5.68\""
+                },
+                {
+                    title: "toString() ",
+                    description: "এই মেথডটি একটি নম্বরকে স্ট্রিং-এ রূপান্তর করে।",
+                    code: "let num = 123;\n" +
+                        "let str = num.toString();\n" +
+                        "console.log(str); // Output: \"123\""
+                },
+                {
+                    title: "parseInt() & parseFloat() ",
+                    description: "এই মেথডগুলো স্ট্রিং থেকে যথাক্রমে ইন্টিজার ও ফ্লোট সংখ্যা বের করতে ব্যবহার করা হয়।",
+                    code: "let intNum = parseInt(\"123\");\n" +
+                        "let floatNum = parseFloat(\"12.34\");\n" +
+                        "console.log(intNum); // Output: 123\n" +
+                        "console.log(floatNum); // Output: 12.34"
+                },
+            ]
+        },
+        {
+            title: "BigInt vs Number : ",
+            description: "BigInt এবং Number এর মধ্যে পার্থক্য হচ্ছে, BigInt অনেক বড় সংখ্যার সাথে কাজ করতে পারে এবং এটি অপ্রয়োজনীয় দশমিক সংখ্যা কাটতে পারে না।",
+            code: "let bigNum = 12345678901234567890n;\n" +
+                "let num = 12345678901234567890;\n" +
+                "console.log(bigNum); // Output: 12345678901234567890n\n" +
+                "console.log(num); // Output: 12345678901234567000 (Precision loss occurs in Number)",
+        },
+        {
+            title: "Note : ",
+            description: "BigInt এবং Number টাইপের ভ্যালু একসাথে সরাসরি ব্যবহার করা যায় না, এজন্য টাইপ কনভার্সন করতে হয়।",
+            code: "let bigNum = 100n;\n" +
+                "let num = 20;\n" +
+                "// console.log(bigNum + num); // Error\n" +
+                "let result = bigNum + BigInt(num);\n" +
+                "console.log(result); // Output: 120n"
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Number",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/number"}
+    ],
+
+    string: [
+        {
+            title: "String Operations : ",
+            description: " JavaScript-এ বিভিন্ন স্ট্রিং অপারেশন করা যায় যা ডাটা ম্যানিপুলেশনে অনেক কাজে আসে।"
+        },
+        {
+            title: "String Methods : ",
+            minTitle:[
+                {
+                    title: "Length Property ",
+                    description: " স্ট্রিং এর দৈর্ঘ্য বের করতে length প্রপার্টি ব্যবহার করা হয়। ",
+                    code: "let text = \"Hello, World!\";\n" +
+                        "console.log(text.length); // Output: 13"
+                },
+                {
+                    title: " String Concatenation ",
+                    description: "দুইটি বা তার বেশি স্ট্রিং একত্রিত করতে + অপারেটর বা concat() মেথড ব্যবহার করা হয়।",
+                    code: "let str1 = \"Hello\";\n" +
+                        "let str2 = \"World\";\n" +
+                        "let result = str1 + \", \" + str2 + \"!\";\n" +
+                        "console.log(result); // Output: \"Hello, World!\"\n" +
+                        "\n" +
+                        "let resultConcat = str1.concat(\", \", str2, \"!\");\n" +
+                        "console.log(resultConcat); // Output: \"Hello, World!\""
+                },
+                {
+                    title: "String to UpperCase ",
+                    description: "স্ট্রিং এর সমস্ত ক্যারেক্টারকে uppercase (বড় হাতের অক্ষর) এ রূপান্তর করতে toUpperCase() মেথড ব্যবহার করা হয়।",
+                    code:"let text = \"Hello, World!\";\n" +
+                        "let upperText = text.toUpperCase();\n" +
+                        "console.log(upperText); // Output: \"HELLO, WORLD!\""
+                },
+                {
+                    title: "String to LowerCase ",
+                    description: "স্ট্রিং এর সমস্ত ক্যারেক্টারকে lowercase (ছোট হাতের অক্ষর) এ রূপান্তর করতে toLowerCase() মেথড ব্যবহার করা হয়।",
+                    code: "let text = \"Hello, World!\";\n" +
+                        "let lowerText = text.toLowerCase();\n" +
+                        "console.log(lowerText); // Output: \"hello, world!\""
+                },
+                {
+                    title: "String Slice ",
+                    description: "স্ট্রিং এর নির্দিষ্ট অংশ কেটে বের করতে slice() মেথড ব্যবহার করা হয়।",
+                    code: "let text = \"Hello, World!\";\n" +
+                        "let slicedText = text.slice(7, 12);\n" +
+                        "console.log(slicedText); // Output: \"World\""
+                },
+                {
+                    title: "String Replace ",
+                    description: "স্ট্রিং এর নির্দিষ্ট অংশকে নতুন স্ট্রিং দিয়ে প্রতিস্থাপন করতে replace() মেথড ব্যবহার করা হয়।",
+                    code: "let text = \"Hello, World!\";\n" +
+                        "let newText = text.replace(\"World\", \"Universe\");\n" +
+                        "console.log(newText); // Output: \"Hello, Universe!\""
+                },
+                {
+                    title: "String Split ",
+                    description: "স্ট্রিং এর অংশগুলোকে আলাদা আলাদা করে array তে পরিণত করতে split() মেথড ব্যবহার করা হয়।",
+                    code: "let text = \"Hello, World!\";\n" +
+                        "let arr = text.split(\", \");\n" +
+                        "console.log(arr); // Output: [\"Hello\", \"World!\"]"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "String",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/string"}
+    ],
+
+    condition:[
+        {
+            title: "Condition : ",
+            description: "জাভাস্ক্রিপ্টে শর্ত বা condition ব্যবহারের মাধ্যমে আমরা একটি নির্দিষ্ট শর্ত পূরণ হলে নির্দিষ্ট কাজ করতে পারি।",
+            minTitle:[
+                {
+                    title: "if(condition) ",
+                    description: "যদি শর্তটি সত্য হয়, তাহলে একটি কোড ব্লক চালানো হবে, আর যদি মিথ্যা হয়, তাহলে অন্য কোড ব্লকটি চালানো হবে।",
+                    code:"let age = 18;\n" +
+                        "if (age >= 18) {\n" +
+                        "  console.log(\"You are eligible to vote.\");\n" +
+                        "}\n" +
+                        "// Output: \"You are eligible to vote.\""
+                },
+                {
+                    title: "else",
+                    code:"let age = 16;\n" +
+                        "if (age >= 18) {\n" +
+                        "  console.log(\"You are eligible to vote.\");\n" +
+                        "} else {\n" +
+                        "  console.log(\"You are not eligible to vote.\");\n" +
+                        "}\n" +
+                        "// Output: \"You are not eligible to vote.\""
+                },
+                {
+                    title: "else if(condition) ",
+                    description: "যদি একটি শর্ত মিথ্যা হয়, তাহলে পরবর্তী শর্তগুলো পরীক্ষা করা হয়।",
+                    code: "let score = 85;\n" +
+                        "if (score >= 90) {\n" +
+                        "  console.log(\"Grade: A\");\n" +
+                        "} else if (score >= 80) {\n" +
+                        "  console.log(\"Grade: B\");\n" +
+                        "} else if (score >= 70) {\n" +
+                        "  console.log(\"Grade: C\");\n" +
+                        "} else {\n" +
+                        "  console.log(\"Grade: F\");\n" +
+                        "}\n" +
+                        "// Output: \"Grade: B\""
+                },
+                {
+                    title: "ternary operator ? ",
+                    description: "এক লাইনে শর্ত এবং দুটি সম্ভাব্য ফলাফলের মধ্যে একটিকে বাছাই করা যায়।",
+                    code: "let age = 18;\n" +
+                        "let eligibility = (age >= 18) ? \"Eligible to vote\" : \"Not eligible to vote\";\n" +
+                        "console.log(eligibility);\n" +
+                        "// Output: \"Eligible to vote\""
+                },
+                {
+                    title: "switch statement",
+                    description: "একাধিক শর্তের মধ্যে একটি ম্যাচ খুঁজে পাওয়া এবং সেই অনুযায়ী কোড চালানো যায়।",
+                    code: "let day = 3;\n" +
+                        "switch (day) {\n" +
+                        "  case 1:\n" +
+                        "    console.log(\"Sunday\");\n" +
+                        "    break;\n" +
+                        "  case 2:\n" +
+                        "    console.log(\"Monday\");\n" +
+                        "    break;\n" +
+                        "  case 3:\n" +
+                        "    console.log(\"Tuesday\");\n" +
+                        "    break;\n" +
+                        "  default:\n" +
+                        "    console.log(\"Invalid day\");\n" +
+                        "}\n" +
+                        "// Output: \"Tuesday\""
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Condition",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/condition"}
+    ],
+
+    loop:[
+        {
+            title: "Loop : ",
+            description: "জাভাস্ক্রিপ্টে loops ব্যবহারের মাধ্যমে আমরা একটি কাজকে বারবার নির্দিষ্ট সংখ্যক বার চালাতে পারি।",
+            minTitle:[
+                {
+                    title: "for loop ",
+                    description: "for loop সাধারণত নির্দিষ্ট সংখ্যক বার কোড ব্লক চালানোর জন্য ব্যবহৃত হয়।",
+                    code: "for (let i = 0; i < 5; i++) {\n" +
+                        "  console.log(\"Number: \" + i);\n" +
+                        "}\n" +
+                        "// Output: \"Number: 0\", \"Number: 1\", \"Number: 2\", \"Number: 3\", \"Number: 4\""
+                },
+                {
+                    title: "while loop ",
+                    description: "while loop তখন পর্যন্ত কোড ব্লক চালিয়ে যেতে থাকে যতক্ষণ না নির্দিষ্ট শর্তটি সত্য থাকে।",
+                    code: "let count = 0;\n" +
+                        "while (count < 5) {\n" +
+                        "  console.log(\"Count: \" + count);\n" +
+                        "  count++;\n" +
+                        "}\n" +
+                        "// Output: \"Count: 0\", \"Count: 1\", \"Count: 2\", \"Count: 3\", \"Count: 4\""
+                },
+                {
+                    title: "do while loop ",
+                    description: "do...while loop কমপক্ষে একবার কোড ব্লক চালায়, তারপর শর্তটি চেক করে।",
+                    code: "let count = 0;\n" +
+                        "do {\n" +
+                        "  console.log(\"Count: \" + count);\n" +
+                        "  count++;\n" +
+                        "} while (count < 5);\n" +
+                        "// Output: \"Count: 0\", \"Count: 1\", \"Count: 2\", \"Count: 3\", \"Count: 4\""
+                },
+                {
+                    title: "for of loop",
+                    description:   "for...of loop একটি iterable object যেমন array এর প্রতিটি এলিমেন্টের জন্য কোড ব্লক চালায়।",
+                    code : "let numbers = [10, 20, 30];\n" +
+                        "for (let number of numbers) {\n" +
+                        "  console.log(\"Number: \" + number);\n" +
+                        "}\n" +
+                        "// Output: \"Number: 10\", \"Number: 20\", \"Number: 30\""
+                },
+                {
+                    title: "for in loop ",
+                    description: "for in loop একটি object এর properties গুলোর উপর loop চালায়।",
+                    code: "let person = {name: \"John\", age: 30, job: \"Developer\"};\n" +
+                        "for (let key in person) {\n" +
+                        "  console.log(key + \": \" + person[key]);\n" +
+                        "}\n" +
+                        "// Output: \"name: John\", \"age: 30\", \"job: Developer\""
+                },
+            ],
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Loop",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/loop"}
+    ],
+
+    bitwise:[
+        {
+            title: "Bitwise Operators (বিটওয়াইজ অপারেটর) : ",
+            description: "বিটওয়াইজ অপারেটরগুলো সংখ্যার বিটের উপর কাজ করে। জাভাস্ক্রিপ্টে বিভিন্ন বিটওয়াইজ অপারেটর ব্যবহার করা হয় ",
+            minTitle:[
+                {
+                    title: "AND (বিটওয়াইজ এন্ড) & ",
+                    description: "এই অপারেটরটি দুইটি বিটের মধ্যে একটি বিটওয়াইজ এন্ড অপারেশন করে।",
+                    code: "let a = 5; // বিট: 0101\n" +
+                        "let b = 3; // বিট: 0011\n" +
+                        "let result = a & b;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 1 (বিট: 0001)"
+                },
+                {
+                    title: "OR (বিটওয়াইজ অর) | ",
+                    description: "এই অপারেটরটি দুইটি বিটের মধ্যে একটি বিটওয়াইজ অর অপারেশন করে।",
+                    code: "let a = 5; // বিট: 0101\n" +
+                        "let b = 3; // বিট: 0011\n" +
+                        "let result = a | b;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 7 (বিট: 0111)"
+                },
+                {
+                    title: " XOR (বিটওয়াইজ এক্সওআর) ^ ",
+                    description: "এই অপারেটরটি দুইটি বিটের মধ্যে একটি বিটওয়াইজ এক্সওআর অপারেশন করে।",
+                    code: "let a = 5; // বিট: 0101\n" +
+                        "let b = 3; // বিট: 0011\n" +
+                        "let result = a ^ b;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 6 (বিট: 0110)"
+                },
+                {
+                    title: "NOT (বিটওয়াইজ নট) ~ ",
+                    description: "এই অপারেটরটি একটি বিটের প্রতিটি বিটের উল্টো করে দেয়।",
+                    code: "let a = 5; // বিট: 0101\n" +
+                        "let result = ~a;\n" +
+                        "console.log(result);\n" +
+                        "// Output: -6 (বিট: 1010)"
+                },
+                {
+                    title: " Left Shift (বিটওয়াইজ লেফট শিফট) << ",
+                    description: "এই অপারেটরটি বিটগুলোকে বাম দিকে সরিয়ে দেয়।",
+                    code: "let a = 5; // বিট: 00000101\n" +
+                        "let result = a << 2;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 20 (বিট: 00010100)"
+                },
+                {
+                    title: " Right Shift (বিটওয়াইজ রাইট শিফট) >> ",
+                    description: "এই অপারেটরটি বিটগুলোকে ডান দিকে সরিয়ে দেয়।",
+                    code: "let a = 20; // বিট: 00010100\n" +
+                        "let result = a >> 2;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 5 (বিট: 00000101)"
+                },
+                {
+                    title: "Unsigned Right Shift (বিটওয়াইজ আনসাইনড রাইট শিফট) >>> ",
+                    description: "এই অপারেটরটি সাইন বিটকে উপেক্ষা করে বিটগুলোকে ডান দিকে সরিয়ে দেয়।",
+                    code: "let a = -20; // বিট: 11101100\n" +
+                        "let result = a >>> 2;\n" +
+                        "console.log(result);\n" +
+                        "// Output: 1073741819"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Bitwise",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/bitwise"}
+    ],
+
+    events:[
+        {
+            title:"JavaScript Events : ",
+            description: "জাভাস্ক্রিপ্ট ইভেন্ট হল কোনো নির্দিষ্ট ঘটনার প্রতিক্রিয়া জানাতে ব্যবহৃত একটি উপায়। উদাহরণস্বরূপ, একটি বাটন ক্লিক করলে, একটি ইমেজ লোড হলে, বা একটি কীবোর্ড কী চাপলে একটি ইভেন্ট ঘটে।",
+            minTitle:[
+                {
+                    title:"Click Event ",
+                    description: "Click ইভেন্ট তখন ঘটে যখন User কোনো HTML এলিমেন্টের উপর ক্লিক করে।",
+                    code:"<button onclick=\"alert('Button clicked!')\">Click Me</button>\n" +
+                        "// Output: \"Button clicked!\" (বাটন ক্লিক করার পর একটি এলার্ট দেখাবে)"
+
+                },
+                {
+                    title: "Mouseover Event ",
+                    description: "Mouseover ইভেন্ট তখন ঘটে যখন ব্যবহারকারী মাউস কার্সর কোনো HTML এলিমেন্টের উপর নিয়ে যায়।",
+                    code: "<div onmouseover=\"console.log('Mouse over!')\">Hover over me</div>\n" +
+                        "// Output: \"Mouse over!\" (এলিমেন্টের উপর মাউস নিয়ে গেলে কনসোলে লগ হবে)"
+                },
+                {
+                    title: "Keydown Event ",
+                    description: "Keydown ইভেন্ট তখন ঘটে যখন ব্যবহারকারী কোনো কীবোর্ড কী চাপেন।",
+                    code: "<input type=\"text\" onkeydown=\"console.log('Key pressed!')\"/>\n" +
+                        "                // Output: \"Key pressed!\" (কীবোর্ডের কোনো কী চাপলে কনসোলে লগ হবে)"
+                },
+                {
+                    title: "Change Event ",
+                    description: "Change ইভেন্ট তখন ঘটে যখন একটি ইনপুট ফিল্ডের মান পরিবর্তন করা হয়।",
+                    code: "<input type=\"text\" onchange=\"console.log('Input changed!')\"/>\n" +
+                        "                // Output: \"Input changed!\" (ইনপুটের মান পরিবর্তিত হলে কনসোলে লগ হবে)",
+                },
+                {
+                    title: "Submit Event ",
+                    description: "Submit ইভেন্ট তখন ঘটে যখন একটি ফর্ম সাবমিট করা হয়।",
+                    code: "<form onsubmit=\"console.log('Form submitted!')\">\n" +
+                        "  <button type=\"submit\">Submit</button>\n" +
+                        "</form>\n" +
+                        "// Output: \"Form submitted!\" (ফর্ম সাবমিট করলে কনসোলে লগ হবে)"
+                },
+                {
+                    title: "Load Event ",
+                    description: "Load ইভেন্ট তখন ঘটে যখন একটি পৃষ্ঠা বা ইমেজ সম্পূর্ণভাবে লোড হয়।",
+                    code: "<body onload=\"console.log('Page fully loaded!')\">\n" +
+                        "// Output: \"Page fully loaded!\" (পেজ পুরোপুরি লোড হলে কনসোলে লগ হবে)"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Events",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/events"}
+    ],
+
+    scopeHoisting:[
+        {
+            title:"Scope (স্কোপ) : ",
+            description: "স্কোপ হলো একটি ভেরিয়েবল বা ফাংশনের পরিসর যেখানে তা দৃশ্যমান এবং ব্যবহার করা যেতে পারে। জাভাস্ক্রিপ্টে মূলত দুই ধরনের স্কোপ থাকে: লেক্সিকাল (বা ব্লক) স্কোপ এবং গ্লোবাল স্কোপ।",
+            minTitle:[
+                {
+                    title: " Global Scope (গ্লোবাল স্কোপ) ",
+                    description: "যেকোনো ভেরিয়েবল যা গ্লোবাল স্কোপে ডিফাইন করা হয়, তা পুরো প্রোগ্রাম জুড়ে অ্যাক্সেসযোগ্য থাকে।",
+                    code:"let globalVar = \"I am global\";\n" +
+                        "function showGlobal() {\n" +
+                        "  console.log(globalVar);\n" +
+                        "}\n" +
+                        "showGlobal(); // আউটপুট: \"I am global\""
+                },
+                {
+                    title: " Local Scope (লোকাল স্কোপ) ",
+                    description: "যেকোনো ভেরিয়েবল যা একটি ফাংশনের মধ্যে ডিফাইন করা হয়, তা শুধুমাত্র সেই ফাংশনের মধ্যে অ্যাক্সেসযোগ্য থাকে।",
+                    code: "function showLocal() {\n" +
+                        "  let localVar = \"I am local\";\n" +
+                        "  console.log(localVar);\n" +
+                        "}\n" +
+                        "showLocal();\n" +
+                        "console.log(localVar); // এর আউটপুট হবে একটি ত্রুটি (ReferenceError)"
+                },
+                {
+                    title: "Block Scope (ব্লক স্কোপ) ",
+                    description: "ES6 থেকে, let এবং const দ্বারা ডিফাইন করা ভেরিয়েবলগুলো ব্লক স্কোপে থাকে, অর্থাৎ {} ব্রেসের মধ্যে সীমাবদ্ধ।",
+                    code: "function checkBlockScope() {\n" +
+                        "  if (true) {\n" +
+                        "    let blockVar = \"I am inside block\";\n" +
+                        "    console.log(blockVar);\n" +
+                        "  }\n" +
+                        "  console.log(blockVar); // এর আউটপুট হবে একটি ত্রুটি (ReferenceError)\n" +
+                        "}\n" +
+                        "checkBlockScope(); // আউটপুট: \"I am inside block\"\n"
+                }
+            ],
+        },
+        {
+            title: "Hoisting (হোস্টিং) : ",
+            description: "হোস্টিং হলো একটি জাভাস্ক্রিপ্ট ফিচার যা পরিবর্তনশীল এবং ফাংশন ডিক্লারেশনগুলোকে তাদের স্কোপের শীর্ষে নিয়ে আসে।",
+            minTitle: [
+                {
+                    title: "Variable Hoisting (ভেরিয়েবল হোস্টিং) ",
+                    description: "যখন একটি ভেরিয়েবল ডিক্লেয়ার করা হয়, তখন জাভাস্ক্রিপ্ট এটি স্কোপের শীর্ষে নিয়ে আসে। তবে, \\`var\\` দ্বারা ডিক্লেয়ার করা ভেরিয়েবলগুলোর ক্ষেত্রে কেবল ডিক্লারেশন হোস্টিং হয়, ইনিশিয়ালাইজেশন নয়।",
+                    code: "console.log(hoistedVar); // আউটপুট হবে: undefined\n" +
+                        "var hoistedVar = \"I am hoisted\";\n" +
+                        "console.log(hoistedVar); // আউটপুট হবে: \"I am hoisted\""
+                },
+                {
+                    title: "Function Hoisting (ফাংশন হোস্টিং) ",
+                    description: "ফাংশন ডিক্লারেশনগুলো পুরোপুরি হোস্ট করা হয়, অর্থাৎ, ফাংশন কল করার আগে তা ব্যবহার করা সম্ভব।",
+                    code: "hoistedFunction(); // আউটপুট হবে: \"I am hoisted function\"\n" +
+                        "function hoistedFunction() {\n" +
+                        "  console.log(\"I am hoisted function\");\n" +
+                        "}"
+                },
+                {
+                    title: "Let and Const Hoisting (লেট এবং কনস্ট হোস্টিং) ",
+                    description: "let এবং const দ্বারা ডিক্লেয়ার করা ভেরিয়েবলগুলোর ক্ষেত্রে হোস্টিং ঘটে, কিন্তু তাদের ব্যবহার Temporal Dead Zone (TDZ) দ্বারা সীমাবদ্ধ। এর মানে হলো, তারা ডিক্লেয়ার না হওয়া পর্যন্ত ব্যবহার করা যাবে না।",
+                    code: "console.log(letVar); // এর আউটপুট হবে একটি ত্রুটি (ReferenceError)\n" +
+                        "let letVar = \"I am let\";"
+                },
+                {
+                    title: "Example of TDZ ",
+                    description: "TDZ প্রমাণিত করে যে, let এবং const ভেরিয়েবল তাদের ডিক্লারেশন লাইনের আগ পর্যন্ত অ্যাক্সেসযোগ্য নয়।",
+                    code: "function exampleTDZ() {\n" +
+                        "  console.log(tdVar); // এর আউটপুট হবে একটি ত্রুটি (ReferenceError)\n" +
+                        "  let tdVar = \"I am in TDZ\";\n" +
+                        "}\n" +
+                        "exampleTDZ();"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Scope & Hoisting",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/scope&histing"}
+    ],
+
+    async:[
+        {
+            title: "Async and Await : ",
+            description: "JavaScript-এ async এবং await কীওয়ার্ডগুলো ব্যবহার করে asynchronous কোড আরও সহজে লেখা যায়। এগুলো Promises এর সাথে কাজ করে এবং কোডকে synchronous কোডের মতোই পড়তে সহজ করে তোলে।",
+            minTitle:[
+                {
+                    title: "Async Function (অ্যাসিঙ্ক ফাংশন) ",
+                    description: "async function এমন একটি ফাংশন যেটি একটি Promise রিটার্ন করে। এটি ব্যবহারের মাধ্যমে আমরা asynchronous কোড লিখতে পারি।\n",
+                    code: "async function fetchData() {\n" +
+                        "    return \"Data fetched\";\n" +
+                        "}\n" +
+                        "fetchData().then(data => console.log(data)); // আউটপুট: Data fetched"
+                },
+                {
+                    title: " Await (অ্যাওয়েট) ",
+                    description: "await কীওয়ার্ডটি শুধুমাত্র async function ভিতরে ব্যবহার করা হয়। এটি একটি Promise-এর Result পর্যন্ত অপেক্ষা করে এবং Promise Result হলে তা রিটার্ন করে।",
+                    code: "async function fetchData() {\n" +
+                        "    let data = await new Promise(resolve => setTimeout(() => resolve(\"Data fetched\"), 2000));\n" +
+                        "    console.log(data);\n" +
+                        "}\n" +
+                        "fetchData(); // আউটপুট: \"Data fetched\" (2 সেকেন্ড অপেক্ষা করার পরে)"
+                },
+                {
+                    title: "Error Handling (এরর হ্যান্ডলিং) ",
+                    description: "অ্যাসিঙ্ক এবং অ্যাওয়েট ব্যবহারের সময় এরর হ্যান্ডলিংও করা যায়। সাধারণত try-catch ব্লক ব্যবহার করে এরর হ্যান্ডলিং করা হয়।",
+                    code: "async function fetchData() {\n" +
+                        "    try {\n" +
+                        "        let data = await new Promise((_, reject) => setTimeout(() => reject(\"Fetch error\"), 2000));\n" +
+                        "        console.log(data);\n" +
+                        "    } catch (error) {\n" +
+                        "        console.log(\"Error:\", error);\n" +
+                        "    }\n" +
+                        "}\n" +
+                        "fetchData(); // আউটপুট: \"Error: Fetch error\" (2 সেকেন্ড পরে)"
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "Async Await",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/scope&histing"}
+    ],
+
+    json:[
+        {
+            title: "JSON (JavaScript Object Notation) : ",
+            description: "JSON হল একটি লাইটওয়েট ডেটা ইন্টারচেঞ্জ ফরম্যাট যা মানুষের দ্বারা পড়তে সহজ এবং মেশিন দ্বারা পার্স করা সহজ। এটি সাধারণত অবজেক্ট এবং অ্যারে হিসেবে ডেটা উপস্থাপন করে।",
+            minTitle:[
+                {
+                    title: "JSON Object : ",
+                    description: "JSON অবজেক্টটি কীগুলোর সাথে মান জোড়া করে ডেটা স্টোর করে। কীগুলো স্ট্রিং হিসেবে এবং মানগুলো যেকোনো ধরনের ডেটা হতে পারে।",
+                    code: "{\n" +
+                        "  \"name\": \"John\",\n" +
+                        "  \"age\": 30,\n" +
+                        "  \"city\": \"New York\"\n" +
+                        "}"
+                },
+                {
+                    title: " JSON.stringify() ",
+                    description: "এই মেথডটি একটি জাভাস্ক্রিপ্ট অবজেক্ট বা অ্যারেকে JSON স্ট্রিং-এ রূপান্তর করে।",
+                    code: "const person = {\n" +
+                        "  name: \"John\",\n" +
+                        "  age: 30,\n" +
+                        "  city: \"New York\"\n" +
+                        "};\n" +
+                        "\n" +
+                        "const jsonString = JSON.stringify(person);\n" +
+                        "console.log(jsonString); // আউটপুট {\"name\":\"John\",\"age\":30,\"city\":\"New York\"} "
+                },
+                {
+                    title: "JSON.parse() ",
+                    description: "এই মেথডটি একটি JSON স্ট্রিংকে জাভাস্ক্রিপ্ট অবজেক্টে রূপান্তর করে।",
+                    code: "const jsonString = '{\"name\":\"John\",\"age\":30,\"city\":\"New York\"}';\n" +
+                        "const person = JSON.parse(jsonString);\n" +
+                        "console.log(person); // আউটপুট: { name: \"John\", age: 30, city: \"New York\" }"
+                },
+                {
+                    title: "Nested JSON Objects ",
+                    description: "JSON অবজেক্টে অন্যান্য অবজেক্ট বা অ্যারে থাকতে পারে।",
+                    code: "const user = {\n" +
+                        "  name: \"Jane\",\n" +
+                        "  address: {\n" +
+                        "    street: \"123 Main St\",\n" +
+                        "    city: \"Los Angeles\"\n" +
+                        "  },\n" +
+                        "  hobbies: [\"reading\", \"swimming\"]\n" +
+                        "};\n" +
+                        "\n" +
+                        "const jsonString = JSON.stringify(user);\n" +
+                        "console.log(jsonString); // আউটপুট: {\"name\":\"Jane\",\"address\":{\"street\":\"123 Main St\",\"city\":\"Los Angeles\"},\"hobbies\":[\"reading\",\"swimming\"]}"
+                },
+                {
+                    title: " Handling Errors ",
+                    description: "যখন JSON.parse() ব্যবহার করা হয়, তখন যদি স্ট্রিংটি অবৈধ হয় তবে একটি ত্রুটি হতে পারে।",
+                    code: "try {\n" +
+                        "  const invalidJson = '{name:\"John\",age:30}';\n" +
+                        "  const parsedData = JSON.parse(invalidJson);\n" +
+                        "  console.log(parsedData);\n" +
+                        "} catch (error) {\n" +
+                        "  console.error(\"Error parsing JSON:\", error); // " +
+                        "আউটপুট: \"Error parsing JSON: SyntaxError: Unexpected token n in JSON at position 1\"\n" +
+                        "}"
+                },
+                {
+                    title: "JSON with Arrays ",
+                    description: "JSON অ্যারে হিসেবেও ডেটা ধারণ করতে পারে।",
+                    code: "const dataArray = [\n" +
+                        "    { name: \"Alice\", age: 25 },\n" +
+                        "    { name: \"Bob\", age: 30 }\n" +
+                        "  ];\n" +
+                        "  \n" +
+                        "  const jsonString = JSON.stringify(dataArray);\n" +
+                        "  console.log(jsonString); // আউটপুট: [{\"name\":\"Alice\",\"age\":25},{\"name\":\"Bob\",\"age\":30}]\n" +
+                        "  \n" +
+                        "  const parsedArray = JSON.parse(jsonString);\n" +
+                        "  console.log(parsedArray); // আউটপুট : [ { name: 'Alice', age: 25 }, { name: 'Bob', age: 30 } ]"
+
+                }
+            ]
+        },
+        {
+            tags:[
+                "Javascript ",
+                "JS ",
+                "DSA",
+                "JSON",
+                "NodeJs ",
+                "Programming ",
+                "Web Development ",
+            ]
+        },
+        {linkTag : "/learn/Javascrip/json"}
+    ]
+
 }
 
 export default jsLanguageConfig;
