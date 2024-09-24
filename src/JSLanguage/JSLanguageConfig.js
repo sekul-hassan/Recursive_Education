@@ -1,4 +1,5 @@
 const jsLanguageConfig = {
+
     basic:[
         {
             title:"Javascript : " ,
@@ -151,6 +152,7 @@ const jsLanguageConfig = {
         },
         {linkTag : "/learn/Javascrip/basic"}
     ],
+
     array:[
         {
             title: "Array : ",
