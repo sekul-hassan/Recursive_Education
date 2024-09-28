@@ -496,7 +496,7 @@ const SequelizeConfig = {
                 "});",
             descriptionCode:"এই কোয়েরিটি সব কমেন্ট ফিরিয়ে আনে যা `Post` মডেলের সাথে সম্পর্কিত এবং `commentableId` হল `1`।"
         }
-    ]
+    ],
 }
 
 export default SequelizeConfig;
