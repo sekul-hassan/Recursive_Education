@@ -5,7 +5,8 @@ import {Nav, Navbar} from "react-bootstrap";
 function LearningSideNav({ practiceLists , onSelectLecture }) {
 
     const{language} = useParams();
-    const selectedLanguage = language || "Javascript";
+    const selectedLanguage = language || "javascript";
+
     return (
         <Fragment>
             <Navbar expand={true} className="practiceList">
@@ -13,13 +14,11 @@ function LearningSideNav({ practiceLists , onSelectLecture }) {
                 <Navbar.Collapse id="basic-navbar-nav" className="show">
                     <Nav className="flex-column sidebar">
                         {practiceLists.map((item, subIndex) => (
-                           item.component && (
-                               <Link
-                                   onClick={() => { onSelectLecture(item) }}
-                                   to={`/learn/${selectedLanguage}${item.link}`}>
-                                   {item.value}
-                               </Link>
-                           )
+                            <Link
+                                onClick={() => { onSelectLecture(item.lecture) }}
+                                to={`/learn/${selectedLanguage}${item.link}`}>
+                                {item.value}
+                            </Link>
                         ))}
                     </Nav>
                 </Navbar.Collapse>

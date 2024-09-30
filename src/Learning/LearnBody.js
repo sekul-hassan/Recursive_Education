@@ -1,33 +1,36 @@
 import React, {Fragment, useEffect, useState} from 'react';
-import learningConfig from "./LearningConfig";
 import TopMenu from "../Components/TopMenu";
 import LearningNav from "./LearningNav";
-import PracticeFormat from "../PracticePages/PracticeFormat";
 import Footer from "../Components/Footer";
 import LearningSideNav from "./LearningSideNav";
 import {useParams} from "react-router-dom";
+import learningNavJson from "./LearningNavJson";
+import learningJsonConfig from "./LearningJsonConfig";
+import LearnDataLoad from "./LearnDataLoad";
 
 function LearnBody(props) {
-    const [lecture, setLecture] = useState(learningConfig[0][1]);
-    const [list,setList] = useState([]);
+    const [lecture, setLecture] = useState(learningJsonConfig.javascript[0].lecture);
+    const [list,setList] = useState(learningJsonConfig.javascript);
     const{language} = useParams();
-    const selectLanguage = language || "Javascript";
+    const selectLanguage = language || "javascript";
     // alert(selectLanguage);
     const onSelectLecture = (lecture) => {
         setLecture(lecture);
     }
 
     useEffect(() => {
-        const data = learningConfig.find((item)=>item[0].link==="/"+selectLanguage);
-        setLecture(data[1]);
-        setList(data)
-        console.log(data)
+        const data = learningJsonConfig[selectLanguage];
+       if(data){
+           setList(data);
+           setLecture(data[0].lecture);
+       }
+
     }, [selectLanguage]);
 
     return (
         <Fragment>
             <TopMenu/>
-            <LearningNav navData={learningConfig}/>
+            <LearningNav navData={learningNavJson}/>
             <div className="d-flex">
                 <div className="practiceSlider">
                     {list && (<LearningSideNav practiceLists={list} onSelectLecture={onSelectLecture}/>)}
@@ -35,15 +38,11 @@ function LearnBody(props) {
                 <div className="practiceRightPage">
                     {
                         lecture && (
-                            <PracticeFormat
-                                Component={lecture.component}
-                            />
+                          <LearnDataLoad data={lecture}/>
                         )
                     }
-
                 </div>
             </div>
-
             <Footer/>
         </Fragment>
     );

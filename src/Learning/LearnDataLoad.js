@@ -1,14 +1,13 @@
 import React, {Fragment} from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { solarizedlight } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import CPPConfig from "./CPPConfig";
+import {Prism as SyntaxHighlighter} from "react-syntax-highlighter";
+import {solarizedlight} from "react-syntax-highlighter/dist/cjs/styles/prism";
 import {Link} from "react-router-dom";
 
-function Inheritance(props) {
+function LearnDataLoad({data}) {
     return (
         <div className="mt-2">
             {
-                CPPConfig.inheritance && CPPConfig.inheritance.map((item, index) => (
+                data && data.map((item, index) => (
                     <Fragment>
                         <h1 className="globalDescription"><strong
                             className="title">{item.title}</strong>{item.description}
@@ -56,4 +55,6 @@ function Inheritance(props) {
     );
 }
 
-export default Inheritance;
+export default LearnDataLoad;
+
+

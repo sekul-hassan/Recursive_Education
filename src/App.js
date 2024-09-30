@@ -29,7 +29,7 @@ function App() {
             <Route path="/terms" element={<TermConditionPage/>}/>
             <Route path="/refund" element={<RefundPage/>}/>
             <Route path="/learn" element={<LearnBody/>}/>
-            <Route path="/learn/Javascript" element={<LearnBody/>}/>
+            <Route path="/learn/javascript" element={<LearnBody/>}/>
             <Route path="/learn/:language" element={<LearnBody/>}/>
             <Route path="/learn/:language/:topic" element={<LearnBody/>}/>
             {/*<Route path="/academic/:id" element={<AcademicBody/>}/>*/}
