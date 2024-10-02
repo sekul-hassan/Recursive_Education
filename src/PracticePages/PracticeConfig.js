@@ -286,7 +286,7 @@ const practiceLists = [
     ],
 
     [
-        { id: 0, link: "React", value: "React" },
+        { id: 0, link: "/practiceJs", value: "React" },
         {
             id: 1,
             link: "/setup",

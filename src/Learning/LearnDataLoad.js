@@ -5,11 +5,11 @@ import {Link} from "react-router-dom";
 
 function LearnDataLoad({data}) {
     return (
-        <div className="mt-2">
+        <div>
             {
                 data && data.map((item, index) => (
                     <Fragment>
-                        <h1 className="globalDescription"><strong
+                        <h1 className="globalDescription mt-3"><strong
                             className="title">{item.title}</strong>{item.description}
                         </h1>
                         {item.code && (<SyntaxHighlighter className="mt-3" language="javascript"
@@ -21,14 +21,14 @@ function LearnDataLoad({data}) {
                                                    style={solarizedlight}>{item.code}</SyntaxHighlighter>
                             ))
                         }
-                        <h4 className="globalDescription">{item.descriptionCode}</h4>
+                        {item.descriptionCode && (<h4 className="globalDescription">{item.descriptionCode}</h4>)}
                         <ol>
                             {
-                                item.minTitle && item.minTitle.map((item, index) => (
+                            item.minTitle && item.minTitle.map((item, index) => (
                                     <Fragment>
-                                        <li><h1 className="globalDescription"><strong
+                                        <li className="mtNeg"><h1><strong
                                             className="subTitle text-dark">{item.title}</strong>
-                                        </h1>{item.description}</li>
+                                        </h1><span className="globalDescription">{item.description}</span></li>
                                         {
                                             item.code && (
                                                 <SyntaxHighlighter className="mt-3" language="javascript"

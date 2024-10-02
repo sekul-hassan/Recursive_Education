@@ -69,6 +69,9 @@
 .mbNeg{
     margin-bottom: -5px!important;
 }
+.mtNeg{
+    margin-top: -15px!important;
+}
 .link-light-3{
     line-height: 30px;
 }
@@ -81,4 +84,10 @@ code{
     display: flex;
     overflow: hidden;
     justify-content: center;
+}
+ol,li{
+    margin: 0!important;
+}
+h1,h2,h3,h4,h5,h6,span{
+    margin: 0!important;
 }

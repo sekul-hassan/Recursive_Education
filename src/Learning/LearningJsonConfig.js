@@ -12,25 +12,25 @@ const learningJsonConfig = {
                 },
                 {
                     title: "Note : ",
-                    description: "জাভাস্ক্রিপ্ট আর জাভা এক নয়। জাভা সম্পূর্ণরূপে অবজেক্ট ওরিয়েন্টেড, আর জাভাস্ক্রিপ্ট ফাংশনাল এবং অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং দুটোই মেইনটেইন করে। এক সময় জাভাস্ক্রিপ্ট শুধু ব্রাউজারে রান হতো, এখন জাভাস্ক্রিপ্ট ব্রাউজার এবং সার্ভার উভয় জায়গায়ই রান করে।",
+                    description: "জাভাস্ক্রিপ্ট আর জাভা কিন্তু এক নয়। জাভা সম্পূর্ণরূপে অবজেক্ট ওরিয়েন্টেড, আর জাভাস্ক্রিপ্ট ফাংশনাল এবং অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং দুটোই মেইনটেইন করে। এক সময় জাভাস্ক্রিপ্ট শুধু ব্রাউজারে রান হতো, এখন জাভাস্ক্রিপ্ট ব্রাউজার এবং সার্ভার উভয় জায়গায়ই রান করে।",
                 },
                 {
                     title: "Variable : ",
-                    description: " জাভাস্ক্রিপ্টে চারভাবে ভেরিয়েবল ডিক্লেয়ার করা যায় ",
+                    description: " জাভাস্ক্রিপ্টে চারভাবে ভেরিয়েবল ডিক্লেয়ার করা যায় ।",
                     minTitle: [
-                        {title: "Variable"},
                         {title: "Using var"},
                         {title: "Using let"},
                         {title: "Using const"},
+                        {title: "Default"},
                     ]
                 },
                 {
-                    title: "Where run JS : ",
-                    description: "জাভাস্ক্রিপ্ট দুটি জায়গায় রান করানো যায় :",
+                    title: "Where JS is Run ..? : ",
+                    description: "জাভাস্ক্রিপ্ট দুটি জায়গায় রান করানো যায় ।",
                     minTitle: [
                         {
                             title: "Browser : ",
-                            description: "ব্রাউজারে রান করাতে চাইলে, <script> ট্যাগের ভিতরে জাভাস্ক্রিপ্ট কোড লিখতে হয়। এখানে জাভাস্ক্রিপ্ট শুধুমাত্র HTML এবং CSS কে ম্যানিপুলেট করতে ব্যবহার করা হয়। তাই যেটিকে আপনি ম্যানিপুলেট করতে চান, সেটাকে আগে ধরতে হবে (যেমন: document.querySelector() বা getElementById() এর মাধ্যমে) এবং তারপর সেটাতে কাজ করতে হবে।",
+                            description: "ব্রাউজারে রান করাতে চাইলে, <script> ট্যাগের ভিতরে জাভাস্ক্রিপ্ট কোড লিখতে হয়। এখানে জাভাস্ক্রিপ্ট শুধুমাত্র HTML এবং CSS কে ম্যানিপুলেট করতে ব্যবহার করা হয়। তাই যেটিকে আপনি ম্যানিপুলেট করতে চান, সেটাকে আগে ধরতে হবে (যেমন: document.querySelector() বা getElementById() এর মাধ্যমে) এবং তারপর সেটাতে কাজ করতে হবে ।",
 
                         },
                         {
@@ -44,34 +44,34 @@ const learningJsonConfig = {
                     description: "জাভাস্ক্রিপ্টে আউটপুট দেখানোর জন্য আমরা চারটি ভিন্ন ফাংশন ব্যবহার করতে পারি ।",
                     minTitle: [
                         {
-                            title: "console.log() : ",
-                            description: "এটি সবচেয়ে বেশি ব্যবহৃত হয় এবং কনসোলের ভিতরে আউটপুট দেখায়। সাধারণত ডিবাগিং এর জন্য ব্যবহার করা হয়।",
+                            title: "console.log() ",
+                            description: "এটি সবচেয়ে বেশি ব্যবহৃত হয় এবং কনসোলের ভিতরে আউটপুট দেখায়। সাধারণত ডিবাগিং এর জন্য ব্যবহার করা হয় ।",
                         },
                         {
-                            title: "alert() : ",
-                            description: "এটি একটি পপ-আপ অ্যালার্ট বক্স প্রদর্শন করে যা ব্যবহারকারীর কাছে মেসেজ দেখায়।",
+                            title: "alert() ",
+                            description: "এটি একটি পপ-আপ অ্যালার্ট বক্স প্রদর্শন করে যা ব্যবহারকারীর কাছে মেসেজ দেখায় ।",
                         },
                         {
-                            title: "document.write() : ",
-                            description: "এটি পেজের ভিতরে সরাসরি HTML কন্টেন্ট যোগ করতে ব্যবহৃত হয়। সাধারণত, ডেভেলপাররা এটি খুব বেশি ব্যবহার করে না, কারণ এটি পুরো পেজের কন্টেন্টকে পরিবর্তন করতে পারে।",
+                            title: "document.write() ",
+                            description: "এটি পেজের ভিতরে সরাসরি HTML কন্টেন্ট যোগ করতে ব্যবহৃত হয়। সাধারণত, ডেভেলপাররা এটি খুব বেশি ব্যবহার করে না, কারণ এটি পুরো পেজের কন্টেন্টকে পরিবর্তন করতে পারে ।",
                         },
                         {
-                            title: "innerHTML বা textContent : ",
-                            description: "এটি HTML এলিমেন্টের ভিতরে কন্টেন্ট আপডেট করতে ব্যবহৃত হয়।",
+                            title: "innerHTML বা textContent ",
+                            description: "এটি HTML এলিমেন্টের ভিতরে কন্টেন্ট আপডেট করতে ব্যবহৃত হয় ।",
                         }
                     ]
                 },
                 {
                     title: "Comment : ",
-                    description: "জাভাস্ক্রিপ্টে দুটি উপায়ে কমেন্ট লেখা যায়",
+                    description: "জাভাস্ক্রিপ্টে দুটি উপায়ে কমেন্ট লেখা যায় ।",
                     minTitle: [
                         {
                             title: "Single line : ",
-                            description: "এটি এক লাইনের কমেন্ট লেখার জন্য ব্যবহৃত হয়। // দিয়ে শুরু হয়।",
+                            description: "এটি এক লাইনের কমেন্ট লেখার জন্য ব্যবহৃত হয়। // দিয়ে শুরু হয় ।",
                         },
                         {
                             title: "Multiple line : ",
-                            description: "একাধিক লাইনের কমেন্ট লেখার জন্য ব্যবহৃত হয়। /* দিয়ে শুরু হয় এবং */ দিয়ে শেষ হয়।",
+                            description: "একাধিক লাইনের কমেন্ট লেখার জন্য ব্যবহৃত হয়। /* দিয়ে শুরু হয় এবং */ দিয়ে শেষ হয় ।",
                         },
                     ]
                 },
@@ -81,61 +81,61 @@ const learningJsonConfig = {
                 },
                 {
                     title: "Assignment : ",
-                    description: "জাভাস্ক্রিপ্টে assignment বলতে একটি ভেরিয়েবলে মান নির্ধারণ বা অ্যাসাইন করার প্রক্রিয়াকে বুঝায়। এটি সাধারণত = অপারেটরের মাধ্যমে করা হয়।" +
-                        "\nlet x = 10; // এখানে 'x' ভেরিয়েবলে '10' মান অ্যাসাইন করা হচ্ছে।",
+                    description: "জাভাস্ক্রিপ্টে assignment বলতে একটি ভেরিয়েবলে মান নির্ধারণ বা অ্যাসাইন করার প্রক্রিয়াকে বুঝায়। এটি সাধারণত = অপারেটরের মাধ্যমে করা হয় ।" +
+                        "\nlet x = 10; // এখানে 'x' ভেরিয়েবলে '10' মান অ্যাসাইন করা হচ্ছে ।",
                 },
                 {
                     title: "Data types : ",
-                    description: "জাভাস্ক্রিপ্টে মোট ৮ ধরনের ডেটা টাইপ রয়েছে ",
+                    description: "জাভাস্ক্রিপ্টে মোট ৮ ধরনের ডেটা টাইপ রয়েছে ।",
                 },
                 {
                     title: " Primitive Types (প্রিমিটিভ টাইপস)",
                     minTitle: [
                         {
-                            title: "String : ",
+                            title: "String ",
                             description: "String: টেক্সট ডেটা যেমন \"Hello, World!\"",
                         },
                         {
-                            title: "Number : ",
+                            title: "Number ",
                             description: "Number: সংখ্যা (ইন্টিজার বা ফ্লোট) যেমন 42, 3.14",
                         },
                         {
-                            title: "BigInt : ",
+                            title: "BigInt ",
                             description: "BigInt: বড় সংখ্যার জন্য ব্যবহৃত হয় যেমন 1234567890123456789012345678901234567890n",
                         },
                         {
-                            title: "Boolean : ",
+                            title: "Boolean ",
                             description: "Boolean: সত্য (true) বা মিথ্যা (false)",
                         },
                         {
-                            title: "Undefined : ",
-                            description: "Undefined: একটি ভেরিয়েবল যে কোনো মান পায়নি তা নির্দেশ করে",
+                            title: "Undefined ",
+                            description: "Undefined: একটি ভেরিয়েবল যে কোনো মান পায়নি তা নির্দেশ করে ।",
                         },
                         {
-                            title: "Null : ",
-                            description: "Null: একটি আসল নাল মান নির্দেশ করে, সাধারণত অনুপস্থিত বা অজ্ঞাত ডেটার জন্য ব্যবহৃত হয়",
+                            title: "Null  ",
+                            description: "Null: Empty নির্দেশ করে, সাধারণত absence or unknown ডেটার জন্য ব্যবহৃত হয় ।",
                         },
                         {
-                            title: "Symbol : ",
-                            description: "Symbol: ইউনিক আইডেন্টিফায়ার তৈরি করতে ব্যবহৃত হয় (ES6 থেকে এসেছে) যেমন Symbol('description')",
+                            title: "Symbol  ",
+                            description: "Symbol: ইউনিক আইডেন্টিফায়ার তৈরি করতে ব্যবহৃত হয় (ES6 থেকে এসেছে) যেমন Symbol('description') ।",
                         },
                         {
-                            title: "Object : ",
-                            description: "Object: অবজেক্ট ডেটা টাইপ বিভিন্ন প্রোপার্টি ও মেথড ধারণ করে",
+                            title: "Object ",
+                            description: "Object: অবজেক্ট ডেটা টাইপ বিভিন্ন প্রোপার্টি ও মেথড ধারণ করে ।",
                         }
                     ],
                 },
                 {
-                    title: " Complex Type (কমপ্লেক্স টাইপ) : ",
+                    title: " Complex Type (কমপ্লেক্স টাইপ) ",
                     minTitle: [
                         {
-                            title: "Array : ",
-                            description: " একাধিক ভ্যালু স্টোর করার জন্য ব্যবহৃত হয়, উদাহরণস্বরূপ [1, 2, 3]",
+                            title: "Array ",
+                            description: " একাধিক ভ্যালু স্টোর করার জন্য ব্যবহৃত হয়, উদাহরণস্বরূপ [1, 2, 3] ।",
                         },
                         {
-                            title: "Function : ",
+                            title: "Function ",
                             description: "কার্য সম্পাদনের জন্য ব্যবহৃত হয়, উদাহরণস্বরূপ\n" +
-                                "function myFunction()"
+                                "function myFunction() ।"
                         }
                     ]
                 },
@@ -183,7 +183,7 @@ const learningJsonConfig = {
                     ],
                 },
                 {
-                    title: "Array methods : ",
+                    title: "Array methods ",
                     minTitle: [
                         {
                             title: "array.length ",
@@ -231,7 +231,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Search methods : ",
+                    title: "Search methods ",
                     minTitle: [
                         {
                             title: "indexOf() ",
@@ -301,7 +301,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Sort methods : ",
+                    title: "Sort methods ",
                     minTitle: [
                         {
                             title: "array.sort() ",
@@ -323,7 +323,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Iteration methods : ",
+                    title: "Iteration methods ",
                     minTitle: [
                         {
                             title: "array.forEach() ",
@@ -389,7 +389,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Set Methods : ",
+                    title: "Set Methods ",
                     minTitle: [
                         {
                             title: "set.add(value) ",
@@ -423,7 +423,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Map Methods : ",
+                    title: "Map Methods ",
                     minTitle: [
                         {
                             title: "map.set(key, value)",
@@ -646,7 +646,7 @@ const learningJsonConfig = {
                     description: " JavaScript-এ বিভিন্ন স্ট্রিং অপারেশন করা যায় যা ডাটা ম্যানিপুলেশনে অনেক কাজে আসে।"
                 },
                 {
-                    title: "String Methods : ",
+                    title: "String Methods ",
                     minTitle: [
                         {
                             title: "Length Property ",
@@ -1225,7 +1225,8 @@ const learningJsonConfig = {
                     ]
                 },
                 {linkTag: "/learn/Javascrip/scope&histing"}
-            ]
+            ],
+
         },
         {
             id: 13,
@@ -1233,7 +1234,7 @@ const learningJsonConfig = {
             link: "/json",
             lecture: [
                 {
-                    title: "JSON (JavaScript Object Notation) : ",
+                    title: "JSON (JavaScript Object Notation) ",
                     description: "JSON হল একটি লাইটওয়েট ডেটা ইন্টারচেঞ্জ ফরম্যাট যা মানুষের দ্বারা পড়তে সহজ এবং মেশিন দ্বারা পার্স করা সহজ। এটি সাধারণত অবজেক্ট এবং অ্যারে হিসেবে ডেটা উপস্থাপন করে।",
                     minTitle: [
                         {
@@ -1880,12 +1881,12 @@ const learningJsonConfig = {
             link: "/basic",
             lecture: [
                 {
-                    title: "Introduction to Node.js",
+                    title: "Introduction to Node.js : ",
                     description: "Node.js হল একটি ওপেন সোর্স, cross-platform runtime environment, যা server-side এবং networking applications ডেভেলপ করতে ব্যবহৃত হয়। এটি Google-এর V8 JavaScript engine এর উপর ভিত্তি করে কাজ করে, এবং জাভাস্ক্রিপ্ট ব্যবহার করে সার্ভার-সাইড স্ক্রিপ্টিং এর সুবিধা প্রদান করে।",
                 },
                 {
-                    title: "Features of Node.js",
-                    description: "Node.js এর কিছু গুরুত্বপূর্ণ ফিচারগুলো হল:",
+                    title: "Features of Node.js : ",
+                    description: "Node.js এর কিছু গুরুত্বপূর্ণ ফিচারগুলো হল -",
                     minTitle: [
                         {
                             title: "Asynchronous and Event-Driven",
@@ -1906,19 +1907,17 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Setting Up Node.js",
+                    title: "Setting Up Node.js : ",
                     description: "Node.js সেট আপ করতে প্রথমে official Node.js website থেকে installer ডাউনলোড করতে হবে। ইনস্টলেশনের পরে, terminal এ node -v এবং npm -v কমান্ড ব্যবহার করে node এবং npm এর version চেক করতে পারবেন।"
                 },
                 {
-                    title: "Creating a Basic Node.js Server",
+                    title: "Creating a Basic Node.js Server : ",
                     description: "নিচের কোডটি একটি basic Node.js server তৈরি করে যা HTTP request handle করে:",
                     code: "const http = require('http');\n\nconst server = http.createServer((req, res) => {\n    res.statusCode = 200;\n    res.setHeader('Content-Type', 'text/plain');\n    res.end('Hello, World!');\n});\n\nserver.listen(3000, () => {\n    console.log('Server running at http://localhost:3000/');\n});",
+                    descriptionCode : " codeExplanation : \"এই কোডটি একটি HTTP server তৈরি করে যা port 3000 এ listen করে এবং 'Hello, World!' মেসেজ রেসপন্স হিসেবে পাঠায়।\"",
                 },
                 {
-                    description: " codeExplanation: \"এই কোডটি একটি HTTP server তৈরি করে যা port 3000 এ listen করে এবং 'Hello, World!' মেসেজ রেসপন্স হিসেবে পাঠায়।\""
-                },
-                {
-                    title: "Conclusion",
+                    title: "Conclusion : ",
                     description: "Node.js একটি powerful tool server-side applications ডেভেলপমেন্ট এর জন্য। এর asynchronous এবং event-driven architecture এর কারণে এটি high performance এবং scalable applications তৈরি করতে সহায়ক।"
                 }
             ],
@@ -1929,7 +1928,7 @@ const learningJsonConfig = {
             link: "/modules",
             lecture: [
                 {
-                    title: "Node.js Modules",
+                    title: "Node.js Modules : ",
                     description: "Node.js এ অনেক বিল্ট-ইন মডিউল রয়েছে যা আপনার অ্যাপ্লিকেশনের বিভিন্ন কাজ সম্পাদনে সাহায্য করে। নিচে কিছু গুরুত্বপূর্ণ মডিউল এবং তাদের ব্যবহারের উদাহরণ দেওয়া হলো:",
                     minTitle: [
                         {
@@ -1987,7 +1986,7 @@ const learningJsonConfig = {
             link: "/eamil",
             lecture: [
                 {
-                    title: "Email Concept",
+                    title: "Email Concept : ",
                     description: "Email communication হলো একটি গুরুত্বপূর্ণ অংশ যে কোন modern web application এর। Node.js এ email পাঠানোর জন্য অনেক module রয়েছে। এর মধ্যে অন্যতম জনপ্রিয় হলো Nodemailer, যেটি ব্যবহার করে আপনি SMTP protocol এর মাধ্যমে email পাঠাতে পারেন।",
                     minTitle: [
                         {
@@ -2028,7 +2027,7 @@ const learningJsonConfig = {
             link: "/basic",
             lecture: [
                 {
-                    title: "Introduction to Sequelize",
+                    title: "Introduction to Sequelize : ",
                     description: "Sequelize হল একটি promise-based ORM (Object-Relational Mapping) library যা Node.js এর সাথে ব্যবহৃত হয়। এটি বিভিন্ন SQL databases যেমন PostgreSQL, MySQL, MariaDB, SQLite, এবং Microsoft SQL Server এর সাথে কাজ করতে সাহায্য করে।",
                     minTitle: [
                         {
@@ -2082,7 +2081,7 @@ const learningJsonConfig = {
             link: "/sync",
             lecture: [
                 {
-                    title: "Sequelize `sync` Method",
+                    title: "Sequelize `sync` Method : ",
                     description: "Sequelize-এর `sync` মেথড ব্যবহৃত হয় মডেলগুলির পরিবর্তন ডাটাবেসে আপডেট করতে। এখানে দুইটি প্রধান অপশন থাকে: `force` এবং `alter`।",
                     minTitle: [
                         {
@@ -2272,11 +2271,11 @@ const learningJsonConfig = {
                     description: "Eager Loading হল একটি প্রযুক্তি যা আপনাকে আপনার ডাটাবেসের সাথে সম্পর্কিত অন্যান্য টেবিলের ডেটা একসাথে লোড করতে দেয়। Sequelize-এ, এটি আপনাকে নেভিগেট এবং সম্পর্কিত ডেটা সহ মূল ডেটা একসাথে নিয়ে আসতে সাহায্য করে।",
                 },
                 {
-                    title: "Why Use Eager Loading? ",
+                    title: "Why Use Eager Loading? : ",
                     description: "Eager Loading ব্যবহার করার মাধ্যমে, আপনি একাধিক ডেটাবেস কল করতে বাধ্য হওয়া এড়াতে পারেন, যা পারফরম্যান্স উন্নত করতে সহায়ক। এটি একবারে সম্পর্কিত ডেটা লোড করতে সাহায্য করে, যা আপনার অ্যাপ্লিকেশনের লোডিং সময় কমায়।",
                 },
                 {
-                    title: "Example: Eager Loading in Sequelize ",
+                    title: "Example of Eager Loading in Sequelize : ",
                     description: "ধরুন, আপনার একটি `User` মডেল এবং একটি `Post` মডেল আছে, যেখানে এক `User` এর একাধিক `Post` থাকতে পারে। Eager Loading ব্যবহার করে আপনি একটি `User` এর সাথে সম্পর্কিত সমস্ত `Post` একসাথে লোড করতে পারেন।",
                     code: "const { Sequelize, DataTypes } = require('sequelize');\n" +
                         "const sequelize = new Sequelize('database', 'username', 'password', {\n" +
@@ -2467,11 +2466,11 @@ const learningJsonConfig = {
             link: "/polymorphicAssociations",
             lecture: [
                 {
-                    title: "Polymorphic Associations এর পরিচিতি : ",
+                    title: "Polymorphic Associations : ",
                     description: "Polymorphic associations একটি মডেলকে একাধিক অন্যান্য মডেলের সাথে একক অ্যাসোসিয়েশনের মাধ্যমে যুক্ত করার সুযোগ দেয়। এটি বিশেষভাবে উপকারী যখন আপনি বিভিন্ন মডেলের মধ্যে নমনীয় সম্পর্ক তৈরি করতে চান, কিন্তু একাধিক অ্যাসোসিয়েশন সংজ্ঞায়িত করার প্রয়োজন হয় না।"
                 },
                 {
-                    title: "Polymorphic Associations এর উদাহরণ : ",
+                    title: "Example of Polymorphic Associations : ",
                     description: "ধরুন আপনার কাছে একটি `Comment` মডেল আছে যা বিভিন্ন মডেলের সাথে সম্পর্কিত হতে পারে, যেমন `Post` এবং `Photo`। আলাদা আলাদা অ্যাসোসিয়েশন তৈরি করার পরিবর্তে, polymorphic associations ব্যবহার করে এটি পরিচালনা করা যায়।",
                     code: "const { Sequelize, DataTypes } = require('sequelize');\n" +
                         "const sequelize = new Sequelize('database', 'username', 'password', {\n" +
@@ -2531,11 +2530,11 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "ব্যবহার ",
+                    title: "ব্যবহার : ",
                     description: "Polymorphic associations বিশেষভাবে উপকারী যখন আপনি একটি মডেল (যেমন `Comment`) কে একাধিক অন্যান্য মডেলের (যেমন `Post`, `Photo`) সাথে সম্পর্কিত করতে চান, একাধিক অ্যাসোসিয়েশন তৈরি না করেই।"
                 },
                 {
-                    title: "Polymorphic Associations কোয়েরি করা ",
+                    title: "Polymorphic Associations কোয়েরি করা : ",
                     description: "Polymorphic associations কোয়েরি করার জন্য, আপনাকে আপনার কোয়েরিতে সম্পর্কিত মডেলের টাইপ নির্ধারণ করতে হবে। উদাহরণস্বরূপ, একটি `Post` সম্পর্কিত কমেন্টগুলি খুঁজতে হলে, `commentableType` এবং `commentableId` দ্বারা ফিল্টার করতে হবে।\n",
                     code: "Comment.findAll({\n" +
                         "  where: {\n" +
@@ -2558,13 +2557,14 @@ const learningJsonConfig = {
             link: "/basic",
             lecture: [
                 {
-                    title:"Introduction to C++ ",
+                    title:"Introduction to C++ : ",
                     description:"C++ একটি Powerful এবং Versatile প্রোগ্রামিং Language, যা Bjarne Stroustrup দ্বারা C ভাষার একটি এক্সটেনশন হিসেবে তৈরি করা হয়েছে। এটি procedural এবং object-oriented programming উভয়কেই সমর্থন করে, যা software development, game development এবং system/application software এর ক্ষেত্রে বহুল ব্যবহৃত হয়।",
                 },
                 {
                     title: "Basic Syntax ",
                     minTitle:[
                         {
+                            title: "Print Hello, World!",
                             code:"#include <iostream>\n" +
                                 "using namespace std;\n" +
                                 "\n" +
@@ -2627,7 +2627,7 @@ const learningJsonConfig = {
                     ],
                 },
                 {
-                    title: "Introduction to C++ Data Types ",
+                    title: "Introduction to C++ Data Types : ",
                     description: "C++-এ বিভিন্ন ধরনের ডেটা সংরক্ষণ করতে বিভিন্ন প্রকারের ডেটা টাইপ ব্যবহৃত হয়। প্রতিটি ডেটা টাইপ নির্দিষ্ট ধরনের ডেটা সংরক্ষণ করতে সাহায্য করে এবং তাদের নিজস্ব বৈশিষ্ট্য থাকে।",
                     minTitle: [
                         {
@@ -2684,7 +2684,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Operators ",
+                    title: "Operators : ",
                     description: "Arithmetic Operators ",
                     code: "int sum = 5 + 3;  // Addition\n" +
                         "int diff = 5 - 3;  // Subtraction\n" +
@@ -2693,7 +2693,7 @@ const learningJsonConfig = {
                     descriptionCode: "Arithmetic operators ব্যবহার করে গাণিতিক কাজ করা হয়। উদাহরণস্বরূপ, + যোগের জন্য, - বিয়োগের জন্য, * গুণের জন্য, এবং / ভাগের জন্য ব্যবহৃত হয়।",
                 },
                 {
-                    title: "Introduction to C++ Strings",
+                    title: "Introduction to C++ Strings : ",
                     description: "C++-এ স্ট্রিং হ্যান্ডল করার জন্য প্রধানত তিনটি ধরনের স্ট্রিং ব্যবহৃত হয়: C স্টাইল স্ট্রিং, C++ স্ট্রিং, এবং স্ট্রিং লিটারেল। এই স্ট্রিং টাইপগুলি বিভিন্ন পরিস্থিতিতে ব্যবহৃত হয় এবং বিভিন্ন বৈশিষ্ট্য প্রদান করে।",
                     minTitle: [
                         {
@@ -2731,7 +2731,7 @@ const learningJsonConfig = {
                     ]
                 },
                 {
-                    title: "Introduction to C++ Math Functions",
+                    title: "Introduction to C++ Math Functions : ",
                     description: "C++-এ গাণিতিক অপারেশন করার জন্য বিভিন্ন ফাংশন সরবরাহ করা হয় যা cmath হেডার ফাইলের অন্তর্গত।",
                     minTitle: [
                         {
@@ -2987,7 +2987,7 @@ const learningJsonConfig = {
             link: "/recursion",
             lecture: [
                 {
-                    title: "Introduction to Recursion",
+                    title: "Introduction to Recursion : ",
                     description: "Recursion একটি প্রোগ্রামিং কৌশল যেখানে একটি ফাংশন নিজেকে কল করে। এটি সমস্যাগুলির পুনরাবৃত্তি সমাধানের জন্য ব্যবহার করা হয়। একটি রিকার্সিভ ফাংশন সাধারণত একটি বেস কেস এবং একটি রিকার্সিভ কেস থাকে।",
                     minTitle: [
                         {
@@ -3241,7 +3241,7 @@ const learningJsonConfig = {
             link: "/oop",
             lecture: [
                 {
-                    title: "Basic OOP Concepts",
+                    title: "Basic OOP Concepts : ",
                     description: "Object-Oriented Programming (OOP) একটি প্রোগ্রামিং কৌশল যেখানে 'অবজেক্ট' এবং 'ক্লাস' এর মাধ্যমে কোড সংগঠিত করা হয়। OOP এর মূল ধারণাগুলি হল Encapsulation, Inheritance, Polymorphism, এবং Abstraction。",
                     minTitle: [
                         {
@@ -3274,7 +3274,7 @@ const learningJsonConfig = {
             link: "/encapsulation",
             lecture: [
                 {
-                    title: "Introduction to Encapsulation",
+                    title: "Introduction to Encapsulation : ",
                     description: "Encapsulation একটি OOP কৌশল যা Data hide এবং controlled অ্যাক্সেসের মাধ্যমে অবজেক্টের অভ্যন্তরীণ অবস্থান রক্ষা করে। এটি ক্লাসের ডেটা মেম্বার এবং মেথডগুলি প্রাইভেট করে রাখে এবং পাবলিক মেথডগুলির মাধ্যমে এক্সেসের অনুমতি দেয়।",
                     minTitle: [
                         {
@@ -3398,7 +3398,7 @@ const learningJsonConfig = {
             link: "/abstraction",
             lecture: [
                 {
-                    title: "Introduction to Abstraction",
+                    title: "Introduction to Abstraction : ",
                     description: "Abstraction হলো একটি OOP কৌশল যা বেসিক বা গুরুত্বপূর্ণ বৈশিষ্ট্যগুলি হাইলাইট করতে সহায়ক এবং অপ্রয়োজনীয় বা পুনরাবৃত্ত বৈশিষ্ট্যগুলি লুকায়। এটি মূলত দুটি অংশে বিভক্ত: abstract classes এবং interfaces।",
                     minTitle: [
                         {
