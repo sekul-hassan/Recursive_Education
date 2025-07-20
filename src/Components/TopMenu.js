@@ -55,7 +55,7 @@ function TopMenu(props) {
                         {/*<Link to="/academic" className={css.navLink}>Academic</Link>*/}
                         <Link to="/learn" className={css.navLink}>Learn</Link>
                         <Link to="/project" className={css.navLink}>Projects</Link>
-                        <Link to="/javascript" className={css.navLink}>Practice</Link>
+                        <Link to="/practiceJs" className={css.navLink}>Practice</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

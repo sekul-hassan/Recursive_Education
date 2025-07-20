@@ -34,8 +34,9 @@ function App() {
             <Route path="/learn/:language/:topic" element={<LearnBody/>}/>
             {/*<Route path="/academic/:id" element={<AcademicBody/>}/>*/}
             {/*<Route path="/academic/:id/:subject" element={<AcademicBody/>}/>*/}
-            <Route path="/javascript" element={<JSPractice/>}/>
-            <Route path="/javascript/:id" element={<JSPractice/>}/>
+            <Route path="/practiceJs" element={<JSPractice />}/>
+                <Route path="/practiceJs/:id" element={<JSPractice />}/>
+
             <Route path="/:id/:id" element={<JSPractice/>}/>
             <Route path="/privacy" element={<Privacy/>}/>
             <Route path="/project" element={<ProjectPage/>}/>
